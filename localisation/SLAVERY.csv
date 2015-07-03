@@ -1,0 +1,24 @@
+enslave;Enslave [Root.GetTitledFirstName];;;;;;;;;;;;;x
+enslave_desc;Turn [Root.GetTitledFirstName] into your personal property. If [Root.GetSheHe] has titles, his heir will inherit them.;;;;;;;;;;;;;x
+free_slave;Free [Root.GetTitledFirstName];;;;;;;;;;;;;x
+free_slave_desc;[Root.GetTitledFirstName] will no longer be your slave and will move to the court of a member of his dynasty.;;;;;;;;;;;;;x
+sell_slave;Sell [Root.GetTitledFirstName];;;;;;;;;;;;;x
+sell_slave_desc;Let the world know that you have got slaves to sell.;;;;;;;;;;;;;x
+buy_slaves;Buy slaves;;;;;;;;;;;;;x
+buy_slaves_desc;Let it be known that you want to buy slaves.;;;;;;;;;;;;;x
+stop_buying_slaves;Stop buying slaves;;;;;;;;;;;;;x
+stop_buying_slaves_desc;Stop receiving offers to buy slaves.;;;;;;;;;;;;;x
+slavery.1.desc;My captor, [From.GetTitledFirstName], has decided to enslave me. Since I have become a slave [Root.Heir.GetFirstName] will inherit my titles.;;;;;;;;;;;;;x
+slavery.11.name;I hope he does well in my stead;;;;;;;;;;;;;x
+slavery.2.desc;My [GetFromRelation] [From.GetName] has been enslaved by [FromFrom.GetTitledFirstName]. I have taken over [From.GetHerHis] titles in [From.GetHerHis] stead.;;;;;;;;;;;;;x
+slavery.21.name;We will get [From.GetHerHim] back someday;;;;;;;;;;;;;x
+slavery.4.desc;My [GetFromRelation] [From.GetName] was freed by [FromFrom.GetTitledFirstName]. [From.GetSheHe] will be seeking refuge with one of our kinsmen,;;;;;;;;;;;;;x
+slavery.41.name;Glory to the family!;;;;;;;;;;;;;x
+slavery.5.desc;One of my courtiers my courtiers came to me this morning and claimed that he had found a slave that I would like.;;;;;;;;;;;;;x
+slavery.51.name;Let me examine this slave;;;;;;;;;;;;;x
+slavery.52.name;I'm can't make an offer right now;;;;;;;;;;;;;x
+slavery.7.desc;[FromFrom.GetTitledFirstName] is offering to buy [From.GetName].;;;;;;;;;;;;;x
+slavery.71.name;This will be my offer;;;;;;;;;;;;;x
+slavery.8.desc;[From.GetTitledFirstName] has named the price of [FromFrom.GetName].;;;;;;;;;;;;;x
+slavery.81.name;That is a fair price;;;;;;;;;;;;;x
+slavery.82.name;The price is too high for the slave's skills!;;;;;;;;;;;;;x

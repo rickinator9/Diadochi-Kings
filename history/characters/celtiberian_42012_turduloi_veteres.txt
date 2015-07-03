@@ -1,0 +1,14 @@
+# 421001-421100 for the Tudruli Vetteres dynasty
+421001 = {
+	name = "Ordumeles" # Made up Turduli Vetteres leader
+	dynasty = 42012
+	culture = celtiberian
+	religion = celtic_main
+	
+	385.1.1 = { # 391 BC, Made up
+		birth="yes"
+	}
+	466.1.1 = { # 309 BC
+		death="yes"
+	}
+}

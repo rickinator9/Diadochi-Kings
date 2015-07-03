@@ -1,0 +1,477 @@
+namespace = nomad
+# Authors: 
+# 	rickinator9
+
+# Resources decrease from high to medium
+province_event = {
+	id = nomad.0
+	desc = "nomad.0.desc"
+	picture = GFX_evt_hunt
+	
+	trigger = {
+		is_capital = yes
+		owner = {
+			num_of_count_titles = 2
+		}
+		has_province_modifier = high_resource
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "nomad.0.name"
+		remove_province_modifier = high_resource
+		add_province_modifier = {
+			name = medium_resource
+			duration = -1
+		}
+	}
+}
+
+# Resources decrease from medium to low
+province_event = {
+	id = nomad.1
+	desc = "nomad.1.desc"
+	picture = GFX_evt_hunt
+	
+	trigger = {
+		is_capital = yes
+		owner = {
+			num_of_count_titles = 2
+		}
+		has_province_modifier = medium_resource
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.15
+			has_province_modifier = huge_population
+		}
+		modifier = {
+			factor = 0.2
+			has_province_modifier = large_population
+		}
+		modifier = {
+			factor = 0.5
+			has_province_modifier = medium_population
+		}
+		modifier = {
+			factor = 0.8
+			has_province_modifier = low_population
+		}
+	}
+	
+	option = {
+		name = "nomad.1.name"
+		remove_province_modifier = medium_resource
+		add_province_modifier = {
+			name = low_resource
+			duration = -1
+		}
+	}
+}
+
+# Province resupplies
+province_event = {
+	id = nomad.2
+	desc = "nomad.2.desc"
+	picture = GFX_evt_child_reading
+	
+	notification = yes
+	
+	trigger = {
+		OR = {
+			has_province_modifier = low_resource
+			has_province_modifier = medium_resource
+		}
+		is_capital = no
+		owner = {
+			num_of_count_titles = 2
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 14
+	}
+	
+	option = {
+		name = "nomad.2.name"
+		
+		if = {
+			limit = {
+				has_province_modifier = medium_resource
+			}
+			remove_province_modifier = medium_resource
+			add_province_modifier = {
+				name = high_resource
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = low_resource
+			}
+			remove_province_modifier = low_resource
+			add_province_modifier = {
+				name = medium_resource
+				duration = -1
+			}
+		}
+	}
+}
+
+# New tribe rises up
+province_event = {
+	id = nomad.3
+	desc = "nomad.3.desc"
+	picture = GFX_evt_mongols
+	
+	trigger = {
+		is_capital = no
+		OR = {
+			has_province_modifier = medium_population
+			has_province_modifier = large_population
+			has_province_modifier = huge_population
+		}
+		owner = {
+			num_of_count_titles = 3
+			primary_title = {
+				has_law = nomad_settled_0
+			}
+			NOT = {
+				capital_scope = {
+					any_neighbor_province = {
+						province = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.75
+			has_province_modifier = large_population
+		}
+		modifier = {
+			factor = 0.5
+			has_province_modifier = huge_population
+		}
+		modifier = {
+			factor = 0.25
+			holder_scope = {
+				demesne_size = 20
+			}
+		}
+	}
+	
+	option = {
+		name = "nomad.31.name" # Let them stay
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = {
+			text = "nomad.31.tooltip"
+			hidden_tooltip = {
+				county = {
+					create_character = {
+						random_traits = yes
+						dynasty = random
+						religion = PREV
+						culture = PREV
+						female = no
+						age = 23
+					}
+					new_character = {
+						usurp_title = PREV
+						if = {
+							limit = {
+								liege = {
+									demesne_size = 5
+								}
+							}
+							character_event = {
+								id = nomad.4
+							}
+						}
+						if = {
+							limit = {
+								liege = {
+									demesne_size = 8
+								}
+							}
+							character_event = {
+								id = nomad.4
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+#	option = {
+#		name = "nomad.32.name"
+#		ai_chance = {
+#			factor = 1
+#		}
+#		custom_tooltip = {
+#			text = "nomad.32.tooltip"
+#			hidden_tooltip = {
+#				county = {
+#					create_character = {
+#						random_traits = yes
+#						dynasty = random
+#						religion = PREV
+#						culture = PREV
+#						female = no
+#						age = random
+#					}
+#					new_character = {
+#						if = {
+#							limit = {
+#								any_neighbor_province = {
+#									owner = {
+#										top_liege = {
+#											ROOT = {
+#												owner = {
+#													top_liege = {
+#														character = PREVPREV
+#													}
+#												}
+#											}
+#										}
+#									}
+#								}
+#							}
+#							character_event = {
+#								id = nomad.5
+#							}
+#						}
+#						if = {
+#							limit = {
+#								any_neighbor_province = {
+#									owner = {
+#										top_liege = {
+#											ROOT = {
+#												owner = {
+#													top_liege = {
+#														NOT = {
+#															character = PREVPREV
+#														}
+#													}
+#												}
+#											}
+#										}
+#									}
+#								}
+#							}
+#							random_list = {
+#								60 = {
+#									character_event = {
+#										id = nomad.5
+#									}
+#								}
+#								40 = {
+#									character_event = {
+#										id = nomad.6
+#									}
+#								}
+#							}
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+}
+
+# Nomads take additional provinces
+character_event = {
+	id = nomad.4
+	desc = "nomad.4.desc"
+	picture = GFX_evt_child_reading
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "AI"
+		capital_scope = {
+			random_neighbor_province = {
+				limit = {
+					owner = {
+						ROOT = {
+							de_facto_liege = PREV
+						}
+						capital_scope = {
+							any_neighbor_province = {
+								NOT = {
+									province = PREVPREVPREVPREV
+								}
+							}
+						}
+					}
+					is_capital = no
+				}
+				county = {
+					ROOT = {
+						usurp_title = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+# Nomads attack expeller
+character_event = {
+	id = nomad.5
+	desc = "AI"
+	picture = GFX_evt_child_reading
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "AI"
+		FROM = {
+			owner = {
+				ROOT = {					
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						owner = ROOT
+						leader = THIS
+						match_character = PREV
+						match_mult = 0.1
+					}
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						owner = ROOT
+						leader = THIS
+						match_character = PREV
+						match_mult = 0.1
+					}
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						owner = ROOT
+						leader = THIS
+						match_character = PREV
+						match_mult = 0.1
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = nomad.10
+	desc = "nomad.10.desc"
+	picture = GFX_evt_child_reading
+	
+	trigger = {
+		ai = yes
+		capital_scope = {
+			has_province_modifier = low_resource
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "AI"
+		capital_scope = {
+			random_neighbor_province = {
+				limit = {
+					owner = {
+						character = ROOT
+					}
+					NOT = {
+						has_province_modifier = low_resource
+					}
+				}
+				remove_province_modifier = minimal_population
+				remove_province_modifier = low_population
+				remove_province_modifier = medium_population
+				remove_province_modifier = large_population
+				remove_province_modifier = huge_population		
+				
+				if = {
+					limit = {
+						ROOT = {
+							capital_scope = {
+								OR = {
+									has_province_modifier = minimal_population
+									has_province_modifier = low_population
+									has_province_modifier = medium_population
+								}
+							}
+						}
+					}
+					add_province_modifier = {
+						name = medium_population
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							capital_scope = {
+								has_province_modifier = large_population
+							}
+						}
+					}
+					add_province_modifier = {
+						name = large_population
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							capital_scope = {
+								has_province_modifier = huge_population
+							}
+						}
+					}
+					add_province_modifier = {
+						name = huge_population
+						duration = -1
+					}
+				}
+				ROOT = {
+					capital_scope = {										
+						remove_province_modifier = minimal_population
+						remove_province_modifier = low_population
+						remove_province_modifier = medium_population
+						remove_province_modifier = large_population
+						remove_province_modifier = huge_population
+						
+						random_list = {
+							60 = {
+								add_province_modifier = {
+									name = minimal_population
+									duration = -1
+								}
+							}
+							40 = {
+								add_province_modifier = {
+									name = low_population
+									duration = -1
+								}
+							}
+						}
+					}
+					capital = PREV
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,115 @@
+decisions = {
+	nomad_migrate = {
+		potential = {
+			ai = no
+			primary_title = {
+				has_law = nomad_settled_0
+			}
+		}
+		allow = {
+			location = {
+				NOT = {
+					is_capital = yes
+				}
+				custom_tooltip = {
+					text = neighbouring_migrate
+					hidden_tooltip = {						
+						any_neighbor_province = {
+							ROOT = {
+								capital_scope = {
+									province = PREVPREV
+								}
+								any_demesne_province = {
+									province = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = migrate_effect
+				hidden_tooltip = {
+					location = {	
+						remove_province_modifier = minimal_population
+						remove_province_modifier = low_population
+						remove_province_modifier = medium_population
+						remove_province_modifier = large_population
+						remove_province_modifier = huge_population		
+						
+						if = {
+							limit = {
+								ROOT = {
+									capital_scope = {
+										OR = {
+											has_province_modifier = minimal_population
+											has_province_modifier = low_population
+											has_province_modifier = medium_population
+										}
+									}
+								}
+							}
+							add_province_modifier = {
+								name = medium_population
+								duration = -1
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									capital_scope = {
+										has_province_modifier = large_population
+									}
+								}
+							}
+							add_province_modifier = {
+								name = large_population
+								duration = -1
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									capital_scope = {
+										has_province_modifier = huge_population
+									}
+								}
+							}
+							add_province_modifier = {
+								name = huge_population
+								duration = -1
+							}
+						}
+						ROOT = {
+							capital_scope = {										
+								remove_province_modifier = minimal_population
+								remove_province_modifier = low_population
+								remove_province_modifier = medium_population
+								remove_province_modifier = large_population
+								remove_province_modifier = huge_population
+								
+								random_list = {
+									60 = {
+										add_province_modifier = {
+											name = minimal_population
+											duration = -1
+										}
+									}
+									40 = {
+										add_province_modifier = {
+											name = low_population
+											duration = -1
+										}
+									}
+								}
+							}
+							capital = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}
