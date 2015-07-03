@@ -1,8 +1,8 @@
 405.1.1 = { # 371 BC
 	holder = 420301 # Retogenes
-	liege = d_titti
+	liege = d_celtiberi
 }
 467.1.2 = { # 308 BC
 	holder = 420302 # Suisetarten
-	liege = d_titti
+	liege = d_celtiberi
 }

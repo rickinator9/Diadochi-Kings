@@ -164,7 +164,7 @@ character_event = {
 		ai_chance = {
 			factor = 1
 		}
-		character_event = {
+		narrative_event = {
 			id = melting_pot.2
 		}
 		culture = pontic
@@ -202,7 +202,7 @@ character_event = {
 		ai_chance = {
 			factor = 1
 		}
-		character_event = {
+		narrative_event = {
 			id = melting_pot.2
 		}
 		culture = pontic

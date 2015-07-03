@@ -163,16 +163,6 @@ ca_grepe_levy_4;Greco-Persian Regional Levy;;;;;;;;;;;;;x
 ca_grepe_levy_4_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
 ca_grepe_levy_5;Greco-Persian Regional Levy;;;;;;;;;;;;;x
 ca_grepe_levy_5_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
-ca_iberian_levy_1;Iberian Regional Levy;;;;;;;;;;;;;x
-ca_iberian_levy_1_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
-ca_iberian_levy_2;Iberian Regional Levy;;;;;;;;;;;;;x
-ca_iberian_levy_2_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
-ca_iberian_levy_3;Iberian Regional Levy;;;;;;;;;;;;;x
-ca_iberian_levy_3_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
-ca_iberian_levy_4;Iberian Regional Levy;;;;;;;;;;;;;x
-ca_iberian_levy_4_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
-ca_iberian_levy_5;Iberian Regional Levy;;;;;;;;;;;;;x
-ca_iberian_levy_5_desc;Recruitment center for forces fighting in the traditional style of the region.;;;;;;;;;;;;;x
 ca_garrison_1;Garrison;;;;;;;;;;;;;x
 ca_garrison_2;Garrison;;;;;;;;;;;;;x
 ca_garrison_3;Garrison;;;;;;;;;;;;;x
@@ -303,11 +293,6 @@ ct_grepe_levy_2;Greco-Persian Regional Levy;;;;;;;;;;;;;x
 ct_grepe_levy_3;Greco-Persian Regional Levy;;;;;;;;;;;;;x
 ct_grepe_levy_4;Greco-Persian Regional Levy;;;;;;;;;;;;;x
 ct_grepe_levy_5;Greco-Persian Regional Levy;;;;;;;;;;;;;x
-ct_iberian_levy_1;Iberian Regional Levy;;;;;;;;;;;;;x
-ct_iberian_levy_2;Iberian Regional Levy;;;;;;;;;;;;;x
-ct_iberian_levy_3;Iberian Regional Levy;;;;;;;;;;;;;x
-ct_iberian_levy_4;Iberian Regional Levy;;;;;;;;;;;;;x
-ct_iberian_levy_5;Iberian Regional Levy;;;;;;;;;;;;;x
 ct_town_1;Town;;;;;;;;;;;;;x
 ct_town_2;Town;;;;;;;;;;;;;x
 ct_town_3;Town;;;;;;;;;;;;;x

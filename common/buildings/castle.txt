@@ -501,9 +501,6 @@ castle = {
 			or = {
 				culture = ligurian
 				culture = gaul
-				culture = celtiberian
-				culture = gallaecian
-				culture = aquitanian
 			}
 		}
 		gold_cost = 115
@@ -523,9 +520,6 @@ castle = {
 			or = {
 				culture = ligurian
 				culture = gaul
-				culture = celtiberian
-				culture = gallaecian
-				culture = aquitanian
 			}
 		}
 		gold_cost = 115
@@ -545,9 +539,6 @@ castle = {
 			or = {
 				culture = ligurian
 				culture = gaul
-				culture = celtiberian
-				culture = gallaecian
-				culture = aquitanian
 			}
 		}
 		gold_cost = 115
@@ -567,9 +558,6 @@ castle = {
 			or = {
 				culture = ligurian
 				culture = gaul
-				culture = celtiberian
-				culture = gallaecian
-				culture = aquitanian
 			}
 		}
 		gold_cost = 115
@@ -589,9 +577,6 @@ castle = {
 			or = {
 				culture = ligurian
 				culture = gaul
-				culture = celtiberian
-				culture = gallaecian
-				culture = aquitanian
 			}
 		}
 		gold_cost = 115
@@ -1690,105 +1675,6 @@ castle = {
 		build_time = 365
 		pikemen = 2500
 		knights = 2500
-		ai_creation_factor = 106
-		
-		# start = { always = no }
-	}
-	ca_iberian_levy_1 = {
-		desc = ca_iberian_levy_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		potential = {
-			OR = {
-				culture = iberian
-				culture = lusitanian
-				culture_group = tartessian
-			}
-		}
-		gold_cost = 115
-		build_time = 365
-		light_infantry = 400
-		heavy_infantry = 500
-		knights = 100
-		ai_creation_factor = 110
-		
-		# start = { always = yes }		
-	}
-	ca_iberian_levy_2 = {
-		desc = ca_iberian_levy_2_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = ca_iberian_levy_1
-		potential = {
-			OR = {
-				culture = iberian
-				culture = lusitanian
-				culture_group = tartessian
-			}
-		}
-		gold_cost = 115
-		build_time = 365
-		light_infantry = 800
-		heavy_infantry = 1000
-		knights = 200
-		ai_creation_factor = 109
-		
-		# start = { always = no }
-	}
-	ca_iberian_levy_3 = {
-		desc = ca_iberian_levy_3_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
-		upgrades_from = ca_iberian_levy_2
-		potential = {
-			OR = {
-				culture = iberian
-				culture = lusitanian
-				culture_group = tartessian
-			}
-		}
-		gold_cost = 115
-		build_time = 365
-		light_infantry = 1200
-		heavy_infantry = 1500
-		knights = 300
-		ai_creation_factor = 108
-		
-		# start = { always = no }
-	}
-	ca_iberian_levy_4 = {
-		desc = ca_iberian_levy_4_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
-		upgrades_from = ca_iberian_levy_3
-		potential = {
-			OR = {
-				culture = iberian
-				culture = lusitanian
-				culture_group = tartessian
-			}
-		}
-		gold_cost = 115
-		build_time = 365
-		light_infantry = 1600
-		heavy_infantry = 2000
-		knights = 400
-		ai_creation_factor = 107
-		
-		# start = { always = no }
-	}
-	ca_iberian_levy_5 = {
-		desc = ca_iberian_levy_5_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
-		upgrades_from = ca_iberian_levy_4
-		potential = {
-			OR = {
-				culture = iberian
-				culture = lusitanian
-				culture_group = tartessian
-			}
-		}
-		gold_cost = 115
-		build_time = 365
-		light_infantry = 2000
-		heavy_infantry = 2500
-		knights = 500
 		ai_creation_factor = 106
 		
 		# start = { always = no }

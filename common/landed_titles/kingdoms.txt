@@ -2437,300 +2437,6 @@ k_cyrene = {
 		}
 	}
 }
-k_syria = {
-	color= { 0 75 100 }
-	color2= { 255 255 255 }
-
-	capital = 120 # Antiocheia
-
-	allow = {
-		liege = {
-			not = { has_landed_title = e_persia }
-			not = { has_landed_title = e_macedonia }
-		}
-	}
-
-	d_syria = {
-		color= { 0 75 100 }
-		color2= { 255 255 255 }
-
-		c_myriandos = {
-			color= { 10 65 100 }
-			color2= { 255 255 255 }
-
-			b_myriandos_myriandos = {
-			}
-			b_kilikiai_pylai_myriandos = {
-			}
-			b_alexandria_myriandos = {
-			}
-			b_issus_myriandos = {
-			}
-			b_epiphaneia_myriandos = {
-			}
-		}
-		c_antiocheia = {
-			color= { 0 75 100 }
-			color2= { 255 255 255 }
-
-			b_rhosos_antiocheia = {
-			}
-			b_bytyllion_antiocheia = {
-			}
-			b_georgia_antiocheia = {
-			}
-			b_charandama_antiocheia = {
-			}
-			b_antiocheia_antiocheia = {
-			}
-			b_seleukeia_antiocheia = {
-			}
-			b_heracleia_antiocheia = {
-			}
-		}
-		c_arados = {
-			color= { 0 85 90 }
-			color2= { 255 255 255 }
-
-			b_arados_arados = {
-			}
-			b_marsya_arados = {
-				holy_site = canaanite_main
-				holy_site = punic_main
-			}
-			b_gabala_arados = {
-			}
-			b_raphaneai_arados = {
-			}
-			b_laodikeia_arados = {
-			}
-		}
-		c_palmyra = {
-			color= { 10 85 100 }
-			color2= { 255 255 255 }
-
-			b_palmyra_palmyra = {
-			}
-			b_aueria_palmyra = {
-			}
-			b_gennaes_palmyra = {
-			}
-			b_danova_palmyra = {
-			}
-			b_nazala_palmyra = {
-			}
-		}
-		c_hierapolis = {
-			color= { 0 65 110 }
-			color2= { 255 255 255 }
-
-			b_hierapolis_hierapolis = {
-			}
-			b_gabboula_hierapolis = {
-				holy_site = anatolian_main
-			}
-			b_amphipolis_hierapolis = {
-			}
-			b_eragiza_hierapolis = {
-			}
-		}
-		c_zeugma = {
-			color= { 10 75 110 }
-			color2= { 255 255 255 }
-
-			b_zeugma_zeugma = {
-			}
-			b_nisibyn_zeugma = {
-			}
-			b_capersana_zeugma = {
-			}
-			b_ourima_zeugma = {
-			}
-		}
-		c_damascus = {
-			color= { 175 125 0 }
-			color2= { 255 255 255 }
-
-			b_damascus_damascus = {
-			}
-			b_lebaba_damascus = {
-			}
-			b_dan_damascus = {
-			}
-			b_abila_damascus = {
-			}
-			b_paneas_damascus = {
-			}
-		}
-	}
-	d_phoenicia = {
-		color= { 150 150 255 }
-		color2= { 255 255 255 }
-
-		c_tripolis = {
-			color= { 140 160 255 }
-			color2= { 255 255 255 }
-
-			b_tripolis_tripolis = {
-			}
-			b_saama_tripolis = {
-			}
-			b_botrys_tripolis = {
-			}
-			b_arqa_tripolis = {
-			}
-		}
-		c_byblos = {
-			color= { 150 140 245 }
-			color2= { 255 255 255 }
-
-			b_byblos_byblos = {
-			}
-			b_nihata_byblos = {
-			}
-			b_berytus_byblos = {
-			}
-			b_borrama_byblos = {
-			}
-		}
-		c_sidon = {
-			color= { 160 140 255 }
-			color2= { 255 255 255 }
-
-			b_sidon_sidon = {
-			}
-			b_alsos_asklepiou_sidon = {
-				holy_site = canaanite_main
-				holy_site = punic_main
-			}
-			b_sarepta_sidon = {
-			}
-			b_platanos_sidon = {
-			}
-			b_baithmare_sidon = {
-			}
-		}
-		c_tyrus = {
-			color= { 150 150 255 }
-			color2= { 255 255 255 }
-
-			b_tyrus_tyrus = {
-			}
-			b_hammon_tyrus = {
-				holy_site = canaanite_main
-				holy_site = punic_main
-			}
-			b_ake_tyrus = {
-			}
-			b_sinde_tyrus = {
-			}
-			b_palaiotyros_tyrus = {
-			}
-		}
-	}
-	d_israel = {
-		color= { 150 175 225 }
-		color2= { 255 255 255 }
-
-		c_apollonia_israel = {
-			color= { 140 165 225 }
-			color2= { 255 255 255 }
-
-			b_dora_apollonia_israel = {
-			}
-			b_apollonia_apollonia_israel = {
-				holy_site = canaanite_main
-				holy_site = punic_main
-			}
-			b_jaffa_apollonia_israel = {
-			}
-			b_husifa_apollonia_israel = {
-			}
-		}
-		c_samaria = {
-			color= { 150 175 225 }
-			color2= { 255 255 255 }
-
-			b_samaria_samaria = {
-			}
-			b_geth_samaria = {
-				holy_site = judaism_main
-			}
-			b_roob_samaria = {
-			}
-			b_sepphoris_samaria = {
-			}
-			b_narbata_samaria = {
-			}
-		}
-		c_jericho = {
-			color= { 150 185 215 }
-			color2= { 255 255 255 }
-
-			b_jericho_jericho = {
-			}
-			b_gabaon_jericho = {
-			}
-			b_archelais_jericho = {
-			}
-			b_thamna_jericho = {
-			}
-		}
-	}
-	d_judea = {
-		color= { 150 175 255 }
-		color2= { 255 255 255 }
-
-		c_gaza = {
-			color= { 140 185 255 }
-			color2= { 255 255 255 }
-
-			b_gaza_gaza = {
-			}
-			b_raphia_gaza = {
-			}
-			b_ashqelon_gaza = {
-			}
-			b_ashdod_gaza = {
-			}
-			b_aser_gaza = {
-			}
-		}
-		c_jerusalem = {
-			color= { 150 175 255 }
-			color2= { 255 255 255 }
-
-			b_jerusalem_jerusalem = {
-			}
-			b_temple_mount_jerusalem = {
-				holy_site = judaism_main
-			}
-			b_engaddai_jerusalem = {
-			}
-			b_bethar_jerusalem = {
-			}
-			b_bethlehem_jerusalem = {
-			}
-			b_gabaon_jerusalem = {
-			}
-		}
-		c_beersheba = {
-			color= { 160 175 245 }
-			color2= { 255 255 255 }
-
-			b_beersheba_beersheba = {
-			}
-			b_betomolachon_beersheba = {
-				holy_site = judaism_main
-				holy_site = canaanite_main
-			}
-			b_elousa_beersheba = {
-			}
-			b_mampsis_beersheba = {
-			}
-		}
-	}
-}
 k_assyria = {
 	color= { 0 50 125 }
 	color2= { 255 255 255 }
@@ -2895,7 +2601,7 @@ k_assyria = {
 		c_takrit = {
 			color= { 0 60 135 }
 			color2= { 255 255 255 }
-
+			
 			b_takrit_takrit = {
 			}
 			b_dura_takrit = {
@@ -2906,7 +2612,7 @@ k_assyria = {
 		c_arrapha = {
 			color= { 10 50 135 }
 			color2= { 255 255 255 }
-
+			
 			b_arrapha_arrapha = {
 			}
 			b_nashom_arrapha = {
@@ -2919,7 +2625,7 @@ k_assyria = {
 		c_arbela = {
 			color= { 10 40 125 }
 			color2= { 255 255 255 }
-
+			
 			b_arbela_arbela = {
 			}
 			b_orava_arbela = {
@@ -2934,7 +2640,7 @@ k_assyria = {
 		c_nineveh = {
 			color= { 10 50 115 }
 			color2= { 255 255 255 }
-
+			
 			b_kalhu_nineveh = {
 			}
 			b_dur_sharrukin_nineveh = {
@@ -2947,6 +2653,119 @@ k_assyria = {
 			b_gaugamela_nineveh = {
 			}
 		}
+	}
+	d_syria = {
+		color= { 0 75 100 }
+		color2= { 255 255 255 }
+	
+		c_myriandos = {
+			color= { 10 65 100 }
+			color2= { 255 255 255 }
+		
+			b_myriandos_myriandos = {
+			}
+			b_kilikiai_pylai_myriandos = {
+			}
+			b_alexandria_myriandos = {
+			}
+			b_issus_myriandos = {
+			}
+			b_epiphaneia_myriandos = {
+			}
+		}
+		c_antiocheia = {
+			color= { 0 75 100 }
+			color2= { 255 255 255 }
+		
+			b_rhosos_antiocheia = {
+			}
+			b_bytyllion_antiocheia = {
+			}
+			b_georgia_antiocheia = {
+			}
+			b_charandama_antiocheia = {
+			}
+			b_antiocheia_antiocheia = {
+			}
+			b_seleukeia_antiocheia = {
+			}
+			b_heracleia_antiocheia = {
+			}
+		}
+		c_arados = {
+			color= { 0 85 90 }
+			color2= { 255 255 255 }
+		
+			b_arados_arados = {
+			}
+			b_marsya_arados = {
+				holy_site = canaanite_main
+				holy_site = punic_main
+			}
+			b_gabala_arados = {
+			}
+			b_raphaneai_arados = {
+			}
+			b_laodikeia_arados = {
+			}
+		}
+		c_palmyra = {
+			color= { 10 85 100 }
+			color2= { 255 255 255 }
+		
+			b_palmyra_palmyra = {
+			}
+			b_aueria_palmyra = {
+			}
+			b_gennaes_palmyra = {
+			}
+			b_danova_palmyra = {
+			}
+			b_nazala_palmyra = {
+			}
+		}
+		c_hierapolis = { 
+			color= { 0 65 110 }
+			color2= { 255 255 255 }
+		
+			b_hierapolis_hierapolis = {
+			}
+			b_gabboula_hierapolis = {
+				holy_site = anatolian_main
+			}
+			b_amphipolis_hierapolis = {
+			}
+			b_eragiza_hierapolis = {
+			}
+		}
+		c_zeugma = {
+			color= { 10 75 110 }
+			color2= { 255 255 255 }
+		
+			b_zeugma_zeugma = {
+			}
+			b_nisibyn_zeugma = {
+			}
+			b_capersana_zeugma = {
+			}
+			b_ourima_zeugma = {
+			}
+		}
+		c_damascus = {
+			color= { 175 125 0 }
+			color2= { 255 255 255 }
+		
+			b_damascus_damascus = {
+			}
+			b_lebaba_damascus = {
+			}
+			b_dan_damascus = {
+			}
+			b_abila_damascus = {
+			}
+			b_paneas_damascus = {
+			}		
+		}		
 	}
 }
 k_babylonia = {
@@ -4716,6 +4535,188 @@ k_greece = {
 			b_dion_torone = {
 			}
 			b_singos_torone = {
+			}
+		}
+	}
+}
+k_israel = {
+	color= { 150 175 255 }
+	color2= { 255 255 255 }
+	
+	capital = 130 # Jerusalem
+	
+	allow = {
+		culture = israelite
+		liege = {
+			not = { has_landed_title = e_persia }
+			not = { has_landed_title = e_macedonia }
+		}
+	}
+	
+	d_phoenicia = {
+		color= { 150 150 255 }
+		color2= { 255 255 255 }
+
+		c_tripolis = {
+			color= { 140 160 255 }
+			color2= { 255 255 255 }
+	
+			b_tripolis_tripolis = {
+			}
+			b_saama_tripolis = {
+			}
+			b_botrys_tripolis = {
+			}
+			b_arqa_tripolis = {
+			}
+		}
+		c_byblos = {
+			color= { 150 140 245 }
+			color2= { 255 255 255 }
+		
+			b_byblos_byblos = {
+			}
+			b_nihata_byblos = {
+			}
+			b_berytus_byblos = {
+			}
+			b_borrama_byblos = {
+			}
+		}
+		c_sidon = {
+			color= { 160 140 255 }
+			color2= { 255 255 255 }
+		
+			b_sidon_sidon = {
+			}
+			b_alsos_asklepiou_sidon = {
+				holy_site = canaanite_main
+				holy_site = punic_main
+			}
+			b_sarepta_sidon = {
+			}
+			b_platanos_sidon = {
+			}
+			b_baithmare_sidon = {
+			}
+		}
+		c_tyrus = {
+			color= { 150 150 255 }
+			color2= { 255 255 255 }
+		
+			b_tyrus_tyrus = {
+			}
+			b_hammon_tyrus = {
+				holy_site = canaanite_main 
+				holy_site = punic_main
+			}
+			b_ake_tyrus = {
+			}
+			b_sinde_tyrus = {
+			}
+			b_palaiotyros_tyrus = {
+			}
+		}
+	}
+	d_israel = {
+		color= { 150 175 225 }
+		color2= { 255 255 255 }
+	
+		c_apollonia_israel = {
+			color= { 140 165 225 }
+			color2= { 255 255 255 }
+		
+			b_dora_apollonia_israel = {
+			}
+			b_apollonia_apollonia_israel = {
+				holy_site = canaanite_main
+				holy_site = punic_main
+			}
+			b_jaffa_apollonia_israel = {
+			}
+			b_husifa_apollonia_israel = {
+			}
+		}
+		c_samaria = {
+			color= { 150 175 225 }
+			color2= { 255 255 255 }
+		
+			b_samaria_samaria = {
+			}
+			b_geth_samaria = {
+				holy_site = judaism_main
+			}
+			b_roob_samaria = {
+			}
+			b_sepphoris_samaria = {
+			}
+			b_narbata_samaria = {
+			}
+		}
+		c_jericho = {
+			color= { 150 185 215 }
+			color2= { 255 255 255 }
+		
+			b_jericho_jericho = {
+			}
+			b_gabaon_jericho = {
+			}
+			b_archelais_jericho = {
+			}
+			b_thamna_jericho = {
+			}
+		}
+	}
+	d_judea = {
+		color= { 150 175 255 }
+		color2= { 255 255 255 }
+	
+		c_gaza = {
+			color= { 140 185 255 }
+			color2= { 255 255 255 }
+		
+			b_gaza_gaza = {
+			}
+			b_raphia_gaza = {
+			}
+			b_ashqelon_gaza = {
+			}
+			b_ashdod_gaza = {
+			}
+			b_aser_gaza = {
+			}
+		}
+		c_jerusalem = {
+			color= { 150 175 255 }
+			color2= { 255 255 255 }
+		
+			b_jerusalem_jerusalem = {
+			}
+			b_temple_mount_jerusalem = {
+				holy_site = judaism_main
+			}
+			b_engaddai_jerusalem = {
+			}
+			b_bethar_jerusalem = {
+			}
+			b_bethlehem_jerusalem = {
+			}
+			b_gabaon_jerusalem = {
+			}
+		}
+		c_beersheba = {
+			color= { 160 175 245 }
+			color2= { 255 255 255 }
+		
+			b_beersheba_beersheba = {
+			}
+			b_betomolachon_beersheba = {
+				holy_site = judaism_main
+				holy_site = canaanite_main
+			}
+			b_elousa_beersheba = {
+			}
+			b_mampsis_beersheba = {
 			}
 		}
 	}
@@ -8145,6 +8146,19 @@ k_lusitania = {
 			b_lacipea_tamusia = {
 			}
 		}
+		c_badua = {
+			color={ 105 105 75 }
+			color2={ 255 255 255 }
+
+			b_badua_badua = {
+			}
+			b_plagiaria_badua = {
+			}
+			b_elvas_badua = {
+			}
+			b_emerita_badua = {
+			}
+		}
 	}
 	d_lusitania = {
 		color={ 170 60 25 }
@@ -8187,6 +8201,19 @@ k_lusitania = {
 			b_elbocoris_collippo = {
 			}
 		}
+		c_ammaia = {
+			color={ 20 75 120 }
+			color2={ 255 255 255 }
+
+			b_ammaia_ammaia = {
+			}
+			b_tubucci_ammaia = {
+			}
+			b_aritium_ammaia = {
+			}
+			b_matusarum_ammaia = {
+			}
+		}
 		c_talabriga = {
 			color={ 55 65 220 }
 			color2={ 255 255 255 }
@@ -8198,6 +8225,22 @@ k_lusitania = {
 			b_langobriga_talabriga = {
 			}
 			b_lamecum_talabriga = {
+			}
+		}
+	}
+	d_olisipo = {
+		color={ 230 75 25 }
+		color2={ 255 255 255 }
+		
+		c_olisipo = {
+			color={ 220 240 90 }
+			color2={ 255 255 255 }
+
+			b_olisipo_olisipo = {
+			}
+			b_ierabriga_olisipo = {
+			}
+			b_eburobrittium_olisipo = {
 			}
 		}
 		c_scallabis = {
@@ -8214,34 +8257,10 @@ k_lusitania = {
 			}
 		}
 	}
-	d_celticia = {
-		color={ 230 75 25 }
+	d_cuneus = {
+		color={ 255 165 70 }
 		color2={ 255 255 255 }
 
-		c_olisipo = {
-			color={ 220 240 90 }
-			color2={ 255 255 255 }
-
-			b_olisipo_olisipo = {
-			}
-			b_ierabriga_olisipo = {
-			}
-			b_eburobrittium_olisipo = {
-			}
-		}
-		c_ammaia = {
-			color={ 20 75 120 }
-			color2={ 255 255 255 }
-
-			b_ammaia_ammaia = {
-			}
-			b_tubucci_ammaia = {
-			}
-			b_aritium_ammaia = {
-			}
-			b_matusarum_ammaia = {
-			}
-		}
 		c_ebora = {
 			color={ 205 165 70 }
 			color2={ 255 255 255 }
@@ -8259,24 +8278,6 @@ k_lusitania = {
 			b_caetobriga_ebore = {
 			}
 		}
-		c_badua = {
-			color={ 105 105 75 }
-			color2={ 255 255 255 }
-
-			b_badua_badua = {
-			}
-			b_plagiaria_badua = {
-			}
-			b_elvas_badua = {
-			}
-			b_emerita_badua = {
-			}
-		}
-	}
-	d_cuneus = {
-		color={ 255 165 70 }
-		color2={ 255 255 255 }
-
 		c_lacobriga = {			
 			color={ 155 165 70 }
 			color2={ 255 255 255 }
@@ -8405,13 +8406,6 @@ k_gallaecia = {
 			b_civitas_zoelarum_compleutica = {
 			}
 		}
-		c_lance = {
-			color={ 5 125 10 }
-			color2={ 255 255 255 }
-
-			b_lance_lance = {
-			}
-		}
 	}
 }
 k_hispa = {
@@ -8421,7 +8415,7 @@ k_hispa = {
 	d_vasconia = {
 		color ={ 0 102 124 }
 		color2 = { 255 255 255 }
-
+		
 		c_segia = {
 			color={ 0 153 124 }
 			color2={ 255 255 255 }
@@ -8431,6 +8425,7 @@ k_hispa = {
 			b_iaka_segia = {
 			}
 		}
+		
 		c_oiasso = {
 			color={ 51 51 73 }
 			color2={ 255 255 255 }
@@ -8438,6 +8433,7 @@ k_hispa = {
 			b_oiarso_oiasso = {
 			}
 		}
+		
 		c_victoriacum = {
 			color={ 102 102 73 }
 			color2={ 255 255 255 }
@@ -8448,10 +8444,19 @@ k_hispa = {
 			}
 		}
 	}
+		
+	
 	d_cantabria = {
 		color={ 0 51 124 }
 		color2={ 255 255 255 }
-
+			
+		c_lance = {
+			color={ 15 240 100 }
+			color2={ 255 255 255 }
+			
+			b_lance_lance = {
+			}
+		}
 		c_brigaecium = {
 			color={ 10 200 160 }
 			color2={ 255 255 255 }
@@ -8466,6 +8471,18 @@ k_hispa = {
 			b_palantia_palantia = {
 			}
 		}
+		c_amallobriga = {
+			color={ 25 110 200 }
+			color2={ 255 255 255 }
+			
+			b_amallobriga_amallobriga= {
+			}
+		}
+	}
+	d_autrigonia = {
+		color={ 102 153 51 }
+		color2={ 255 255 255 }
+		
 		c_aracelium = {
 			color={ 40 200 150 }
 			color2={ 255 255 255 }
@@ -8491,6 +8508,11 @@ k_hispa = {
 			b_koueliokos_gebala={
 			}
 		}
+	}		
+	d_turmodigia = {
+		color={ 153 204 186 }
+		color2={ 255 255 255 }
+		
 		c_virovesca = {
 			color={ 20 130 135 }
 			color2={ 255 255 255 }
@@ -8500,55 +8522,48 @@ k_hispa = {
 			b_sekobirikes_virovesca = {
 			}
 		}
+		c_turbes = {
+			color={ 20 10 145 }
+			color2={ 255 255 255 }
+			
+			b_turbes_turbes = {
+			}
+		}
 	}
 	d_vaccaea = {
 		color={ 204 136 221 }
 		color2={ 255 255 255 }
-
+		
 		c_salmantica = {
 			color= { 130 75 160 }
 			color2={ 255 255 255 }
-
+			
 			b_helmantica_salmantica = {
 			}
 		}
 		c_nivaria = {
 			color={ 125 60 130 }
 			color2={ 255 255 255 }
-
+			
 			b_nivaria_nivaria = {
 			}
 		}
 		c_segovia = {
 			color={ 100 40 100 }
 			color2={ 255 255 255 }
-
+			
 			b_segovia_segovia = {
 			}
 		}
-		c_amallobriga = {
-			color={ 25 110 200 }
-			color2={ 255 255 255 }
-
-			b_amallobriga_amallobriga= {
-			}
-		}
-		c_turbes = {
-			color={ 20 10 145 }
-			color2={ 255 255 255 }
-
-			b_turbes_turbes = {
-			}
-		}
-	}
-	d_celtiberia = {
+	}		
+	d_arevacia = {
 		color={ 153 136 221 }
 		color2={ 255 255 255 }
-
+		
 		c_termes = {
 			color={ 170 105 20 }
 			color2={ 255 255 255 }
-
+			
 			b_termes_termes = {
 			}
 			b_sekotias_termes = {
@@ -8557,14 +8572,14 @@ k_hispa = {
 		c_bilbilis = {
 			color={ 200 20 130 }
 			color2={ 255 255 255 }
-
+			
 			b_bilbilis_bilbilis = {
 			}
 		}
 		c_klunia = { 
 			color={ 120 115 180 }
 			color2={ 255 255 255 }
-
+			
 			b_kolounioku_klunia = {
 			}
 			b_letaisama_klunia = {
@@ -8573,7 +8588,7 @@ k_hispa = {
 		c_numantia = { 
 			color={ 135 145 80 }
 			color2={ 255 255 255 }
-
+			
 			b_numantia_numantia = {
 			}
 			b_okalakom_numantia = {
@@ -8585,38 +8600,35 @@ k_hispa = {
 			b_terkakom_numantia = {
 			}
 		}
+	}		
+	d_tittia = {
+		color={ 153 85 221 }
+		color2={ 255 255 255 }
+		
 		c_loutia = {
 			color={ 190 55 200 }
 			color2={ 255 255 255 }
-
+			
 			b_lutiakos_loutia = {
 			}
 			b_aratikos_loutia = {
 			}
 		}
-		c_ocules = {
-			color={ 120 110 20 }
+		c_contrebia = {
+			color={ 100 65 30 }
 			color2={ 255 255 255 }
-
-			b_ocules_ocules = {
+			
+			b_kontrebia_contrebia = {
 			}
-			b_segobriga_ocules = {
+			b_tamaniu_contrebia = {
 			}
-			b_opta_ocules = {
+			b_itukoite_contrebia = {
 			}
-		}
-		c_iniesta = {
-			color={ 25 150 100 }
-			color2={ 255 255 255 }
-
-			b_iniesta_iniesta = {
-			}
-			b_putea_iniesta = {
-			}
-			b_valeria_iniesta = {
+			b_sekaisa_contrebia = {
 			}
 		}
 	}
+	
 	d_carpetania = {
 		color={ 153 85 170}
 		color2={ 255 255 255 }
@@ -8656,6 +8668,42 @@ k_hispa = {
 			b_caesada_arriaca = {
 			}
 		}
+		c_ocules = {
+			color={ 120 110 20 }
+			color2={ 255 255 255 }
+
+			b_ocules_ocules = {
+			}
+			b_segobriga_ocules = {
+			}
+			b_opta_ocules = {
+			}
+		}
+	}
+	d_lobetania = {
+		color={ 25 170 135 }
+		color2={ 255 255 255 }
+		
+		c_iniesta = {
+			color={ 25 150 100 }
+			color2={ 255 255 255 }
+
+			b_iniesta_iniesta = {
+			}
+			b_putea_iniesta = {
+			}
+			b_valeria_iniesta = {
+			}
+		}
+		c_libisosa = {
+			color={ 120 130 100 }
+			color2={ 255 255 255 }
+
+			b_libisosa_libisosa = {
+			}
+			b_caput_libisosa = {
+			}
+		}
 	}
 	d_oretania = {
 		color={ 60 160 140 }
@@ -8685,22 +8733,6 @@ k_hispa = {
 			b_baesucci_edeba = {
 			}
 			b_baecula_edeba = {
-			}
-		}
-		c_tugia = {
-			color={ 135 20 155 }
-			color2={ 255 255 255 }
-
-			b_tugia_tugia = {
-			}
-		}
-		c_libisosa = {
-			color={ 120 130 100 }
-			color2={ 255 255 255 }
-
-			b_libisosa_libisosa = {
-			}
-			b_caput_libisosa = {
 			}
 		}
 	}
@@ -8858,19 +8890,6 @@ k_iberia = {
 			b_kelin_kili = {
 			}
 		}
-		c_contrebia = {
-			color={ 240 160 130 }
-			color2={ 255 255 255 }
-
-			b_kontrebia_contrebia = {
-			}
-			b_tamaniu_contrebia = {
-			}
-			b_itukoite_contrebia = {
-			}
-			b_sekaisa_contrebia = {
-			}
-		}
 	}
 	d_contestania = {
 		color={ 185 75 0 }
@@ -8940,6 +8959,13 @@ k_iberia = {
 			color2={ 255 255 255 }
 			
 			b_bergastrum_bergastrum = {
+			}
+		}
+		c_tugia = {
+			color={ 135 20 155 }
+			color2={ 255 255 255 }
+			
+			b_tugia_tugia = {
 			}
 		}
 	}
@@ -9270,22 +9296,6 @@ k_turdetania = {
 			}
 			b_abdera_sexi = {
 			}
-		}
-	}
-}
-
-# Titular titles
-k_israel = {
-	color= { 150 175 255 }
-	color2= { 255 255 255 }
-
-	capital = 130 # Jerusalem
-
-	allow = {
-		culture = israelite
-		liege = {
-			not = { has_landed_title = e_persia }
-			not = { has_landed_title = e_macedonia }
 		}
 	}
 }

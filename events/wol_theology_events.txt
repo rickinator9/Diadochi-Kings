@@ -14,7 +14,6 @@ namespace = WoL
 # Study religious myths?
 character_event = {
 	id = WoL.7000
-	desc = EVTDESC_WoL_7000_non_unref_pagan
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 	
