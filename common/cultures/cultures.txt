@@ -151,14 +151,14 @@ celtic = {
 		color = { 0.38 0.75 0.17 }
   
 		male_names = {
-			Ablon_Ablon Adingibas_Adingibas Aius_Aius Akuios_Akuios Alucio_Alucio Ambon_Ambon Arkanta_Arkanta Aualos_Aualos Auaro_Auaro Ausa_Ausa Babpo_Babpo Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Buntalos_Buntalos Burzu_Burzu Caciro_Caciro Cado_Cado Caro_Caro Cauecas_Cauecas Cesarus_Cesarus Durato_Durato Elaukos_Elaukos Elazunos_Elazunos Elguismio_Elguismio Elkua_Elkua Eskutino_Eskutino Hilerno_Hilerno Indibil_Indibil Indortes_Indortes Istolacio_Istolacio Kaiaitos_Kaiaitos Karbelos_Karbelos Kasilos_Kasilos Kaukirino_Kaukirino Koitu_Koitu Kontuzos_Kontuzos Lesson_Lesson Letondon_Letondon Letontu_Letontu Leukon_Leukon Likinos_Likinos Liteno_Liteno Lubbo_Lubbo Luxinio_Luxinio Magauarico_Magauarico Melmanios_Melmanios Mezukenos_Mezukenos Olindico_Olindico Ordumeles_Ordumeles Pirreso_Pirreso Redukeno_Redukeno Retogenes_Retogenes Retukenos_Retukenos Sanion_Sanion Segisamo_Segisamo Sekilos_Sekilos Sekontios_Sekontios Sekonzos_Sekonzos Sigilo_Sigilo Skirtunos_Skirtunos Sleitiu_Sleitiu Suisetarten_Suisetarten  Tarbantu_Tarbantu Teitebas_Teitebas Terkinos_Terkinos Thurro_Thurro Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Tirtukue_Tirtukue Touto_Touto Tueizu_Tueizu Tureno_Tureno Ultinos_Ultinos Umarbeles_Umarbeles Umarilo_Umarilo Uxentio_Uxentio
+			Ablon_Ablon Adingibas_Adingibas Aios_Aios Akuios_Akuios Alukio_Alukio Ambon_Ambon Arkanta_Arkanta Aualos_Aualos Auaro_Auaro Ausa_Ausa Babpo_Babpo Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Buntalos_Buntalos Burzu_Burzu Kakiro_Kakiro Kado_Kado Karo_Karo Kauekas_Kauekas Kesarus_Kesarus Durato_Durato Elaukos_Elaukos Elazunos_Elazunos Elguismio_Elguismio Elkua_Elkua Eskutino_Eskutino Hilerno_Hilerno Indibil_Indibil Indortes_Indortes Istolakio_Istolakio Kaiaitos_Kaiaitos Karbelos_Karbelos Kasilos_Kasilos Kaukirino_Kaukirino Koitu_Koitu Kontuzos_Kontuzos Lesson_Lesson Letondon_Letondon Letontu_Letontu Leukon_Leukon Likinos_Likinos Liteno_Liteno Lubbo_Lubbo Luxinio_Luxinio Magauarikos_Magauarikos Melmanios_Melmanios Mezukenos_Mezukenos Olindikos_Olindikos Ordumeles_Ordumeles Pirreso_Pirreso Redukenos_Redukenos Retogenes_Retogenes Retukenos_Retukenos Sanion_Sanion Segisamo_Segisamo Sekilos_Sekilos Sekontios_Sekontios Sekonzos_Sekonzos Sigilos_Sigilos Skirtunos_Skirtunos Sleitiu_Sleitiu Suisetarten_Suisetarten  Tarbantu_Tarbantu Teitebas_Teitebas Terkinos_Terkinos Thurro_Thurro Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Tirtukue_Tirtukue Touto_Touto Tueizu_Tueizu Tureno_Tureno Ultinos_Ultinos Umarbeles_Umarbeles Umarilo_Umarilo Uxentio_Uxentio
 		}
 		female_names = {
-			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita Brietta_Brietta Galena_Galena Genovefa_Genovefa Kara_Kara Kyna_Kyna Mavis_Mavis Nunn_Nunn Sicounin_Sicounin Stena_Stena Treva_Treva Vevila_Vevila        
+			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita Brietta_Brietta Galena_Galena Genouefa_Genouefa Kara_Kara Kyna_Kyna Mauis_Mauis Nunn_Nunn Sikounin_Sikounin Stena_Stena Treva_Treva Ueuila_Ueuila        
 		}
   
-		from_dynasty_prefix = "of "    		
-		dynasty_title_names = yes
+	 		
+		
 		modifier = celtic_culture_modifier
 	}
 	galatian = {
@@ -188,14 +188,14 @@ celtic = {
 		color = { 0.5 0.9 0.5 }
   
 		male_names = {
-			Ablon_Ablon Adingibas_Adingibas Aius_Aius Akuios_Akuios Alucio_Alucio Ambon_Ambon Arkanta_Arkanta Aualos_Aualos Auaro_Auaro Ausa_Ausa Babpo_Babpo Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Buntalos_Buntalos Burzu_Burzu Caciro_Caciro Cado_Cado Caro_Caro Catuenus_Catuenus Cauecas_Cauecas Cloutius_Cloutius Cundigus_Cundigus Cuntinus_Cuntinus Durato_Durato Elaukos_Elaukos Elazunos_Elazunos Elguismio_Elguismio Elkua_Elkua Eskutino_Eskutino Hilerno_Hilerno Iccalus_Iccalus Indibil_Indibil Indortes_Indortes Istolacio_Istolacio Kaiaitos_Kaiaitos Karbelos_Karbelos Kasilos_Kasilos Kaukirino_Kaukirino Koitu_Koitu Kontuzos_Kontuzos Leoni_Leoni Letondon_Letondon Letontu_Letontu Leukon_Leukon Likinos_Likinos Liteno_Liteno Lubbo_Lubbo Luxinio_Luxinio Magauarico_Magauarico Meiduenus_Meiduenus Mezukenos_Mezukenos Olindico_Olindico Ordumeles_Ordumeles Pirreso_Pirreso Redukeno_Redukeno Retogenes_Retogenes Retukenos_Retukenos Sanion_Sanion Segisamo_Segisamo Sekilos_Sekilos Sekontios_Sekontios Sekonzos_Sekonzos Sigilo_Sigilo Skirtunos_Skirtunos Sleitiu_Sleitiu Suisetarten_Suisetarten  Tarbantu_Tarbantu Teitebas_Teitebas Terkinos_Terkinos Thurro_Thurro Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Tirtukue_Tirtukue Toutonus_Toutonus Tueizu_Tueizu Tureno_Tureno Ultinos_Ultinos Umarbeles_Umarbeles Umarilo_Umarilo Vesucloti_Vesucloti
+			Ablon_Ablon Adingibas_Adingibas Aios_Aios Akuios_Akuios Alukio_Alukio Ambon_Ambon Arkanta_Arkanta Aualos_Aualos Auaro_Auaro Ausa_Ausa Babpo_Babpo Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Buntalos_Buntalos Burzu_Burzu Kakiro_Kakiro Kado_Kado Karo_Karo Katuenos_Katuenos Kauekas_Kauekas Kloutios_Kloutios Kundigos_Kundigos Kuntinos_Kuntinos Durato_Durato Elaukos_Elaukos Elazunos_Elazunos Elguismio_Elguismio Elkua_Elkua Eskutino_Eskutino Hilerno_Hilerno Ikkalos_Ikkalos Indibil_Indibil Indortes_Indortes Istolakio_Istolakio Kaiaitos_Kaiaitos Karbelos_Karbelos Kasilos_Kasilos Kaukirino_Kaukirino Koitu_Koitu Kontuzos_Kontuzos Leoni_Leoni Letondon_Letondon Letontu_Letontu Leukon_Leukon Likinos_Likinos Liteno_Liteno Lubbo_Lubbo Luxinio_Luxinio Magauarikos_Magauarikos Meiduenos_Meiduenos Mezukenos_Mezukenos Olindikos_Olindikos Ordumeles_Ordumeles Pirreso_Pirreso Redukenos_Redukenos Retogenes_Retogenes Retukenos_Retukenos Sanion_Sanion Segisamo_Segisamo Sekilos_Sekilos Sekontios_Sekontios Sekonzos_Sekonzos Sigilo_Sigilo Skirtunos_Skirtunos Sleitiu_Sleitiu Suisetarten_Suisetarten  Tarbantu_Tarbantu Teitebas_Teitebas Terkinos_Terkinos Thurro_Thurro Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Tirtukue_Tirtukue Toutonus_Toutonus Tueizu_Tueizu Tureno_Tureno Ultinos_Ultinos Umarbeles_Umarbeles Umarilo_Umarilo Uesukloti_Uesukloti
 		}
 		female_names = {
-			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita Brietta_Brietta Galena_Galena Genovefa_Genovefa Kara_Kara Kyna_Kyna Mavis_Mavis Nunn_Nunn Sicounin_Sicounin Stena_Stena Treva_Treva Vevila_Vevila        
+			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita Brietta_Brietta Galena_Galena Genouefa_Genouefa Kara_Kara Kyna_Kyna Mauis_Mauis Nunn_Nunn Sikounin_Sikounin Stena_Stena Treua_Treua Ueuila_Ueuila        
 		}
   
-		from_dynasty_prefix = "of "    		
-		dynasty_title_names = yes
+		 		
+	
 		modifier = celtic_culture_modifier
 	}
 }
@@ -1783,14 +1783,14 @@ iberian = {
 	color = { 0.91 0.65 0.5 }
 	
 	male_names = {
-		Abadutiker_Abadutiker Abararban_Abararban Abartanban_Abartanban Abartiaigis_Abartiaigis Aibekeres_Aibekeres Aiunesker_Aiunesker Alorildui_Alorildui Alortigis_Alortigis Amusico_Amusico Andobales_Andobales Antorbanen_Antorbanen Arbiskar_Arbiskar Argisabam_Argisabam Argitibasar_Argitibasar Argitiker_Argitiker Armitalsko_Armitalsko Atabeles_Atabeles Atinbelaur_Atinbelaur Bagarok_Bagarok Bailar_Bailar Baisebilos_Baisebilos Baisetas_Baisetas Baitesir_Baitesir Balacertar_Balacertar Balcaldur_Balcaldur Balceadin_Balceadin Balcebe_Balcebe Balceskar_Balceskar Balkar_Balkar Bartar_Bartar Basirtir_Basirtir Baspedas_Baspedas Bastartine_Bastartine Bedule_Bedule Belasbaisereban_Belasbaisereban Bilinos_Bilinos Bilisteges_Bilisteges Binturke_Binturke Biosildun_Biosildun Biulakos_Biulakos Biurbetin_Biurbetin Biurdiki_Biurdiki Biurtan_Biurtan Biurtetel_Biurtetel Biurtibes_Biurtibes Biurtilaur_Biurtilaur Bodilkas_Bodilkas Boutintibas_Boutintibas Budar_Budar Busadines_Busadines Caikonbe_Caikonbe Cerdubeles_Cerdubeles Culcas_Culcas Edecon_Edecon Ertebas_Ertebas Eterindu_Eterindu Garokan_Garokan Iceatin_Iceatin Ieorbeles_Ieorbeles Ieortas_Ieortas Ildutas_Ildutas Iltiradin_Iltiradin Indibil_Indibil Indikortes_Indikortes Indo_Indo Isbataris_Isbataris Isceradin_Isceradin Iscerbeles_Iscerbeles Katulatin_Katulatin Korbis_Korbis Korribilo_Korribilo Lagunas_Lagunas Mandonio_Mandonio Nabarsosin_Nabarsosin Nisunin_Nisunin Orison_Orison Orisos_Orisos Otigirteker_Otigirteker Sakarbik_Sakarbik Sakarisker_Sakarisker Seihar_Seihar Selgiterar_Selgiterar Sinebetin_Sinebetin Situbolai_Situbolai Sosian_Sosian Sosinbiuru_Sosinbiuru Sosintacer_Sosintacer Talskubilos_Talskubilos Tarkunbiur_Tarkunbiur Tibaste_Tibaste Turibas_Turibas Ultidikan_Ultidikan Unibelos_Unibelos Unibetin_Unibetin Untigorisar_Untigorisar Uraucen_Uraucen Urcaildu_Urcaildu Urcebas_Urcebas Urcetices_Urcetices
+		Abadutiker_Abadutiker Abararban_Abararban Abartanban_Abartanban Abartiaigis_Abartiaigis Aibekeres_Aibekeres Aiunesker_Aiunesker Alorildui_Alorildui Alortigis_Alortigis Amusiko_Amusiko Andobales_Andobales Antorbanen_Antorbanen Arbiskar_Arbiskar Argisabam_Argisabam Argitibasar_Argitibasar Argitiker_Argitiker Armitalsko_Armitalsko Atabeles_Atabeles Atinbelaur_Atinbelaur Bagarok_Bagarok Bailar_Bailar Baisebilos_Baisebilos Baisetas_Baisetas Baitesir_Baitesir Balakertar_Balakertar Balkaldur_Balkaldur Balkeadin_Balkeadin Balkebe_Balkebe Balkeskar_Balkeskar Balkar_Balkar Bartar_Bartar Basirtir_Basirtir Baspedas_Baspedas Bastartine_Bastartine Bedule_Bedule Belasbaisereban_Belasbaisereban Bilinos_Bilinos Bilisteges_Bilisteges Binturke_Binturke Biosildun_Biosildun Biulakos_Biulakos Biurbetin_Biurbetin Biurdiki_Biurdiki Biurtan_Biurtan Biurtetel_Biurtetel Biurtibes_Biurtibes Biurtilaur_Biurtilaur Bodilkas_Bodilkas Boutintibas_Boutintibas Budar_Budar Busadines_Busadines Kaikonbe_Kaikonbe Kerdubeles_Kerdubeles Kulkas_Kulkas Edekon_Edekon Ertebas_Ertebas Eterindu_Eterindu Garokan_Garokan Ikeatin_Ikeatin Ieorbeles_Ieorbeles Ieortas_Ieortas Ildutas_Ildutas Iltiradin_Iltiradin Indibil_Indibil Indikortes_Indikortes Indo_Indo Isbataris_Isbataris Iskeradin_Iskeradin Iskerbeles_Iskerbeles Katulatin_Katulatin Korbis_Korbis Korribilo_Korribilo Lagunas_Lagunas Mandonio_Mandonio Nabarsosin_Nabarsosin Nisunin_Nisunin Orison_Orison Orisos_Orisos Otigirteker_Otigirteker Sakarbik_Sakarbik Sakarisker_Sakarisker Seihar_Seihar Selgiterar_Selgiterar Sinebetin_Sinebetin Situbolai_Situbolai Sosian_Sosian Sosinbiuru_Sosinbiuru Sosintacer_Sosintacer Talskubilos_Talskubilos Tarkunbiur_Tarkunbiur Tibaste_Tibaste Turibas_Turibas Ultidikan_Ultidikan Unibelos_Unibelos Unibetin_Unibetin Untigorisar_Untigorisar Urauken_Urauken Urkaildu_Urkaildu Urkebas_Urkebas Urketikes_Urketikes
 		}
 		female_names = {
-			Auruningica_Auruningica Aretaunin_Aretaunin Canine_Canine Daleninar_Daleninar Edereta_Edereta Nisunin_Nisunin Sicedunin_Sicedunin Sicounin_Sicounin Similce_Similce
+			Auruningika_Auruningika Aretaunin_Aretaunin Kanine_Kanine Daleninar_Daleninar Edereta_Edereta Nisunin_Nisunin Sikedunin_Sikedunin Sikounin_Sikounin Similke_Similke
 		}
 		
-		from_dynasty_prefix = "of "   		
-		dynasty_title_names = yes
+			
+		
 		modifier = iberian_culture_modifier
 	}
 }
@@ -1802,14 +1802,14 @@ lusitanian = {
 	color = { 0.85 0.4 0.15 }
 	
 	male_names = {
-		Ambatus_Ambatus Arauus_Arauus Bibablus_Bibalus Bouiani_Bouiani Bouati_Bouati Bouaulus_Bouaulus Bouius_Bouius Buanus_Buanus Caelobrigus_Caelobrigus Cancilus_Cancilus Cancilius_Cancilius Casapus_Casapus Casabius_Casabius Cilenus_Cilenus Coporus_Coporus Cumelius_Cumelius Cundigus_Cundigus Cuntinus_Cuntinus Cuntius_Cuntius Equaesus_Equaesus Iccauos_Iccauos Iccalus_Iccalus Iccianus_Iccianus Icconius_Icconius Leoni_Leoni Matugenus_Matugenus Melmandus_Melmandus Pecunius_Pecunius Seurus_Seurus Taporus_Taporus Taurilius_Taurilius Taurocus_Taurocus Vendicus_Vendicus 
+		Ambatos_Ambatos Arauos_Arauos Bibablos_Bibalos Bouiani_Bouiani Bouati_Bouati Bouaulos_Bouaulos Bouios_Bouios Buanos_Buanos Kailobrigos_Kailobrigos Kankilos_Kankilos Kankilios_Kankilios Kasapos_Kasapos Kasabios_Kasabios Kilenos_Kilenos Koporos_Koporos Kumelios_Kumelios Kundigos_Kundigos Kuntinos_Kuntinos Kuntios_Kuntios Equaisos_Equaisos Ikkauos_Ikkauos Ikkalos_Ikkalos Ikkianos_Ikkianos Ikkonios_Ikkonios Leoni_Leoni Matugenos_Matugenos Melmandos_Melmandos Pekunios_Pekunios Seuros_Seuros Taporos_Taporos Taurilios_Taurilios Taurokos_Taurokos Uendikos_Uendikos 
 		}
 		female_names = {
-			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Cilena_Cilena Genovefa_Genovefa Kara_Kara Kyna_Kyna Mavis_Mavis Nunn_Nunn Sicounin_Sicounin Stena_Stena Treva_Treva Vevila_Vevila     
+			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Kilena_Kilena Genouefa_Genouefa Kara_Kara Kyna_Kyna Mauis_Mauis Nunn_Nunn Sikounin_Sikounin Stena_Stena Treua_Treua Ueuila_Ueuila  
 		}
 		
-		from_dynasty_prefix = "of "   		
-		dynasty_title_names = yes
+				
+		
 		modifier = lusitanian_culture_modifier
 	}
 }
@@ -1823,14 +1823,14 @@ tartessian = {
 	color = { 0 0.5 1 }
 	
 	male_names = {
-		Argantodanos_Argantodanos Arganthonios_Arganthonios Attenes_Attenes Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Caikonbe_Caikonbe Culchas_Culchas Gargoris_Gargoris Habis_Habis Indo_Indo Kalbo_Kalbo Luxinio_Luxinio Magauarico_Magauarico Melmanios_Melmanios Mezukenos_Mezukenos Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Sakarbik_Sakarbik Sakarisker_Sakarisker Seihar_Seihar Selgiterar_Selgiterar Sinebetin_Sinebetin
+		Argantodanos_Argantodanos Arganthonios_Arganthonios Attenes_Attenes Belsu_Belsu Bilinos_Bilinos Bodo_Bodo Botilkos_Botilkos Builbos_Builbos Kaikonbe_Kaikonbe Kulchas_Kulchas Gargoris_Gargoris Habis_Habis Indo_Indo Kalbo_Kalbo Luxinio_Luxinio Magauarico_Magauarico Melmanios_Melmanios Mezukenos_Mezukenos Tiokenesos_Tiokenesos Tiresio_Tiresio Tirtanos_Tirtanos Sakarbik_Sakarbik Sakarisker_Sakarisker Seihar_Seihar Selgiterar_Selgiterar Sinebetin_Sinebetin
 		}
 		female_names = {
-			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Cilena_Cilena Genovefa_Genovefa Kara_Kara Kyna_Kyna Mavis_Mavis Nunn_Nunn Sicounin_Sicounin Stena_Stena Treva_Treva Vevila_Vevila     
+			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Kilena_Kilena Genouefa_Genouefa Kara_Kara Kyna_Kyna Mauis_Mauis Nunn_Nunn Sikounin_Sikounin Stena_Stena Treua_Treua Ueuila_Ueuila   
 		}
 		
-		from_dynasty_prefix = "of "   		
-		dynasty_title_names = yes
+			
+	
 		modifier = tartessian_culture_modifier
 	}
 	
@@ -1840,14 +1840,14 @@ tartessian = {
 	color = { 0.55 0.2 0.10 }
 	
 	male_names = {
-		Argantodanos_Argantodanos Arganthonios_Arganthonios Attenes_Attenes Caikonbe_Caikonbe Culchas_Culchas Gargoris_Gargoris Habis_Habis Indo_Indo Kalbo_Kalbo Luxinio_Luxinio 
+		
 		}
 		female_names = {
-			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Cilena_Cilena Genovefa_Genovefa Kara_Kara Kyna_Kyna Mavis_Mavis Nunn_Nunn Sicounin_Sicounin Stena_Stena Treva_Treva Vevila_Vevila     
+			Ama_Ama Amena_Amena Amia_Amia Ana_Ana Apirka_Apirka Aunia_Aunia Birkita_Birkita  Bouana_Bouana Bouia_Bouia Kilena_Kilena Genouefa_Genouefa Kara_Kara Kyna_Kyna Mauis_Mauis Nunn_Nunn Sikounin_Sikounin Stena_Stena Treua_Treua Ueuila_Ueuila     
 		}
 		
-		from_dynasty_prefix = "of "   		
-		dynasty_title_names = yes
+				
+		
 		modifier = tartessian_culture_modifier
 	}
 }
@@ -1859,14 +1859,14 @@ aquitanian = {
 	color = { 0 0.76 0.31 }
 	
 	male_names = {
-		Abisunhar_Abisunhar Andereseni_Andereseni Baeserte_Baeserte Belexconis_Belexconis Bihossi_Bihossi Biurtetel_Biurtetel Biurtibes_Biurtibes Biurtilaur_Biurtilaur Cison_Cison Cissonbonnis_Cissonbonnis Dusanharis_Dusanharis Ennebox_Ennebox Gerexo_Gerexo Halscotarris_Halscotarris Hanna_Hanna Harbelex_Harbelex Illurberrixo_Illurberrixo Korbis_Korbis Laurco_Laurco Otigirteker_Otigirteker Sembe_Sembe Sembecconi_Sembecconi Senius_Senius Serhuhoris_Serhuhoris Talsconis_Talsconis Ummesahar_Ummesahar
+		Abisunhar_Abisunhar Andereseni_Andereseni Baiserte_Baiserte Belexkonis_Belexkonis Bihossi_Bihossi Biurtetel_Biurtetel Biurtibes_Biurtibes Biurtilaur_Biurtilaur Kison_Kison Kissonbonnis_Kissonbonnis Dusanharis_Dusanharis Ennebox_Ennebox Gerexo_Gerexo Halskotarris_Halskotarris Hanna_Hanna Harbelex_Harbelex Illurberrixo_Illurberrixo Korbis_Korbis Laurko_Laurko Otigirteker_Otigirteker Sembe_Sembe Sembekkoni_Sembekkoni Senios_Senios Serhuhoris_Serhuhoris Talskonis_Talskonis Ummesahar_Ummesahar
 		}
 		female_names = {
-			Andere_Andere Aretaunin_Aretaunin Canine_Canine Daleninar_Daleninar Edereta_Edereta Nescato_Nescato Nisunin_Nisunin Sicedunin_Sicedunin Sicounin_Sicounin Similce_Similce
+			Andere_Andere Aretaunin_Aretaunin Kanine_Kanine Daleninar_Daleninar Edereta_Edereta Neskato_Neskato Nisunin_Nisunin Sikedunin_Sikedunin Sikounin_Sikounin Similke_Similke
 		}
 		
-		from_dynasty_prefix = "of "   		
-		dynasty_title_names = yes
+				
+		
 		modifier = aquitanian_culture_modifier
 	}
 }

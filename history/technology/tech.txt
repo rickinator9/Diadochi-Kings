@@ -359,7 +359,7 @@ technology = {
 	titles = {
 		d_sinai
 		d_nabataea
-		d_damascus
+		d_bostra
 		d_lihyan
 		d_ma_in
 		d_himyar
@@ -445,6 +445,50 @@ technology = {
 		d_khotan
 		d_turfan
 		d_urumchi
+	}
+	417 = {
+		military = 1
+		economy = 1
+		culture = 1
+	}
+	800 = {
+		military = 2
+		economy = 2
+		culture = 2
+	}
+}
+
+# Iberia
+technology = {
+	titles = {
+		#Lusitania
+		d_vettonia
+		d_lusitania
+		d_celticia
+		d_cuneus
+		#Callaecia
+		d_callaecia
+		d_asturia
+		#Hispa
+		d_vasconia
+		d_cantabria
+		d_vaccaea
+		d_celtiberia
+		d_carpetania
+		d_oretania
+		#Iberia
+		d_sicoria
+		d_cessetania
+		d_laetania
+		d_edetania
+		d_contestania
+		d_bastetania
+		d_baliares
+		#Turdetania
+		d_tartessos
+		d_turdulia
+		d_turdetania
+		d_bastulia
 	}
 	417 = {
 		military = 1

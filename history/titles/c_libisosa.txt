@@ -1,4 +1,4 @@
 405.1.1 = { # 371 BC
-	holder = 421001 # Retukenos
+	holder = 420601 
 	liege = d_carpetani
 }

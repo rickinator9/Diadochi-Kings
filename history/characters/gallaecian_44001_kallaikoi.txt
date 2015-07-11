@@ -1,8 +1,8 @@
-# 420001-420100 for the Celtiberi dynasty
-420001 = {
-	name = "Eskutino" # Made up Celtiberi leader
-	dynasty = 42001
-	culture = celtiberian
+# 440001-440100 for the Callaeci dynasty
+440001 = {
+	name = "Skirtunos" # Made up Callaeci leader
+	dynasty = 44001
+	culture = gallaecian
 	religion = celtic_main
 	
 	385.1.1 = { # 391 BC, Made up
@@ -12,9 +12,9 @@
 		death="yes"
 	}
 }
-420002 = {
-	name = "Builbos" # Made up Celtiberi leader
-	dynasty = 42001
+440002 = {
+	name = "Sanion" # Made up Callaeci leader
+	dynasty = 44001
 	culture = celtiberian
 	religion = celtic_main
 	

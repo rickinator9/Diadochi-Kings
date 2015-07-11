@@ -61,7 +61,7 @@ d_counei = {
 	allow = {
 	}
 }
-d_celtiberi = {
+d_olcades = {
 	color={ 200 255 140 }
 	color2={ 255 255 255 }
 	
@@ -131,3 +131,51 @@ d_vettones = {
 	allow = {
 	}
 }
+d_cantabri = {
+	color={ 50 120 70 }
+	color2={ 255 255 255 }
+	
+	allow = {
+	}
+}
+d_astures = {
+	color={ 50 120 100 }
+	color2={ 255 255 255 }
+	
+	allow = {
+	}
+}
+d_arevaci = {
+	color={ 110 35 0 }
+	color2={ 255 255 255 }
+	
+	allow = {
+	}
+}
+d_belli = {
+	color={ 160 85 50 }
+	color2={ 255 255 255 }
+	
+	allow = {
+	}
+}
+d_titti = {
+	color={ 60 0 50 }
+	color2={ 255 255 255 }
+	
+	allow = {
+	}
+}
+d_turboletae = {
+	color={ 38 84 26 }
+	color2={ 255 255 255 }
+}
+d_callaeci = {
+	color={ 50 100 50 }
+	color2={ 255 255 255 }
+}
+d_vascones = {
+	color={ 255 222 0 }
+	color2={ 255 255 255 }
+}
+

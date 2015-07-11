@@ -4,34 +4,34 @@
 	culture = iberian
 }
 39002 = {
-	name = "Lacetani"
+	name = "Laketanoi"
 	culture = iberian
 }
 39003 = {
-	name = "Cassetani"
+	name = "Kassetanoi"
 	culture = iberian
 }
 39004 = {
-	name = "Layetani"
+	name = "Laietanoi"
 	culture = iberian
 }
 39005 = {
-	name = "Ilercavones"
+	name = "Ilerkauones"
 	culture = iberian
 }
 39006 = {
-	name = "Edetani"
+	name = "Edetanoi"
 	culture = iberian
 }
 39007 = {
-	name = "Contestani"
+	name = "Kontestanoi"
 	culture = iberian
 }
 39008 = {
-	name = "Bastetani"
+	name = "Bastetanoi"
 	culture = iberian
 }
 39009 = {
-	name = "Ilergetae"
+	name = "Ilergetai"
 	culture = iberian
 }
