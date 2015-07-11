@@ -1,4 +1,4 @@
-447.7.1 = { # 329 BC
+446.9.1 = { # 330 BC
 	holder = 110001 # Stasanor
 	liege="e_macedonia"
 }

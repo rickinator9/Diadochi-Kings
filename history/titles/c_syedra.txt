@@ -2,7 +2,7 @@
 	holder = 90324
 	liege = k_p_babylon
 }
-446.1.1 = { # 330 BC
+443.9.1 = { # 333 BC
 	holder = 501 # Philotas, Satrap of Cilicia
 	liege = k_s_cilicia
 }

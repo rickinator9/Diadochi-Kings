@@ -1,4 +1,4 @@
-447.7.1 = { # 329 BC
+446.9.1 = { # 330 BC
 	holder = 90205 # Artabazos
 	liege="e_macedonia"
 }

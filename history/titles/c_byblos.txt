@@ -2,7 +2,7 @@
 	holder = 90324
 	liege = k_p_babylon
 }
-446.1.1 = { # 330 BC
+444.1.1 = { # 332 BC
 	holder = 30101 # Laomedon, Satrap of Syria
 	liege = k_s_syria
 }

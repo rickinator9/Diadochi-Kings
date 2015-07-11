@@ -2,10 +2,10 @@
 	holder = 90323
 	liege = k_p_lydia
 }
-442.1.1 = {
-	holder = 90314
+442.1.1 = { # 334 BC
+	holder = 90314 # Darius III
 }
-446.1.1 = { # 330 BC
+443.7.1 = { # 333 BC
 	holder = 50101 # Eumenes
 	liege = k_s_cappadocia
 }

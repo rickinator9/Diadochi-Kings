@@ -2,7 +2,11 @@
 	holder = 90701
 	liege = k_p_arachosia
 }
-447.7.1 = { # 329 BC
+446.1.1 = { # 330 BC
+	holder = 120101 # Porus
+	liege = k_pancha_nada
+}
+450.7.1 = { # 329 BC
 	holder = 20101 # Sibyrtios
 	liege="k_s_gedrosia"
 }

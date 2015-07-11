@@ -8,7 +8,7 @@
 443.1.1 = {
 	holder = 90601 # Mazaces
 }
-446.1.1 = { # 330 BC
+445.1.1 = { # 331 BC
 	holder = 811 # Kleomenes
 	liege = k_s_egypt
 }

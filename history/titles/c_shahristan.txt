@@ -2,7 +2,7 @@
 	holder = 90701
 	liege = k_p_arachosia
 }
-447.7.1 = { # 329 BC
+446.12.1 = { # 330 BC
 	holder = 110001 # Stasanor
 	liege="k_s_aria"
 }

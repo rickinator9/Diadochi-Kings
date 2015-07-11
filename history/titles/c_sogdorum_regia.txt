@@ -2,7 +2,11 @@
 	holder = 90701
 	liege = k_p_arachosia
 }
-447.7.1 = { # 329 BC
+446.1.1 = { # 330 BC
+	holder = 121401 # Rurak
+	liege = k_sindhu
+}
+450.12.1 = { # 326 BC
 	holder = 1501 # Peithon Agenoros
 	liege = k_s_indus
 }

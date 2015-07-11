@@ -1,4 +1,4 @@
-446.1.1 = { # 330 BC
+445.10.1 = { # 330 BC
 	holder = 701 # Archon of Babylonia
 	liege = e_macedonia
 }

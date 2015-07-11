@@ -2,7 +2,7 @@
 	holder = 90321 # Fravarti, satrap of Persia
 	liege = k_p_persia
 }
-446.1.1 = { # 330 BC
+445.11.1 = { # 330 BC
 	holder = 1201 # Peukestas
 	liege="k_s_persia"
 }

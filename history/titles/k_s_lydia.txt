@@ -1,4 +1,4 @@
-446.1.1 = { # 330 BC
+442.6.1 = { # 334 BC
 	holder = 201 # Menander, Satrap of Lydia
 	liege = e_macedonia
 }

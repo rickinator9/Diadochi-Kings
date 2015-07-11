@@ -8,7 +8,7 @@
 442.1.1 = { # 334 BC
 	liege = e_persia
 }
-446.1.1 = { # 330 BC
+443.3.1 = { # 333 BC
 	liege = k_s_mysia
 }
 457.3.1 = { # 319 BC

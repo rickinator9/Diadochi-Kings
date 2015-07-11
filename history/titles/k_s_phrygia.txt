@@ -1,4 +1,4 @@
-446.1.1 = { # 330 BC
+443.3.1 = { # 333 BC
 	holder = 401 # Antigonus, the one eyed
 	liege = e_macedonia
 }

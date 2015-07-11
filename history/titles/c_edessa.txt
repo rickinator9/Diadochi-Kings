@@ -2,7 +2,7 @@
 	holder = 90324
 	liege = k_p_babylon
 }
-446.1.1 = { # 330 BC
+445.8.1 = { # 331 BC
 	holder = 30201
 	liege = k_s_assyria
 }

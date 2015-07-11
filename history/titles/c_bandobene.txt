@@ -8,7 +8,7 @@
 438.9.25 = {
 	holder = 90320 # Artaxerxes V Bessus
 }
-447.7.1 = { # 329 BC
+447.4.1 = { # 329 BC
 	holder = 20101 # Sibyrtios
 	liege="k_s_gedrosia"
 }

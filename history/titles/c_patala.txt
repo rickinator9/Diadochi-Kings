@@ -2,7 +2,7 @@
 	holder = 121401 # Rurak
 	liege = k_sindhu
 }
-451.1.1 = {
+450.12.1 = { # 326 BC
 	holder = 1501 # Peithon Agenoros
 	liege = k_s_indus
 }

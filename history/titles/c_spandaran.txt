@@ -2,7 +2,7 @@
 	holder = 90322 # Made up Satrap of Media
 	liege = k_p_media
 }
-446.1.1 = { # 330 BC
+446.6.1 = { # 330 BC
 	holder = 90325 # Oxydates
 	liege = k_s_media
 }
