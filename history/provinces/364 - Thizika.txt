@@ -12,8 +12,8 @@ b_ureu_thizika = castle
 b_abitina_thizika = temple
 
 # Misc
-culture = punic
-religion = punic_main
+culture = berber
+religion = berber_main
 
 # History
 # Can be filled when things change around the province

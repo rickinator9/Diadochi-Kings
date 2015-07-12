@@ -11,8 +11,8 @@ b_tabira_thaenae = temple
 b_taparura_thaenae = city
 
 # Misc
-culture = punic
-religion = punic_main
+culture = berber
+religion = berber_main
 
 # History
 # Can be filled when things change around the province
