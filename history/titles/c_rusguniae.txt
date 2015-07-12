@@ -1,18 +1,10 @@
-401.1.1 = { # 375 BC
-	holder = 250304 # Magon III of Carthage
+412.1.1 = { # 364 BC
+	holder = 250203
+	liege = d_hipponensis
 }
-432.1.1 = { # 344 BC 
-	holder = 250303 # Hanno III of Carthage
+420.1.1 = { # 356 BC
+	holder = 250201 # Magon of the family of Hasdrubal
 }
-436.1.1 = { # 340 BC
-	holder = 250104 # Hanno the Great
-}
-439.1.1 = { # 337 BC
-	holder = 250103 # Gisgo I
-}
-446.1.1 = { # 330 BC
-	holder = 250101 # Hamilcar II
-}
-467.1.1 = { # 309 BC
-	holder = 250102 # Bomilcar
+463.1.1 = { # 313 BC
+	holder = 250202
 }

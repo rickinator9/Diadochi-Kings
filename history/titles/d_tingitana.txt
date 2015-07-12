@@ -1,7 +1,6 @@
 413.1.1 = { # 363 BC
-	holding_dynasty = 25005 # Dido
 	holder = 250402 # Bodmelqart
-	liege = d_tingitana
+	liege = k_carthage
 }
 450.1.1 = { # 326 BC
 	holder = 250403 # Bodtanit

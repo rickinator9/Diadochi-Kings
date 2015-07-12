@@ -1,18 +1,10 @@
-401.1.1 = { # 375 BC
-	holder = 250304 # Magon III of Carthage
+413.1.1 = { # 363 BC
+	holder = 250402 # Bodmelqart
+	liege = d_tingitana
 }
-432.1.1 = { # 344 BC 
-	holder = 250303 # Hanno III of Carthage
+450.1.1 = { # 326 BC
+	holder = 250403 # Bodtanit
 }
-436.1.1 = { # 340 BC
-	holder = 250104 # Hanno the Great
-}
-439.1.1 = { # 337 BC
-	holder = 250103 # Gisgo I
-}
-446.1.1 = { # 330 BC
-	holder = 250101 # Hamilcar II
-}
-467.1.1 = { # 309 BC
-	holder = 250102 # Bomilcar
+462.1.1 = { # 314 BC	
+	holder = 250401 # Yehawwielon
 }
