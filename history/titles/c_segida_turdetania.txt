@@ -2,3 +2,6 @@
 	holder = 400001 
 	liege = d_turdetani
 }
+466.1.1 = { # 310 BC
+	holder = 400003
+}
