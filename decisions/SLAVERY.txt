@@ -120,7 +120,7 @@ targetted_decisions = {
 				NOT = {
 					FROM = {
 						any_courtier = {
-							limit = { trait = slave }
+							trait = slave
 							count = 5
 						}
 					}
@@ -178,7 +178,7 @@ targetted_decisions = {
 				NOT = {
 					FROM = {
 						any_courtier = {
-							limit = { trait = slave }
+							trait = slave
 							count = 5
 						}
 					}
@@ -237,7 +237,7 @@ targetted_decisions = {
 				factor = 0.01
 				FROM = {
 					any_courtier = {
-						limit = { trait = slave }
+						trait = slave
 						count = 5
 					}
 				}

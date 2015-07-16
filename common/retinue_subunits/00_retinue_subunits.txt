@@ -20,6 +20,7 @@ RETTYPE_MAC_PHALANX = { # Argyraspides / Silver Shields
 				culture = macedonian
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -41,6 +42,7 @@ RETTYPE_MAC_CAVALRY = { # Hetairoi / Companion Cavalry
 				culture = macedonian
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -62,6 +64,7 @@ RETTYPE_HEL_HOPLITE = { # Epilektoi Hoplitai / Elite Hoplites
 				culture_group = hellenic
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -83,6 +86,7 @@ RETTYPE_HEL_CAVALRY = { # Hippeis Xystophoroi / Heavy Cavalry
 				culture_group = hellenic
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -112,6 +116,7 @@ RETTYPE_PER_CAVALRY = { # Khuveshavagan / Heavy cavalry
 				}
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -185,6 +190,7 @@ RETTYPE_ARM_SPEARMEN = { # Nakhararakan Tiknapah / Elite spearmen
 				culture = armenian
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -206,6 +212,7 @@ RETTYPE_ARM_CAVALRY = { # Nakhararakan Aspet / Cataphracts
 				culture = armenian
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -231,6 +238,7 @@ RETTYPE_THR_RHOMPHAIA = { # Thraikioi Rhomphaiaphoroi / Rhomphaia-wielding elite
 				}
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -256,6 +264,7 @@ RETTYPE_THR_CAVALRY = { # Tarabostes / Heavy cavalry
 				}
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -277,6 +286,7 @@ RETTYPE_CAR_PHALANX = { # Dorkim Kdoshim / Sacred Band phalanx
 				culture = punic
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -298,6 +308,7 @@ RETTYPE_CAR_CAVALRY = { # Ha'Abbirim Ha'Qdosim sel Astarte / Sacred Band cavalry
 				culture = punic
 			}
 		}
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -321,6 +332,7 @@ RETTYPE_AFR_ELEPHANT = { # Elephantes Hulaioi Liboukoi / African elephants
 				culture = nubian
 			}
 		}
+		is_nomadic = no
 	}
 }
 
@@ -331,6 +343,7 @@ RETTYPE_SPA_HOPLITE = { # Spartiatai Hoplitai / Spartan hoplites
 	
 	potential = {
 		has_landed_title = k_sparta
+		is_nomadic = no
 	}
 	
 	modifier = {
@@ -346,6 +359,7 @@ RETTYPE_BOS_ARCHERS = { # Thureopherontes Toxotai / Bosporan heavy archers
 	
 	potential = {
 		has_landed_title = k_bosphorus
+		is_nomadic = no
 	}
 	
 	modifier = {

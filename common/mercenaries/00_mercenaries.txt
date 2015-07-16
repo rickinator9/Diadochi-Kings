@@ -44,3 +44,9 @@ d_greek_pikemen_composition = {
 	levy_size = 1
 	pikemen = 500
 }
+
+## Must exist or else dynamic mercenary band might fail for nomads!
+default_culture_band_composition = {
+	levy_size = 1
+	light_infantry = 100
+}

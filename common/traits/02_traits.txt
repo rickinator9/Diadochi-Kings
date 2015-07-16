@@ -406,3 +406,19 @@ gamer = {
 	
 	same_opinion = 20
 }
+
+adventurer = {
+
+	martial = 1
+	diplomacy = -1
+	combat_rating = 1
+	levy_size = 0.2
+	max_manpower_mult = 0.1
+	
+	same_opinion = 20
+
+	ai_ambition = 40
+	
+	customizer = no
+	random = no
+}

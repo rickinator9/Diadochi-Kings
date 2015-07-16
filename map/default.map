@@ -10,7 +10,8 @@ tree_definition = "trees.bmp"
 continent = "continent.txt"
 adjacencies = "adjacencies.csv"
 climate = "climate.txt"
-region = "region.txt"
+region = "island_region.txt"
+geographical_region = "geographical_region.txt"
 static = "static.txt"
 seasons = "seasons.txt"
 
@@ -31,3 +32,5 @@ ocean_region = {
 tree = { 3 4 7 10 }
 major_rivers = {
 }
+
+externals = { }

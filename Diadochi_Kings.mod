@@ -1,5 +1,5 @@
 name = "Diadochi Kings"
-path = "mod/Diadochi Kings"
+path = "mod/Diadochi-Kings"
 user_dir = "Diadochi Kings"
 
 replace_path = "common\cultures"
