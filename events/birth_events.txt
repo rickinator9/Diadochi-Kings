@@ -888,11 +888,7 @@ character_event = {
 			
 			modifier = {
 				factor = 50.0
-				OR = {
-					trait = monk
-					trait = nun
-					trait = chaste
-				}
+				trait = chaste
 			}
 			
 			modifier = {
@@ -2318,10 +2314,6 @@ character_event = {
 			if = {
 				limit = { trait = saoshyant_descendant }
 				remove_trait = saoshyant_descendant
-			}
-			if = {
-				limit = { trait = sayyid }
-				remove_trait = sayyid
 			}
 			mother = {
 				character_event = { id = 310 tooltip = EVTTOOLTIP310 } # The child's mother is dishonoured

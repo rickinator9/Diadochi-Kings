@@ -11,10 +11,5 @@ b_capera_capera = castle
 culture = celtiberian
 religion = celtic_main
 
-
-
-
-
-
 # History
 # Can be filled when things change around the province

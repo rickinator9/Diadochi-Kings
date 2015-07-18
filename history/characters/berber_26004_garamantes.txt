@@ -37,7 +37,7 @@
 		death="yes"
 	}
 }
-260303 = { 
+260304 = { 
 	name = "Bagaius"
 	dynasty = 26004
 	religion = berber_main

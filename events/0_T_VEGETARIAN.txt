@@ -713,10 +713,10 @@ character_event = {
 			set_character_flag = vegetarian_perseverance_2
 		}
 		piety = -5
-		add_character_modifier = {
-			name = best_meal_in_ages
-			duration = 30
-		}
+		#add_character_modifier = {
+		#	name = best_meal_in_ages
+		#	duration = 30
+		#}
 		random_courtier = {
 			limit = {
 				is_adult = yes
@@ -927,10 +927,10 @@ character_event = {
 			set_character_flag = vegetarian_perseverance_2
 		}
 		piety = -5
-		add_character_modifier = {
-			name = best_meal_in_ages
-			duration = 30
-		}
+		#add_character_modifier = {
+		#	name = best_meal_in_ages
+		#	duration = 30
+		#}
 	}
 	
 	option = { # No
@@ -1147,10 +1147,10 @@ character_event = {
 			}
 		}
 		piety = -1
-		add_character_modifier = {
-			name = polite_ruler
-			duration = 365
-		}
+		#add_character_modifier = {
+		#	name = polite_ruler
+		#	duration = 365
+		#}
 	}
 	
 	option = { # No

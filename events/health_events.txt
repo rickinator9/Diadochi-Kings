@@ -372,10 +372,7 @@ character_event = {
 		health = 4
 		trait = lunatic
 		NOT = {
-			OR = {
-				trait = syphilitic
-				trait = has_aztec_disease
-			}
+			trait = syphilitic
 		}
 	}
 	

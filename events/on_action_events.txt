@@ -308,25 +308,6 @@ character_event = {
 			give_nickname = nick_the_unchaste
 		}
 		
-		if = {
-			limit = {
-				religion_group = christian
-				OR = {
-					AND = {
-						is_ruler = yes
-						is_theocracy = yes
-					}
-					trait = monk
-					trait = nun
-				}
-			}
-			add_character_modifier = {
-				name = adulterous_priest
-				years = 20
-			}
-			piety = -100
-		}
-		
 		event_target:target_adulterer = {
 			ROOT = {
 				if = {

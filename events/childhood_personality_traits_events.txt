@@ -6134,7 +6134,7 @@ character_event = {
 			}
 		}
 	}
-	weight_multiplier = {
+	mean_time_to_happen = {
 		months = 16
 	}
 	

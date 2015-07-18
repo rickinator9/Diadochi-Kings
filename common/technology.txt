@@ -39,6 +39,8 @@ TECH_GROUP_MILITARY = {
 		modifier = {
 			GALLEYS_PERC = 0.8
 		}
+		1 = {
+		}
 		2 = {
 			add_building = ca_port_2
 			add_building = ct_port_2
@@ -180,6 +182,8 @@ TECH_GROUP_ECONOMY = {
 		modifier = {
 			CITY_TAX_MODIFIER = 0.5
 		}
+		1 = {
+		}
 		2 = {
 			add_building = ct_stan_levy_2
 			add_building = ct_town_2
@@ -270,6 +274,8 @@ TECH_GROUP_ECONOMY = {
 			add_building = ct_market_5
 			add_building = ct_stable_4
 		}
+		7 = {
+		}
 		8 = {
 			add_building = ct_guard_5
 			add_building = ct_stable_5
@@ -278,6 +284,8 @@ TECH_GROUP_ECONOMY = {
 	TECH_TEMPLE_CONSTRUCTION = { #temple buildings
 		modifier = {
 			TEMPLE_TAX_MODIFIER = 0.5
+		}
+		1 = {
 		}
 		2 = { 
 			add_building = tp_commune_2
@@ -289,6 +297,8 @@ TECH_GROUP_ECONOMY = {
 			add_building = tp_shrine_3
 			add_building = tp_shrine_rev_2
 		}
+		4 = {
+		}
 		5 = {
 			add_building = tp_commune_4
 			add_building = tp_shrine_4
@@ -299,12 +309,16 @@ TECH_GROUP_ECONOMY = {
 			add_building = tp_shrine_5
 			add_building = tp_shrine_rev_4
 		}
+		7 = {
+		}
 		8 = {
 			add_building = tp_shrine_rev_5
 		}
 	}
 	TECH_FORTIFICATIONS_CONSTRUCTION = { # walls and levy buildings
 		modifier = {
+		}
+		1 = {
 		}
 		2 = {
 			add_building = ca_wall_2
@@ -344,6 +358,8 @@ TECH_GROUP_ECONOMY = {
 		modifier = {
 			LOCAL_BUILD_TIME_MODIFIER = -0.25
 			LOCAL_BUILD_COST_MODIFIER = -0.25
+		}
+		1 = {
 		}
 		2 = {
 			add_building = ca_farm_1

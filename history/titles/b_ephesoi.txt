@@ -1,4 +1,4 @@
-396.1.1 = { # 368 BC
+397.1.1 = { # 367 BC
 	holding_dynasty = 5007 # Ephesoi
 	liege="k_r_tyras"
 	holder = 50601

@@ -1770,9 +1770,7 @@ character_event = {
 				OR = {
 					has_regent = yes
 					in_command = yes
-					FROMFROM = { trait = on_hajj }
 					FROMFROM = { trait = in_hiding }
-					FROMFROM = { trait = on_pilgrimage }
 					FROMFROM = { in_command = yes }
 				}
 			}
@@ -6169,9 +6167,7 @@ character_event = {
 						NOT = { character = ROOT }
 						NOT = { character = PREV }
 						NOT = { trait = incapable }
-						NOT = { trait = on_hajj }
 						NOT = { trait = in_hiding }
-						NOT = { trait = on_pilgrimage }
 						NOT = { is_father = PREV }
 						NOT = { is_mother = PREV }
 						NOT = { is_lover = PREV }
@@ -6206,9 +6202,7 @@ character_event = {
 								NOT = { character = ROOT }
 								NOT = { character = PREV }
 								NOT = { trait = incapable }
-								NOT = { trait = on_hajj }
 								NOT = { trait = in_hiding }
-								NOT = { trait = on_pilgrimage }
 								at_location = PREV
 								OR = {
 									AND = {

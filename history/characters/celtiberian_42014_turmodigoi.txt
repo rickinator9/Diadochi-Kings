@@ -1,5 +1,5 @@
-# 421201-421300 for the Turmodigi dynasty
-421201 = {
+# 421301-421400 for the Turmodigoi dynasty
+421301 = {
 	name = "Sekilos" # Made up Turmodigi leader
 	dynasty = 42014
 	culture = celtiberian

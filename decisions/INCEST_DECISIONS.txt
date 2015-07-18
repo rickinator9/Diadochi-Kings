@@ -255,7 +255,7 @@ dynasty_decisions = {
 						trait = dwarf
 						trait = slow
 						trait = imbecile
-						trait = imbred
+						trait = inbred
 						trait = weak
 					}
 				}

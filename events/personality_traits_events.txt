@@ -4765,7 +4765,7 @@ character_event = {
 		trait = trusting
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {

@@ -673,6 +673,10 @@ on_major_battle_won_leader = {
 	}
 }
 
+# Winning army owner is ROOT - opponent army owner is FROM
+on_battle_won_owner = {
+}
+
 # Any leader in battle on losing side is ROOT - opponent army leader is FROM
 on_battle_lost = {
 	random_events = {
@@ -696,6 +700,12 @@ on_battle_lost_leader = {
 on_major_battle_lost_leader = {
 	events = {
 		CM.10032
+	}
+}
+
+# Losing army owner is ROOT - opponent army owner is FROM
+on_battle_lost_owner = {
+	events = {
 	}
 }
 
@@ -833,6 +843,12 @@ on_marriage = {
  	}
 }
 
+#character. Triggers when someone gets imprisoned for any reason. - ROOT is prisoner, FROM is imprisoner
+on_become_imprisoned_any_reason = {
+	events = {
+	}
+}
+
 #character. Triggers if someone tries to imprison someone landed and fails. This leads to an automatic war declaration(independece)
 on_avoided_imprison_started_war = {
 	events = {
@@ -845,6 +861,12 @@ on_became_imprisoned = {
 	events = {
  		151 # Was imprisoned
 		CM.10024  # Chronicle entry
+ 	}
+}
+
+#character. Triggers if someone becomes imprisoned in any way - ROOT is prisoner, FROM is imprisoner
+on_became_imprisoned = {
+	events = {
  	}
 }
 
@@ -966,6 +988,13 @@ on_character_event_message = {
 
 on_loot_settlement = {
 	random_events = {
+	}
+}
+
+# When someone is looting currently in a province
+# ROOT = Looter, FROM = Province
+on_loot_province = {
+	events = {
 	}
 }
 
@@ -1317,6 +1346,16 @@ ASK_TO_RANSOM_CHARACTER_INTERACTION_DECLINE_EVENT = {
 	}
 }
 
+SETTLE_ADVENTURER_INTERACTION_ACCEPT_EVENT = {
+	events = {
+	}
+}
+
+SETTLE_ADVENTURER_INTERACTION_DECLINE_EVENT = {
+	events = {
+	}
+}
+
 ASK_TO_JOIN_WAR_INTERACTION_ACCEPT_EVENT = {
 	events = {
 		293
@@ -1351,6 +1390,46 @@ MAKE_CONSORT_INTERACTION_ACCEPT_EVENT = {
 MAKE_CONSORT_INTERACTION_DECLINE_EVENT = {
 	events = {
 		298
+	}
+}
+
+ABSORB_CLAN_INTERACTION_ACCEPT_EVENT = {
+	events = {
+	}
+}
+
+ABSORB_CLAN_INTERACTION_DECLINE_EVENT = {
+	events = {
+	}
+}
+
+SPLIT_CLAN_INTERACTION_ACCEPT_EVENT = {
+	events = {
+	}
+}
+
+SPLIT_CLAN_INTERACTION_DECLINE_EVENT = {
+	events = {
+	}
+}
+
+FORM_BLOOD_OATH_INTERACTION_ACCEPT_EVENT = {
+	events = {
+	}
+}
+
+FORM_BLOOD_OATH_INTERACTION_DECLINE_EVENT = {
+	events = {
+	}
+}
+
+SETTLE_FEUD_INTERACTION_ACCEPT_EVENT = {
+	events = {
+	}
+}
+
+SETTLE_FEUD_INTERACTION_DECLINE_EVENT = {
+	events = {
 	}
 }
 
@@ -1516,6 +1595,9 @@ on_new_holder_usurpation = {
 	}
 }
 
+on_unlanded = {
+}
+
 # Fires at the end of each year if the chronicle is empty
 on_create_chronicle_if_empty = {
 	random_events = {
@@ -1609,3 +1691,46 @@ on_war_ended_defeat = {
 	}
 }
 
+# From = Divorcer, Root = Spouse, New = Religious head if applicable
+on_divorce = {
+	events = {
+		717 # Achievement
+		CM.10037
+	}
+}
+
+# ROOT = Builder, FROM = Title
+on_settlement_construction_start = {
+}
+
+# ROOT = Builder, FROM = Title
+on_settlement_construction_completed = {
+	events = {
+		#HL.3
+		#HL.4
+	}
+}
+
+# ROOT = Starter, FROM = Target 
+on_feud_started = {
+	events = {
+		#HL.6
+	}
+}
+
+# ROOT = Ender, FROM = Target 
+on_feud_ended = {
+}
+
+on_blood_brother_death = {
+	events = {
+		#HL.10
+	}
+}
+
+# ROOT = AI character
+on_ai_end_raid = {
+	events = {
+		#HL.191
+	}
+}

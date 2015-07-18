@@ -12227,7 +12227,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		months = 300
 		
 		modifier = {

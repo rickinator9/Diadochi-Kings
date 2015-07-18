@@ -442,7 +442,6 @@ technology = {
 technology = {
 	titles = {
 		d_kashgaria
-		d_khotan
 		d_turfan
 		d_urumchi
 	}

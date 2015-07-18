@@ -1,6 +1,6 @@
-# 421101-421200 for the Vaccaei dynasty
-421101 = {
-	name = "Tirtanos" # Made up Vaccaei leader
+# 421201-421300 for the Uakkaioi dynasty
+421201 = {
+	name = "Tirtanos" # Made up Uakkaioi leader
 	dynasty = 42013
 	culture = celtiberian
 	religion = celtic_main

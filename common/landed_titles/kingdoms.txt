@@ -12,6 +12,21 @@ k_bosphorus = {
 			color= { 50 0 25 }
 			color2= { 255 255 255 }
 			
+			holy_site = berber_main
+			holy_site = illyrian_main
+			holy_site = celtic_main
+			holy_site = scythian_main
+			holy_site = hinduism_main
+			holy_site = jainism_main
+			holy_site = buddhism_main
+			holy_site = georgian_main
+			holy_site = phrygian_main
+			holy_site = arabic_main
+			holy_site = dravidian_main
+			holy_site = lusitanian_main
+			holy_site = iberian_main
+			holy_site = aquitanian_main
+			
 			b_phanagoria = {
 			}
 			b_hermonassa_phanagoria ={
@@ -26,7 +41,22 @@ k_bosphorus = {
 		c_gorgippia = {
 			color= { 60 10 25 }
 			color2= { 255 255 255 }
-						
+			
+			holy_site = berber_main
+			holy_site = illyrian_main
+			holy_site = celtic_main
+			holy_site = scythian_main
+			holy_site = hinduism_main
+			holy_site = jainism_main
+			holy_site = buddhism_main
+			holy_site = georgian_main
+			holy_site = phrygian_main
+			holy_site = arabic_main
+			holy_site = dravidian_main
+			holy_site = lusitanian_main
+			holy_site = iberian_main
+			holy_site = aquitanian_main
+
 			b_gorgippia_gorgippia = {
 			}
 			b_bata_gorgippia = {
@@ -37,7 +67,22 @@ k_bosphorus = {
 		c_pityous = {
 			color= { 40 0 15 }
 			color2= { 255 255 255 }
-								
+			
+			holy_site = berber_main
+			holy_site = illyrian_main
+			holy_site = celtic_main
+			holy_site = scythian_main
+			holy_site = hinduism_main
+			holy_site = jainism_main
+			holy_site = buddhism_main
+			holy_site = georgian_main
+			holy_site = phrygian_main
+			holy_site = arabic_main
+			holy_site = dravidian_main
+			holy_site = lusitanian_main
+			holy_site = iberian_main
+			holy_site = aquitanian_main
+			
 			b_pityous_pityous = {
 			}
 			b_torikos_pityous = {
@@ -49,6 +94,21 @@ k_bosphorus = {
 			color= { 50 10 35 }
 			color2= { 255 255 255 }
 			
+			holy_site = berber_main
+			holy_site = illyrian_main
+			holy_site = celtic_main
+			holy_site = scythian_main
+			holy_site = hinduism_main
+			holy_site = jainism_main
+			holy_site = buddhism_main
+			holy_site = georgian_main
+			holy_site = phrygian_main
+			holy_site = arabic_main
+			holy_site = dravidian_main
+			holy_site = lusitanian_main
+			holy_site = iberian_main
+			holy_site = aquitanian_main
+			
 			b_tanais_tanais = {
 			}
 			b_hygreis_tanais = {
@@ -59,6 +119,21 @@ k_bosphorus = {
 		c_azara = {
 			color= { 50 10 15 }
 			color2= { 255 255 255 }
+			
+			holy_site = berber_main
+			holy_site = illyrian_main
+			holy_site = celtic_main
+			holy_site = scythian_main
+			holy_site = hinduism_main
+			holy_site = jainism_main
+			holy_site = buddhism_main
+			holy_site = georgian_main
+			holy_site = phrygian_main
+			holy_site = arabic_main
+			holy_site = dravidian_main
+			holy_site = lusitanian_main
+			holy_site = iberian_main
+			holy_site = aquitanian_main
 			
 			b_azara_azara = {
 			}
@@ -303,6 +378,8 @@ k_odrysia = {
 			color= { 140 65 0 }
 			color2= { 255 255 255 }
 			
+			holy_site = thracian_main
+			
 			b_bergoule_orestias = {
 			}
 			b_orestias_orestias = {
@@ -310,7 +387,6 @@ k_odrysia = {
 			b_burtudizon_orestias = {
 			}
 			b_drousipara_orestias = {
-				holy_site = thracian_main
 			}
 			b_narco_orestias = {
 			}			
@@ -365,10 +441,11 @@ k_odrysia = {
 			color= { 150 75 25 }
 			color2= { 255 255 255 }
 			
+			holy_site = thracian_main
+			
 			b_seuthopolis_seuthopolis = {
 			}
 			b_longinopara_seuthopolis = {
-				holy_site = thracian_main
 			}
 			b_oescus_seuthopolis = {
 			}
@@ -512,12 +589,13 @@ k_odrysia = {
 		c_byzantion = {
 			color= { 150 75 25 }
 			color2= { 255 255 255 }
+			
+			holy_site = zalmoxism
+			holy_site = thracian_main
 		
 			b_byzantion_byzantion = {
 			}
 			b_chalcaea_byzantion = {
-				holy_site = zalmoxism
-				holy_site = thracian_main
 			}
 			b_selymbria_byzantion  = {
 			}
@@ -911,11 +989,12 @@ k_lydia = {
 			color= { 0 135 135 }
 			color2= { 255 255 255 }
 			
+			holy_site = greek_main
+			holy_site = anatolian_main
+			
 			b_ephesus_ephesus = {
 			}
 			b_colophon_ephesus = { # Temple of Artemis
-				holy_site = greek_main
-				holy_site = anatolian_main
 			}
 			b_magnesia_ephesus = {
 			}
@@ -957,11 +1036,12 @@ k_lydia = {
 		c_samos = {
 			color= { 0 135 115 }
 			color2= { 255 255 255 }
+			
+			holy_site = zalmoxism
 		
 			b_samos_samos = {
 			}
 			b_korsiai_samos = {
-				holy_site = zalmoxism
 			}
 			b_histoi_samos = {
 			}
@@ -1022,6 +1102,8 @@ k_lydia = {
 			color= { 10 85 75 }
 			color2= { 255 255 255 }
 			
+			holy_site = greek_main
+			
 			b_miletus_miletus = {
 			}
 			b_kanossos_miletus = {
@@ -1031,7 +1113,6 @@ k_lydia = {
 			b_mylasa_miletus = {
 			}			
 			b_didyma_miletus = { # Oracle of Didyma
-				holy_site = greek_main
 			}
 			b_priene_miletus = {
 			}
@@ -1417,10 +1498,11 @@ k_lydia = {
 			color= { 90 65 50 }
 			color2= { 255 255 255 }
 			
+			holy_site = thracian_main
+			
 			b_ancore_nicaea = {
 			}
 			b_kabia_nicaea = {
-				holy_site = thracian_main
 			}
 			b_terbos_nicaea = {
 			}
@@ -1656,10 +1738,11 @@ k_cappadocia = {
 			color= { 190 185 150 }
 			color2= { 255 255 255 }
 			
+			holy_site = anatolian_main
+			
 			b_comana_cataonia = {
 			}
 			b_kokousos_cataonia = {
-				holy_site = anatolian_main
 			}
 			b_tanadaris_cataonia = {
 			}
@@ -1670,10 +1753,11 @@ k_cappadocia = {
 			color= { 200 185 140 }
 			color2= { 255 255 255 }
 			
+			holy_site = anatolian_main
+			
 			b_pteria_pteria = {
 			}
 			b_agranai_pteria = {
-				holy_site = anatolian_main
 			}
 			b_sibora_pteria = {
 			}
@@ -1994,6 +2078,10 @@ k_egypt = {
 			color2= { 255 255 255 }
 			egyptian = "Ra Katit"
 			
+			
+			holy_site = kemetic
+			holy_site = atenist
+			
 			b_alexandria_alexandria = {
 				egyptian = "Ra Katit"
 			}
@@ -2020,14 +2108,16 @@ k_egypt = {
 		c_memphis = {
 			color= { 225 200 0 }
 			color2= { 255 255 255 }
+			
 			egyptian = "Men Nefer"
+			
+			holy_site = kemetic
+			holy_site = atenist
 			
 			b_memphis_memphis = {
 				egyptian = "Men Nefer"
 			}
-			b_bousiris_memphis = {			
-				holy_site = kemetic
-				holy_site = atenist
+			b_bousiris_memphis = {
 			}
 			b_toachris_memphis = {
 			}
@@ -2106,12 +2196,13 @@ k_egypt = {
 			color2= { 255 255 255 }
 			egyptian = "Akhetaten"
 			
+			holy_site = atenist
+			
 			b_antinoopolis_antinoopolis = {
 			}
 			b_thmoresis_antinoopolis = {
 			}
 			b_akhetaten_antinoopolis = {
-				holy_site = atenist
 			}
 			b_alabastronpolis_antinoopolis = {
 			egyptian = "Hbnw"
@@ -2204,12 +2295,13 @@ k_egypt = {
 			color2= { 255 255 255 }
 			egyptian = "Hut-Sekhem"
 			
+			holy_site = kemetic
+			holy_site = atenist
+			
 			b_diospolis_mikra_diospolis_mikra = {
 				egyptian = "Hut-Sekhem"
 			}
 			b_memnonia_diospolis_mikra = { # Ramesseum
-				holy_site = kemetic
-				holy_site = atenist
 				egyptian = "Ramesseum"
 			}
 			b_abydos_diospolis_mikra = {
@@ -2239,6 +2331,9 @@ k_egypt = {
 			color2= { 255 255 255 }
 			egyptian = "Waset"
 			
+			holy_site = kemetic
+			holy_site = atenist
+			
 			b_thebes_thebes_egypt = {
 				egyptian = "Waset"
 			}
@@ -2247,13 +2342,9 @@ k_egypt = {
 			b_touphion_thebes_egypt = {
 			}
 			b_karnak_thebes_egypt = {
-				holy_site = kemetic
-				holy_site = atenist
 				egyptian = "Ipet-Isut"
 			}
-			b_luxor_thebes_egypt = {
-				holy_site = kemetic
-				holy_site = atenist
+			b_luxor_temple_thebes_egypt = {
 				egyptian = "Ipet-Resyt"
 			}
 			b_kastron_thebon_thebes_egypt = {
@@ -2281,11 +2372,12 @@ k_egypt = {
 			color2= { 255 255 255 }
 			egyptian = "Swenett"
 			
+			holy_site = kemetic
+			
 			b_syene_syene = {
 				egyptian = "Swenett"
 			}
 			b_omboi_syene = {
-				holy_site = kemetic
 				egyptian = "Nubt"
 			}
 			b_elephantine_syene = {
@@ -2491,12 +2583,13 @@ k_syria = {
 		c_arados = {
 			color= { 0 85 90 }
 			color2= { 255 255 255 }
+			
+			holy_site = canaanite_main
+			holy_site = punic_main
 
 			b_arados_arados = {
 			}
 			b_marsya_arados = {
-				holy_site = canaanite_main
-				holy_site = punic_main
 			}
 			b_gabala_arados = {
 			}
@@ -2523,11 +2616,12 @@ k_syria = {
 		c_hierapolis = {
 			color= { 0 65 110 }
 			color2= { 255 255 255 }
+			
+			holy_site = anatolian_main
 
 			b_hierapolis_hierapolis = {
 			}
 			b_gabboula_hierapolis = {
-				holy_site = anatolian_main
 			}
 			b_amphipolis_hierapolis = {
 			}
@@ -2596,12 +2690,13 @@ k_syria = {
 		c_sidon = {
 			color= { 160 140 255 }
 			color2= { 255 255 255 }
+			
+			holy_site = canaanite_main
+			holy_site = punic_main
 
 			b_sidon_sidon = {
 			}
 			b_alsos_asklepiou_sidon = {
-				holy_site = canaanite_main
-				holy_site = punic_main
 			}
 			b_sarepta_sidon = {
 			}
@@ -2613,12 +2708,13 @@ k_syria = {
 		c_tyrus = {
 			color= { 150 150 255 }
 			color2= { 255 255 255 }
+			
+			holy_site = canaanite_main
+			holy_site = punic_main
 
 			b_tyrus_tyrus = {
 			}
 			b_hammon_tyrus = {
-				holy_site = canaanite_main
-				holy_site = punic_main
 			}
 			b_ake_tyrus = {
 			}
@@ -2636,11 +2732,12 @@ k_syria = {
 			color= { 140 165 225 }
 			color2= { 255 255 255 }
 
+			holy_site = canaanite_main
+			holy_site = punic_main
+			
 			b_dora_apollonia_israel = {
 			}
 			b_apollonia_apollonia_israel = {
-				holy_site = canaanite_main
-				holy_site = punic_main
 			}
 			b_jaffa_apollonia_israel = {
 			}
@@ -2651,10 +2748,11 @@ k_syria = {
 			color= { 150 175 225 }
 			color2= { 255 255 255 }
 
+			holy_site = judaism_main
+			
 			b_samaria_samaria = {
 			}
 			b_geth_samaria = {
-				holy_site = judaism_main
 			}
 			b_roob_samaria = {
 			}
@@ -2699,11 +2797,12 @@ k_syria = {
 		c_jerusalem = {
 			color= { 150 175 255 }
 			color2= { 255 255 255 }
+			
+			holy_site = judaism_main
 
 			b_jerusalem_jerusalem = {
 			}
 			b_temple_mount_jerusalem = {
-				holy_site = judaism_main
 			}
 			b_engaddai_jerusalem = {
 			}
@@ -2717,12 +2816,13 @@ k_syria = {
 		c_beersheba = {
 			color= { 160 175 245 }
 			color2= { 255 255 255 }
+			
+			holy_site = judaism_main
+			holy_site = canaanite_main
 
 			b_beersheba_beersheba = {
 			}
 			b_betomolachon_beersheba = {
-				holy_site = judaism_main
-				holy_site = canaanite_main
 			}
 			b_elousa_beersheba = {
 			}
@@ -2878,10 +2978,11 @@ k_assyria = {
 			color= { 0 50 125 }
 			color2= { 255 255 255 }
 			
+			holy_site = marduk_cult
+			
 			b_ashur_ashur = {
 			}
 			b_vicat_ashur = {
-				holy_site = marduk_cult
 			}
 			b_balad_ashur = {
 			}
@@ -2934,11 +3035,12 @@ k_assyria = {
 		c_nineveh = {
 			color= { 10 50 115 }
 			color2= { 255 255 255 }
+			
+			holy_site = marduk_cult
 
 			b_kalhu_nineveh = {
 			}
 			b_dur_sharrukin_nineveh = {
-				holy_site = marduk_cult
 			}
 			b_mosul_nineveh = {
 			}
@@ -3016,10 +3118,11 @@ k_babylonia = {
 			color= { 0 50 225 }
 			color2= { 255 255 255 }
 			
+			holy_site = marduk_cult
+			
 			b_babylon_babylon = {
 			}
 			b_cutha_babylon = {
-				holy_site = marduk_cult
 			}
 			b_borsippa_babylon = {
 			}
@@ -3054,10 +3157,11 @@ k_babylonia = {
 			color= { 0 15 165 }
 			color2= { 255 255 255 }
 			
+			holy_site = marduk_cult
+			
 			b_nippur_nippur = {
 			}
 			b_dabrum_nippur = {
-				holy_site = marduk_cult
 			}
 			b_isin_nippur = {
 			}
@@ -3079,10 +3183,11 @@ k_babylonia = {
 			color= { 10 25 185 }
 			color2= { 255 255 255 }
 			
+			holy_site = marduk_cult
+			
 			b_ur_ur = {
 			}
 			b_eridu_ur = {
-				holy_site = marduk_cult
 			}
 			b_nina_ur = {
 			}
@@ -3138,10 +3243,11 @@ k_armenia = {
 			color= { 200 25 50 }
 			color2= { 255 255 255 }
 			
+			holy_site = anatolian_main
+			
 			b_melitene_melitene = {
 			}
 			b_arca_melitene = {
-				holy_site = anatolian_main
 			}
 			b_sartona_melitene = {
 			}
@@ -3364,10 +3470,11 @@ k_armenia = {
 			color= { 200 0 50 }
 			color2= { 255 255 255 }
 			
+			holy_site = armenian_main
+			
 			b_armavir_armavir = {
 			}
 			b_kainepolis_armavir = {
-				holy_site = armenian_main
 			}
 			b_motene_armavir = {
 			}
@@ -3647,15 +3754,16 @@ k_macedon = {
 			color= { 210 90 50 }
 			color2= { 255 255 255 }
 			
+			holy_site = greek_main
+			holy_site = pontic_main
+			
 			b_aigai_pieria = {
 			}
 			b_pydna_pieria = {
 			}
 			b_methone_pieria = {
 			}
-			b_dion_pieria = { # Mount Olympus			
-				holy_site = greek_main
-				holy_site = pontic_main
+			b_dion_pieria = { # Mount Olympus
 			}
 			b_pimpleia_pieria = {
 			}
@@ -3848,12 +3956,13 @@ k_illyria = {
 			color= { 35 215 125 }
 			color2= { 255 255 255 }
 			
+			holy_site = thracian_main
+			
 			b_ratiaria_ratiaria = {
 			}
 			b_bononia_ratiaria = {
 			}
 			b_almus_ratiaria = {
-				holy_site = thracian_main
 			}
 			b_romuliana_ratiaria = {
 			}
@@ -4298,12 +4407,13 @@ k_greece = {
 		c_olympia = {
 			color= { 100 165 245 }
 			color2= { 255 255 255 }
+			
+			holy_site = greek_main
+			holy_site = pontic_main
 		
 			b_elis_olympia = {
 			}
 			b_olympia_olympia = { # Olympia
-				holy_site = greek_main
-				holy_site = pontic_main
 			}
 			b_dyme_olympia = {
 			}
@@ -4388,11 +4498,12 @@ k_greece = {
 		c_delphi = {
 			color= { 90 210 255 }
 			color2= { 255 255 255 }
+			
+			holy_site = greek_main
 		
 			b_kythinion_delphi = {
 			}
 			b_delphi_delphi = { # Oracle of Delphi
-				holy_site = greek_main
 			}
 			b_pindos_delphi = {
 			}
@@ -4824,11 +4935,12 @@ k_nabataea = {
 		c_madaba = {
 			color= { 190 150 10 }
 			color2= { 255 255 255 }
+			
+			holy_site = judaism_main
 		
 			b_madaba_madaba = {
 			}
 			b_esbous_madaba = {
-				holy_site = judaism_main
 			}
 			b_ziza_madaba = {
 			}
@@ -4900,11 +5012,12 @@ k_nabataea = {
 		c_gadara = {
 			color= { 165 135 0 }
 			color2= { 255 255 255 }
+			
+			holy_site = judaism_main
 		
 			b_gadara_gadara = {
 			}
 			b_abila_gadara = {
-				holy_site = judaism_main
 			}
 			b_hippos_gadara = {
 			}
@@ -5007,12 +5120,13 @@ k_italy = {
 			color= { 125 35 10 }
 			color2= { 255 255 255 }
 			
+			holy_site = roman_main
+			
 			b_beneventum_beneventum = {
 			}
 			b_chivia_beneventum = {
 			}
 			b_telesia_beneventum = {
-				holy_site = roman_main
 			}
 			b_melae_beneventum = {
 			}
@@ -5074,6 +5188,9 @@ k_italy = {
 			color= { 125 0 0 }
 			color2= { 255 255 255 }
 			
+			holy_site = etruscan_main
+			holy_site = roman_main
+			
 			b_roma_roma = {
 			}
 			b_ostia_roma = {
@@ -5081,8 +5198,6 @@ k_italy = {
 			b_vialaurentina_roma = {
 			}
 			b_aricia_roma = {
-				holy_site = etruscan_main
-				holy_site = roman_main
 			}
 			b_picana_roma = {
 			}
@@ -5109,6 +5224,8 @@ k_italy = {
 			color= { 125 35 35 }
 			color2= { 255 255 255 }
 			
+			holy_site = roman_main
+			
 			b_spoletium_spoletium = {
 			}
 			b_treva_spoletium = {
@@ -5116,7 +5233,6 @@ k_italy = {
 			b_ameria_spoletium = {
 			}
 			b_mevania_spoletium = {
-				holy_site = roman_main
 			}
 		}
 		c_iguvium = {
@@ -5167,11 +5283,12 @@ k_italy = {
 			color= { 90 0 10 }
 			color2= { 255 255 255 }
 			
+			holy_site = etruscan_main
+			holy_site = roman_main
+			
 			b_tarquinii_tarquinii = {
 			}
 			b_tuscania_tarquinii = {
-				holy_site = etruscan_main
-				holy_site = roman_main
 			}
 			b_blera_tarquinii = {
 			}
@@ -5208,6 +5325,8 @@ k_italy = {
 			color= { 100 0 0 }
 			color2= { 255 255 255 }
 			
+			holy_site = etruscan_main
+			
 			b_pisae_pisae = {
 			}
 			b_populonium_pisae = {
@@ -5215,7 +5334,6 @@ k_italy = {
 			b_luca_pisae = {
 			}
 			b_fiorentia_pisae = {
-				holy_site = etruscan_main
 			}
 			b_pistoria_pisae = {
 			}
@@ -5242,6 +5360,8 @@ k_italy = {
 			color= { 160 0 10 }
 			color2= { 255 255 255 }
 			
+			holy_site = roman_main
+			
 			b_ancona_ancona = {
 			}
 			b_firmum_ancona = {
@@ -5249,7 +5369,6 @@ k_italy = {
 			b_sentium_ancona = {
 			}
 			b_faleria_ancona = {
-				holy_site = roman_main
 			}
 		}
 	}
@@ -5435,6 +5554,8 @@ k_cisalpine_gaul = {
 			color= { 90 200 65 }
 			color2= { 255 255 255 }
 			
+			holy_site = etruscan_main
+			
 			b_ravenna_ravenna = {
 			}
 			b_spina_ravenna = {
@@ -5442,7 +5563,6 @@ k_cisalpine_gaul = {
 			b_favrentia_ravenna = {
 			}
 			b_solana_ravenna = {
-				holy_site = etruscan_main
 			}
 		}
 	}
@@ -5631,10 +5751,11 @@ k_carthage = {
 			color= { 255 255 175 }
 			color2= { 255 255 255 }
 			
+			holy_site = etruscan_main
+			
 			b_aleria_aleria = {
 			}
 			b_mariana_aleria = {
-				holy_site = etruscan_main
 			}
 			b_clunium_aleria = {
 			}
@@ -5712,10 +5833,11 @@ k_carthage = {
 			color= { 255 255 150 }
 			color2= { 255 255 255 }
 			
+			holy_site = punic_main
+			
 			b_carthage_carthage = {
 			}
 			b_thuburbo_carthage = {
-				holy_site = punic_main
 			}
 			b_capri_carthage = {
 			}
@@ -6393,12 +6515,13 @@ k_dacia = {
 			color= { 75 15 10 }
 			color2= { 255 255 255 }
 			
+			holy_site = zalmoxism
+			
 			b_arcidava_arcidava = {
 			}
 			b_berzobis_arcidava = {
 			}
 			b_aizis_arcidava = {
-				holy_site = zalmoxism
 			}
 			b_tibiscum_arcidava = {
 			}
@@ -6444,12 +6567,13 @@ k_dacia = {
 			color= { 75 25 0 }
 			color2= { 255 255 255 }
 			
+			holy_site = zalmoxism
+			
 			b_bucuresti_bucuresti = {
 			}
 			b_piscul_bucuresti = {
 			}
 			b_argidava_bucuresti = {
-				holy_site = zalmoxism
 			}
 			b_tirgsor_bucuresti = {
 			}
@@ -6487,12 +6611,13 @@ k_dacia = {
 			color= { 100 50 25 }
 			color2= { 255 255 255 }
 			
+			holy_site = zalmoxism
+			
 			b_sarmizegetusa_sarmizegetusa = {
 			}
 			b_blidaru_sarmizegetusa = {
 			}
 			b_cugir_sarmizegetusa = {
-				holy_site = zalmoxism
 			}
 			b_costeti_sarmizegetusa = {
 			}
