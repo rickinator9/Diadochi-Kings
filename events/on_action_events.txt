@@ -30,14 +30,14 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		if = {
-			limit = {
-				ai = no
-				event_target:target_victim = { any_spouse = { character = ROOT } }
-				NOT = { has_character_flag = achievement_spouse_killer } 
-			}
-			set_character_flag = achievement_spouse_killer
-		}
+		#if = { # Moved to on death instead to cover undiscovered murders.
+		#	limit = {
+		#		ai = no
+		#		event_target:target_victim = { any_spouse = { character = ROOT } }
+		#		NOT = { has_character_flag = achievement_spouse_killer } 
+		#	}
+		#	set_character_flag = achievement_spouse_killer
+		#}
 	
 		if = {
 			limit = { NOT = { has_character_modifier = known_murderer } }
@@ -50,7 +50,6 @@ character_event = {
 		if = {
 			limit = {
 				NOT = { trait = kinslayer }
-				NOT = { religion_group = muslim }
 				event_target:target_victim = {
 					dynasty = ROOT
 				}
@@ -300,29 +299,12 @@ character_event = {
 	immediate = {
 		set_character_flag = adultery_discovered
 		
-		if = {
-			limit = {
-				has_nickname = no
-				random = 95 # 5% chance
-			}
-			give_nickname = nick_the_unchaste
-		}
-		
 		event_target:target_adulterer = {
 			ROOT = {
 				if = {
 					limit = {
 						is_female = yes
 						PREV = { is_female = no } # No one cares if two women fool around
-					}
-					
-					if = {
-						limit = {
-							is_married = yes
-							has_nickname = no
-							random = 50
-						}
-						give_nickname = nick_the_unfaithful
 					}
 					
 					if = {
@@ -390,8 +372,7 @@ character_event = {
 					if = {
 						limit = {
 							is_close_relative = PREV
-							NOT = { religion = messalian }
-							NOT = { religion = zoroastrian }
+							NOT = { religion = zoroastrian_main }
 						}
 						add_character_modifier = {
 							name = incestuous_adulteress
@@ -402,8 +383,7 @@ character_event = {
 						limit = {
 							OR = {
 								NOT = { is_close_relative = PREV }
-								religion = messalian
-								religion = zoroastrian
+								religion = zoroastrian_main
 							}
 						}
 						add_character_modifier = {
@@ -648,7 +628,7 @@ character_event = {
 					any_spouse = { character = ROOT }
 				}
 
-				set_character_flag = achievement_spouse_killer
+				#set_character_flag = achievement_spouse_killer
 
 				spouse = {
 					any_dynasty_member = {
@@ -1901,8 +1881,8 @@ narrative_event = {
 # FROM is the attacked kingdom title
 narrative_event = {
 	id = 326
-	title = "EVTNAME200"
-	desc = "EVTDESC326"
+	title = EVTNAME200
+	desc = EVTDESC326
 	picture = GFX_evt_viking_battle_oldgods
 	
 	is_triggered_only = yes
@@ -1915,11 +1895,11 @@ narrative_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA324" # For [God Name]!
+		name = EVTOPTA324 # For [God Name]!
 		trigger = { religion = ROOT }
 	}
 	option = {
-		name = "EVTOPTB200" # No concern of ours
+		name = EVTOPTB200 # No concern of ours
 		trigger = {
 			NOT = { religion = ROOT }
 			new_character = {
@@ -1929,7 +1909,7 @@ narrative_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTD200" # To Arms!
+		name = EVTOPTD200 # To Arms!
 		trigger = {
 			new_character = {
 				character = PREV
@@ -1937,7 +1917,7 @@ narrative_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTE200" # Terrible News!
+		name = EVTOPTE200 # Terrible News!
 		trigger = {
 			new_character = {
 				religion = PREV
@@ -2972,6 +2952,185 @@ diploresponse_event = {
 	}
 }
 
+# SETTLE_ADVENTURER_INTERACTION_ACCEPT_EVENT =
+diploresponse_event = {
+	id = 288
+
+	is_triggered_only = yes
+	major = no
+	is_friendly = yes
+
+	trigger = {
+		ai = no
+	}
+
+	desc = "EVTDESC288"
+
+	option = {
+		name = "OK"
+	}
+}
+
+# SETTLE_ADVENTURER_INTERACTION_DECLINE_EVENT =
+diploresponse_event = {
+	id = 289
+
+	is_triggered_only = yes
+	major = no
+
+	trigger = {
+		ai = no
+	}
+
+	desc = "EVTDESC289"
+
+	option = {
+		name = "OK"
+	}
+}
+
+# ABSORB_CLAN_INTERACTION_ACCEPT_EVENT =
+diploresponse_event = {
+	id = 503
+	desc = "EVTDESC503"
+
+	is_triggered_only = yes
+	major = no
+	is_friendly = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# ABSORB_CLAN_INTERACTION_DECLINE_EVENT =
+diploresponse_event = {
+	id = 504
+	desc = "EVTDESC504"
+
+	is_triggered_only = yes
+	major = no
+	is_hostile = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# FORM_BLOOD_OATH_INTERACTION_ACCEPT_EVENT =
+diploresponse_event = {
+	id = 505
+	desc = "EVTDESC505"
+
+	is_triggered_only = yes
+	major = no
+	is_friendly = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# FORM_BLOOD_OATH_INTERACTION_DECLINE_EVENT =
+diploresponse_event = {
+	id = 506
+	desc = "EVTDESC506"
+
+	is_triggered_only = yes
+	major = no
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# SETTLE_FEUD_INTERACTION_ACCEPT_EVENT =
+diploresponse_event = {
+	id = 507
+	desc = "EVTDESC507"
+
+	is_triggered_only = yes
+	major = no
+	is_friendly = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA507"
+	}
+}
+
+# SETTLE_FEUD_INTERACTION_DECLINE_EVENT =
+diploresponse_event = {
+	id = 508
+	desc = "EVTDESC508"
+
+	is_triggered_only = yes
+	major = no
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA508"
+	}
+}
+
+# SPLIT_CLAN_INTERACTION_ACCEPT_EVENT =
+diploresponse_event = {
+	id = 509
+	desc = "EVTDESC509"
+
+	is_triggered_only = yes
+	major = no
+	is_friendly = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
+# SPLIT_CLAN_INTERACTION_DECLINE_EVENT =
+diploresponse_event = {
+	id = 510
+	desc = "EVTDESC510"
+
+	is_triggered_only = yes
+	major = no
+	is_hostile = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = "OK"
+	}
+}
+
 # On-action event: Royal Marriage Aid Duty
 character_event = {
 	id = 500
@@ -3003,11 +3162,41 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA500"
-		scaled_wealth = 0.5
+		name = EVTOPTA500
+		scaled_wealth = {
+			value = 0.5
+			min = 10
+		}
 	}
 	option = {
-		name = "EVTOPTB500"
+		name = EVTOPTB500
+		if = {
+			limit = {
+				NOT = { yearly_income = 50 }
+			}
+			if = {
+				limit = { tier = EMPEROR }
+				prestige = 150
+			}
+			if = {
+				limit = { tier = KING }
+				prestige = 50
+			}
+			if = {
+				limit = { tier = DUKE }
+				prestige = 25
+			}
+			if = {
+				limit = { tier = COUNT }
+				prestige = 13
+			}
+			if = {
+				limit = { tier = BARON }
+				prestige = 6
+			}
+			break = yes
+		}
+		
 		if = {
 			limit = { tier = EMPEROR }
 			prestige = 300
@@ -3057,8 +3246,11 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA500"
-		scaled_wealth = 0.5
+		name = EVTOPTA500
+		scaled_wealth = {
+			value = 0.5
+			min = 10
+		}
 		if = {
 			limit = { tier = EMPEROR }
 			piety = 300
@@ -3081,27 +3273,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB500"
-		if = {
-			limit = { tier = EMPEROR }
-			prestige = 300
-		}
-		if = {
-			limit = { tier = KING }
-			prestige = 200
-		}
-		if = {
-			limit = { tier = DUKE }
-			prestige = 100
-		}
-		if = {
-			limit = { tier = COUNT }
-			prestige = 50
-		}
-		if = {
-			limit = { tier = BARON }
-			prestige = 25
-		}
+		name = EVTOPTB500
 		
 		if = {
 			limit = { tier = EMPEROR }
@@ -3122,6 +3294,54 @@ character_event = {
 		if = {
 			limit = { tier = BARON }
 			piety = 25
+		}
+		
+		if = {
+			limit = {
+				NOT = { yearly_income = 50 }
+			}
+			if = {
+				limit = { tier = EMPEROR }
+				prestige = 150
+			}
+			if = {
+				limit = { tier = KING }
+				prestige = 50
+			}
+			if = {
+				limit = { tier = DUKE }
+				prestige = 25
+			}
+			if = {
+				limit = { tier = COUNT }
+				prestige = 13
+			}
+			if = {
+				limit = { tier = BARON }
+				prestige = 6
+			}
+			break = yes
+		}
+		
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 300
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 25
 		}
 	}
 }
@@ -3321,6 +3541,7 @@ province_event = {
 	
 	trigger = {
 		NOT = { has_dlc = "The Old Gods" }
+		num_of_settlements = 1
 	}
 
 	option = {
@@ -3947,4 +4168,38 @@ character_event = {
 		name = EVTOPTA_63104
 	}
 	
+}
+
+# Remove patron deity modifiers for hindu converts
+character_event = {
+	id = 63105
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hinduism_main }
+	}
+	
+	immediate = {
+		remove_patrons_effect = yes
+	}
+}
+
+# Safety check event for flag clearace - do_not_disturb etc
+character_event = {
+	id = 63106
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				had_character_flag = { flag = do_not_disturb days = 1800 }  # Clears if flag has stayed on for 5 years approx
+			}
+			clr_character_flag = do_not_disturb
+		}
+	}
 }

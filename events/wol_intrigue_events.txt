@@ -209,19 +209,6 @@ character_event = {
 		remove_character_modifier = wol_schemer_2
 		add_trait = schemer
 		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_nickname = no
-				}
-				random_list = {
-					34 = { give_nickname = nick_the_spider }
-					33 = { give_nickname = nick_the_whisperer }
-					33 = { give_nickname = nick_the_shadow }
-				}
-			}
-		}
-		
 #		log = "WoL.2003: [Root.GetTitledName] achieves the lifestyle Schemer!"
 	}
 	option = {
@@ -254,20 +241,6 @@ character_event = {
 		remove_character_modifier = wol_schemer_2
 		add_trait = impaler
 		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_nickname = no
-				}
-				random_list = {
-					25 = { give_nickname = nick_the_cruel }
-					25 = { give_nickname = nick_the_terrible }
-					25 = { give_nickname = nick_the_impaler }
-					25 = { give_nickname = nick_the_devil }
-				}
-			}
-		}
-		
 #		log = "WoL.2003: [Root.GetTitledName] achieves the lifestyle Impaler!"
 	}
 	
@@ -298,6 +271,8 @@ character_event = {
 			save_event_target_as = target_spy_on
 		}
 		save_event_target_as = target_snooper
+
+		set_character_flag = spy_on_confirmed
 	}
 	
 	option = {
@@ -743,12 +718,15 @@ character_event = {
 			modifier = opinion_spying_on
 		}
 		
+		clear_delayed_event = { id = WoL.2060 }
+		
 		clr_character_flag = charge_illegitimate
 		clr_character_flag = charge_heretic
 		clr_character_flag = charge_infidel
 		clr_character_flag = charge_deviant
 		clr_character_flag = charge_traitor
 		clr_character_flag = charge_slanderer
+		clr_character_flag = spy_on_confirmed
 	}
 }
 
@@ -804,82 +782,79 @@ character_event = {
 # Dirt uncovered: blackmail or expose to give imprisonment reasons
 character_event = {
 	id = WoL.2080
-	picture = GFX_evt_eavesdropping
-	border = GFX_event_normal_frame_intrigue
+	picture = GFX_evt_eavesdropping
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		if = {
-			limit = {
-				FROMFROMFROM = {
-					is_father_real_father = no
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROMFROMFROM = {
+						is_father_real_father = no
+					}
 				}
+				set_character_flag = charge_illegitimate
+				break = yes
 			}
-			set_character_flag = charge_illegitimate
-			break = yes
-		}
-		
-		if = {
-			limit = {
-				FROMFROMFROM = {
-					OR = {
-						trait = cynical
-						AND = {
-							liege = { religion_group = PREV }
-							NOT = { liege = { religion = PREV } }
+			
+			if = {
+				limit = {
+					FROMFROMFROM = {
+						OR = {
+							trait = cynical
+							AND = {
+								liege = { religion_group = PREV }
+								NOT = { liege = { religion = PREV } }
+							}
 						}
 					}
 				}
+				set_character_flag = charge_heretic
+				break = yes
 			}
-			set_character_flag = charge_heretic
-			break = yes
-		}
-		if = {
-			limit = {
-				FROMFROMFROM = {
-					OR = {
+			if = {
+				limit = {
+					FROMFROMFROM = {
 						NOT = { liege = { religion_group = PREV } }
-						AND = {
-							NOT = { liege = { religion = PREV } }
+					}
+				}
+				set_character_flag = charge_infidel
+				break = yes
+			}
+			if = {
+				limit = {
+					FROMFROMFROM = {
+						OR = {
+							trait = decadent
+							trait = hedonist
+							trait = homosexual
+							trait = possessed
+							trait = lunatic
+							trait = arbitrary
+							trait = cruel
+							trait = impaler
+							trait = seducer
+							trait = seductress
+							has_character_modifier = incestuous_adulterer
+							has_character_modifier = incestuous_adulteress
+							has_character_modifier = adulterer
+							has_character_modifier = adulteress
+							has_character_modifier = known_sodomite
+							has_character_modifier = cradle_robber
+							has_character_modifier = adulterous_priest
 						}
 					}
 				}
+				set_character_flag = charge_deviant
+				break = yes
 			}
-			set_character_flag = charge_infidel
-			break = yes
-		}
-		if = {
-			limit = {
-				FROMFROMFROM = {
-					OR = {
-						trait = decadent
-						trait = hedonist
-						trait = homosexual
-						trait = possessed
-						trait = lunatic
-						trait = arbitrary
-						trait = cruel
-						trait = impaler
-						trait = seducer
-						trait = seductress
-						has_character_modifier = incestuous_adulterer
-						has_character_modifier = incestuous_adulteress
-						has_character_modifier = adulterer
-						has_character_modifier = adulteress
-						has_character_modifier = known_sodomite
-						has_character_modifier = cradle_robber
-						has_character_modifier = adulterous_priest
-					}
-				}
+			
+			random_list = {
+				10 = { set_character_flag = charge_traitor }
+				90 = { set_character_flag = charge_slanderer }
 			}
-			set_character_flag = charge_deviant
-			break = yes
-		}
-		
-		random_list = {
-			10 = { set_character_flag = charge_traitor }
-			90 = { set_character_flag = charge_slanderer }
 		}
 	}
 	
@@ -931,11 +906,10 @@ character_event = {
 		
 		hidden_tooltip = {
 			FROMFROMFROM = { liege = { character_event = { id = WoL.2082 } } }
-		}
-		
-		opinion = {
-			who = FROMFROMFROM
-			modifier = opinion_spy_blackmailed
+			opinion = {
+				who = FROMFROMFROM
+				modifier = opinion_spy_blackmailed
+			}
 		}
 
 		# Mudslinger achievement check event
@@ -2142,6 +2116,17 @@ character_event = {
 		ai_chance = {
 			factor = 100
 			modifier = {
+				factor = 0
+				FROMFROMFROM = {
+					same_liege = ROOT # No use for vassals to kill other vassals
+					NOT = { is_foe = ROOT }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { wealth = 5 }
+			}
+			modifier = {
 				factor = 2.0
 				trait = arbitrary
 			}
@@ -2150,8 +2135,24 @@ character_event = {
 				trait = cruel
 			}
 			modifier = {
-				factor = 5.0
-				is_rival = FROMFROMFROM
+				factor = 10.0
+				is_foe = FROMFROMFROM
+			}
+			modifier = {
+				factor = 0.1
+				trait = just
+			}
+			modifier = {
+				factor = 0.25
+				FROMFROMFROM = {
+					liege = {
+						ROOT = {
+							character = PREV
+						}
+					}
+					in_faction = no
+					NOT = { is_foe = ROOT }
+				}
 			}
 		}
 		
@@ -2457,6 +2458,45 @@ character_event = {
 		name = EVTOPTA_WOL_2120
 		ai_chance = {
 			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { wealth = 5 }
+			}
+			modifier = {
+				factor = 0
+				FROMFROMFROM = {
+					same_liege = ROOT # No use for vassals to imprison other vassals
+					NOT = { is_foe = ROOT }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = just
+			}
+			modifier = {
+				factor = 2.0
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 3.0
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.25
+				FROMFROMFROM = {
+					liege = {
+						ROOT = {
+							character = PREV
+						}
+					}
+					in_faction = no
+					NOT = { is_foe = ROOT }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { wealth = 10 }
+			}
 		}
 		
 		wealth = -5

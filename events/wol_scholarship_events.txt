@@ -496,20 +496,6 @@ character_event = {
 			remove_character_modifier = studying_the_stars
 			add_trait = scholar
 		}
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_wise
-				}
-				10 = {
-					give_nickname = nick_the_able
-				}
-				10 = {
-					give_nickname = nick_the_scholar
-				}
-			}
-		}
 		add_character_modifier = {
 			name = annoyed_religious
 			years = -1
@@ -968,26 +954,6 @@ character_event = {
 				add_trait = paranoid
 			}
 		}
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_scholar
-				}
-				10 = {
-					give_nickname = nick_the_strange
-				}
-				10 = {
-					give_nickname = nick_the_devil
-				}
-				10 = {
-					give_nickname = nick_the_accursed
-				}
-				10 = {
-					give_nickname = nick_the_black
-				}
-			}
-		}
 		hidden_tooltip = { character_event = { id = WoL.6360 days = 180 } }
 	}
 }
@@ -1036,17 +1002,6 @@ character_event = {
 			limit = { NOT = { lifestyle_traits = 1 } }
 			remove_character_modifier = studying_the_stars
 			add_trait = mystic
-		}
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_scholar
-				}
-				10 = {
-					give_nickname = nick_the_strange
-				}
-			}
 		}
 	}
 	option = {

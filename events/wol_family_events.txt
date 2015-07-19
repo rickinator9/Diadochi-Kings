@@ -228,20 +228,6 @@ character_event = {
 		}
 		add_trait = socializer
 		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_nickname = no
-				}
-				random_list = {
-					10 = { give_nickname = nick_the_affable }
-					10 = { give_nickname = nick_the_jovial }
-					10 = { give_nickname = nick_the_jolly }
-					10 = { give_nickname = nick_the_gracious }
-				}
-			}
-		}
-		
 #		log = "WoL.3003: [Root.GetTitledName] achieves the lifestyle Socializer!"
 	}
 	option = {
@@ -249,20 +235,6 @@ character_event = {
 		add_trait = gamer
 		ai_chance = {
 			factor = 100
-		}
-		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_nickname = no
-				}
-				random_list = {
-					10 = { give_nickname = nick_the_shrewd }
-					10 = { give_nickname = nick_the_lucky }
-					10 = { give_nickname = nick_the_wily }
-					10 = { give_nickname = nick_the_fox }
-				}
-			}
 		}
 		
 #		log = "WoL.3003: [Root.GetTitledName] achieves the lifestyle Game Master!"
@@ -300,6 +272,7 @@ character_event = {
 		in_command = no
 		is_ill = no
 		any_spouse = {
+			is_alive = yes
 			NOT = { is_lover = ROOT }
 			NOT = { is_rival = ROOT }
 			NOT = { trait = incapable }
@@ -341,6 +314,7 @@ character_event = {
 	immediate = {
 		random_spouse = {
 			limit = {
+				is_alive = yes
 				NOT = { is_lover = ROOT }
 				NOT = { is_rival = ROOT }
 				NOT = { trait = incapable }
@@ -423,6 +397,7 @@ character_event = {
 		in_command = no
 		is_ill = no
 		any_sibling = {
+			is_alive = yes
 			NOT = { is_friend = ROOT }
 			NOT = { trait = incapable }
 			NOT = { trait = inbred }
@@ -453,6 +428,7 @@ character_event = {
 	immediate = {
 		random_sibling = {
 			limit = {
+				is_alive = yes
 				NOT = { is_friend = ROOT }
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
@@ -598,6 +574,7 @@ character_event = {
 		is_ill = no
 		OR = {
 			father = {
+				is_alive = yes
 				prisoner = no
 				NOT = { trait = incapable }
 				NOT = {
@@ -608,6 +585,7 @@ character_event = {
 				}
 			}
 			mother = {
+				is_alive = yes
 				prisoner = no
 				NOT = { trait = incapable }
 				NOT = {
@@ -815,6 +793,7 @@ character_event = {
 		in_command = no
 		is_ill = no
 		any_child = {
+			is_alive = yes
 			NOT = { trait = incapable }
 			NOT = { trait = inbred }
 			NOT = { trait = imbecile }
@@ -850,6 +829,7 @@ character_event = {
 	immediate = {
 		random_child = {
 			limit = {
+				is_alive = yes
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
@@ -1002,6 +982,7 @@ character_event = {
 		random_dynasty_member = {
 			limit = {
 				is_adult = yes
+				is_alive = yes
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
@@ -1046,6 +1027,7 @@ character_event = {
 		random_dynasty_member = {
 			limit = {
 				is_adult = yes
+				is_alive = yes
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
@@ -1366,6 +1348,7 @@ character_event = {
 		any_child = {
 			age = 5
 			is_adult = no
+			is_alive = yes
 		}
 	}
 	
@@ -1385,6 +1368,7 @@ character_event = {
 		random_child = {
 			limit = {
 				is_adult = no
+				is_alive = yes
 				age = 5
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
@@ -1422,6 +1406,7 @@ character_event = {
 				random_child = {
 					limit = {
 						is_adult = no
+						is_alive = yes
 						age = 5
 						NOT = { trait = incapable }
 						NOT = { trait = inbred }

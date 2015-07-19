@@ -287,56 +287,6 @@ province_event = {
 	}
 }
 
-# Add high supply to recently conquered steppe provinces
-province_event = {
-	id = misc.8
-	desc = "misc.8.desc"
-	picture = GFX_evt_child_reading
-
-	notification = yes
-
-	trigger = {
-		OR = {
-			has_province_modifier = minimal_population
-			has_province_modifier = low_population
-			has_province_modifier = medium_population
-			has_province_modifier = large_population
-			has_province_modifier = huge_population
-		}
-		OR = {
-			culture = scythian
-			culture = sarmatian
-		}
-		NOT = {
-			OR = {
-				has_province_modifier = high_resource
-				has_province_modifier = medium_resource
-				has_province_modifier = low_resource
-			}
-		}
-		owner = {
-			top_liege = {
-				primary_title = { has_law = nomad_settled_0 }
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	immediate = {
-		add_province_modifier = {
-			name = high_resource
-			duration = -1
-		}
-	}
-
-	option = {
-		name = "misc.8.name"
-	}
-}
-
 ###########
 # STARTUP #
 ###########

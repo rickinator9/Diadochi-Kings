@@ -3231,12 +3231,6 @@ character_event = {
 	}
 }
 
-
-
-
-
-
-
 ##########################################
 # LOVERS FALLING OUT OF LOVE
 ##########################################
@@ -3897,15 +3891,21 @@ character_event = {
 						AND = {
 							is_female = yes
 							NOT = { age = 45 }
+							is_pregnant = no
+							FROM = { is_female = no }
 						}
-						FROM = {
-							is_female = yes
-							NOT = { age = 45 }
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+								is_pregnant = no
+							}
 						}
 					}
 				}
 				random = {
-					chance = 50
+					chance = 25
 					if = {
 						limit = {
 							FROM = {
@@ -3988,15 +3988,21 @@ character_event = {
 						AND = {
 							is_female = yes
 							NOT = { age = 45 }
+							is_pregnant = no
+							FROM = { is_female = no }
 						}
-						FROM = {
-							is_female = yes
-							NOT = { age = 45 }
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+								is_pregnant = no
+							}
 						}
 					}
 				}
 				random = {
-					chance = 50
+					chance = 25
 					if = {
 						limit = {
 							FROM = {

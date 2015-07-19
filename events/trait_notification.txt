@@ -1,6 +1,6 @@
 ######################################
 # Trait Notifaction Events
-# 38150->38199 & 38250->3829 
+# 38150->38199 & 38250->38299
 # Written by Johan Andersson
 ######################################
 					  #Child  #You
@@ -1243,7 +1243,7 @@ character_event = {
 	}
 }
 
-##I am A LUNATIC!
+#I am A LUNATIC!
 character_event = {
 	id = 38304
 	desc = EVTDESC38304

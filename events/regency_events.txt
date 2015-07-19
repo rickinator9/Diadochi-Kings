@@ -224,16 +224,16 @@ character_event = {
 	option = {
 		name = EVTOPTA61101
 		random_demesne_title = {
-				limit = {
-					NOT = {	tier = duke }
-					NOT = {	tier = king }
-					NOT = {	tier = emperor }
-					NOT = {
-						location = { is_capital = yes }
-						}
-					}
-				grant_title = FROM
+			limit = {
+				NOT = {	tier = duke }
+				NOT = {	tier = king }
+				NOT = {	tier = emperor }
+				NOT = {
+					location = { is_capital = yes }
 				}
+			}
+			grant_title = FROM
+		}
 	}
 	option = {
 		name = EVTOPTB61101
@@ -244,10 +244,10 @@ character_event = {
 				NOT = {	tier = emperor }
 				NOT = {
 					location = { is_capital = yes }
-					}
 				}
-			grant_title = FROM
 			}
+			grant_title = FROM
+		}
 	}
 }
 
@@ -752,6 +752,7 @@ character_event = {
 	
 	trigger = {
 		NOT = { has_character_flag = pushed_regent }
+		is_nomadic = no
 	}
 	
 	mean_time_to_happen = {
@@ -1800,15 +1801,17 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		imprison = FROM
+	}
+	
 	option = {
 		name = EVTOPTA61213
-		random_list = {
-			80 = { 
-				add_trait = lunatic
-				imprison = yes
-			}
-			20 = {
-				imprison = yes
+		random = {
+			chance = 80
+			add_trait = lunatic
+			hidden_tooltip = {
+				character_event = { id = 38304 } # notify lunatic
 			}
 		}
 	}
@@ -3042,12 +3045,6 @@ character_event = {
 			NOT = { has_character_flag = regent_lowered_CA }
 			any_demesne_title = {
 				tier = KING
-				OR = {
-					has_law = centralization_1
-					has_law = centralization_2
-					has_law = centralization_3
-					has_law = centralization_4
-				}
 				ROOT = {
 					primary_title = {
 						kingdom = {
@@ -3087,40 +3084,6 @@ character_event = {
 		name = EVTOPTA61300
 		ai_chance = { factor = 100 }
 		liege = {
-			random_demesne_title = {
-				limit = {
-					tier = KING
-					OR = {
-						has_law = centralization_1
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
-					}
-					ROOT = {
-						primary_title = {
-							kingdom = {
-								title = PREVPREVPREV
-							}
-						}
-					}
-				}
-				if = {
-					limit = { has_law = centralization_1 }
-					add_law = centralization_0
-				}
-				if = {
-					limit = { has_law = centralization_2 }
-					add_law = centralization_1
-				}
-				if = {
-					limit = { has_law = centralization_3 }
-					add_law = centralization_2
-				}
-				if = {
-					limit = { has_law = centralization_4 }
-					add_law = centralization_3
-				}
-			}
 			hidden_tooltip = {
 				character_event = { id = 61301 }
 				set_character_flag = regent_lowered_CA
@@ -3171,12 +3134,6 @@ character_event = {
 			NOT = { has_character_flag = regent_lowered_CA }
 			any_demesne_title = {
 				tier = EMPEROR
-				OR = {
-					has_law = centralization_1
-					has_law = centralization_2
-					has_law = centralization_3
-					has_law = centralization_4
-				}
 				ROOT = {
 					primary_title = {
 						empire = {
@@ -3216,40 +3173,6 @@ character_event = {
 		name = EVTOPTA61300
 		ai_chance = { factor = 100 }
 		liege = {
-			random_demesne_title = {
-				limit = {
-					tier = EMPEROR
-					OR = {
-						has_law = centralization_1
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
-					}
-					ROOT = {
-						primary_title = {
-							empire= {
-								title = PREVPREVPREV
-							}
-						}
-					}
-				}
-				if = {
-					limit = { has_law = centralization_1 }
-					add_law = centralization_0
-				}
-				if = {
-					limit = { has_law = centralization_2 }
-					add_law = centralization_1
-				}
-				if = {
-					limit = { has_law = centralization_3 }
-					add_law = centralization_2
-				}
-				if = {
-					limit = { has_law = centralization_4 }
-					add_law = centralization_3
-				}
-			}
 			hidden_tooltip = {
 				character_event = { id = 61303 }
 				set_character_flag = regent_lowered_CA

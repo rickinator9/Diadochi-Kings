@@ -23,8 +23,9 @@ character_event = {
 	
 	hide_from = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
-	is_female = no
+	only_men = yes
 	
 	trigger = {
 		OR = {
@@ -64,6 +65,7 @@ character_event = {
 	
 	hide_from = yes
 	prisoner = no
+	only_rulers = yes
 	
 	trigger = {
 		has_character_flag = toy_army_prepare
@@ -180,6 +182,7 @@ character_event = {
 	
 	hide_from = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -276,6 +279,7 @@ character_event = {
 	
 	hide_from = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -312,6 +316,7 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	
 	hide_from = yes
+	only_rulers = yes
 	
 	trigger = {
 		OR = {
@@ -441,6 +446,7 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -474,6 +480,7 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -499,46 +506,6 @@ character_event = {
 	}
 }
 
-### Alexander the Great
-character_event = {
-	id = 94018
-	desc = EVTDESC94018
-	picture = GFX_evt_library
-	border = GFX_event_normal_frame_war
-	
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		OR = {
-			AND = {
-				has_focus = focus_war
-				NOT = { martial = 8 }
-			}
-			has_ambition = obj_improve_martial
-		}
-		NOT = { has_character_flag = toy_army }
-		NOT = { has_character_flag = street_ruffians }
-		NOT = { has_character_flag = warrior_mentor }
-		capital_scope = {
-			NOT = { empire = { title = e_rajastan } }
-			NOT = { empire = { title = e_bengal } }
-			NOT = { empire = { title = e_deccan } }
-			NOT = { empire = { title = e_persia } }
-			NOT = { empire = { title = e_india } }
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 280
-	}
-	
-	option = {
-		name = EVTOPTA94018
-		change_martial = 1
-	}
-}
-
 ########################
 # Stewardship Ambition #
 ########################
@@ -553,6 +520,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -882,6 +850,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -946,6 +915,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1003,6 +973,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1036,6 +1007,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1069,6 +1041,7 @@ character_event = {
 	border = GFX_event_normal_frame_economy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1109,6 +1082,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1473,64 +1447,6 @@ character_event = {
 	}
 }
 
-### St. Augustine's Confessions
-
-# Augustine
-character_event = {
-	id = 94098
-	desc = EVTDESC94098
-	picture = GFX_evt_library
-	border = GFX_event_normal_frame_religion
-
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		OR = {
-			AND = {
-				has_focus = focus_theology
-				NOT = { learning = 8 }
-			}
-			has_ambition = obj_improve_learning
-		}
-		NOT = { has_character_flag = flying_machine }
-		NOT = { has_character_flag = ancient_tome }
-		NOT = { has_character_flag = hermit_visit }
-		NOT = { has_character_flag = ancient_tome_taken }
-	}
-	
-	mean_time_to_happen = {
-		months = 280
-	}
-	
-	option = {
-		name = EVTOPTA94098
-		character_event = { id = 94099 days = 6 tooltip = EVTTOOLTIP94099 }
-		set_character_flag = ancient_tome
-		set_character_flag = ancient_tome_taken
-	}
-	option = {
-		name = EVTOPTB94098
-		custom_tooltip = { text = improve_learning_quit }
-	}
-}
-
-# Finished Reading
-character_event = {
-	id = 94099
-	desc = EVTDESC94099
-	picture = GFX_evt_library
-	border = GFX_event_normal_frame_religion
-	
-	hide_from = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA94099
-		change_learning = 2
-	}
-}
 ### The Hermit
 
 # Hermit
@@ -1541,6 +1457,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1556,6 +1473,8 @@ character_event = {
 		NOT = { has_character_flag = hermit_visit }
 		NOT = { has_character_flag = hermit_visit_taken }
 		NOT = { trait = in_hiding }
+		NOT = { has_character_flag = do_not_disturb }
+		in_command = no
 	}
 	
 	mean_time_to_happen = {
@@ -1647,39 +1566,6 @@ character_event = {
 	}
 }
 
-### Roman Engineering
-character_event = {
-	id = 94107
-	desc = EVTDESC94107
-	picture = GFX_evt_library
-	border = GFX_event_normal_frame_religion
-	
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		OR = {
-			AND = {
-				has_focus = focus_scholarship
-				NOT = { learning = 8 }
-			}
-			has_ambition = obj_improve_learning
-		}
-		NOT = { has_character_flag = flying_machine }
-		NOT = { has_character_flag = ancient_tome }
-		NOT = { has_character_flag = hermit_visit }
-	}
-	
-	mean_time_to_happen = {
-		months = 280
-	}
-	
-	option = {
-		name = EVTOPTA94107
-		change_learning = 1
-	}
-}
-
 ### Philosophy
 character_event = {
 	id = 94108
@@ -1688,6 +1574,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1721,6 +1608,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -1760,6 +1648,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2004,6 +1893,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2040,6 +1930,7 @@ character_event = {
 	
 	hide_from = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2070,6 +1961,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2245,6 +2137,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2279,6 +2172,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2312,6 +2206,7 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2351,6 +2246,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2741,6 +2637,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2801,6 +2698,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2893,6 +2791,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2918,7 +2817,7 @@ character_event = {
 	}
 }
 
-### Improved Bodygard
+### Improved Bodyguard
 character_event = {
 	id = 94172
 	desc = EVTDESC94172
@@ -2926,6 +2825,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {
@@ -2959,6 +2859,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	trigger = {

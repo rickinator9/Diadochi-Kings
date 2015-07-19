@@ -58,12 +58,12 @@ character_event = {
 	
 	only_men = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ruler = yes
 		trait = stressed
 		diplomacy = 2
 		NOT = {
@@ -125,12 +125,12 @@ character_event = {
 	
 	only_men = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ruler = yes
 		trait = stressed
 		in_command = no
 		martial = 2
@@ -193,12 +193,12 @@ character_event = {
 	
 	only_men = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ruler = yes
 		trait = stressed
 		intrigue = 2
 		NOT = {
@@ -260,12 +260,12 @@ character_event = {
 	
 	only_men = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ruler = yes
 		trait = stressed
 		stewardship = 2
 		NOT = {
@@ -327,12 +327,12 @@ character_event = {
 	
 	only_men = yes
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		is_ruler = yes
 		trait = stressed
 		learning = 2
 		NOT = {
@@ -478,11 +478,15 @@ character_event = {
 		trigger = {
 			any_courtier = {
 				is_councillor = yes
+				prisoner = no
+				NOT = { trait = incapable }
 			}
 		}
 		random_courtier = {
 			limit = {
 				is_councillor = yes
+				prisoner = no
+				NOT = { trait = incapable }
 			}
 			character_event = {
 				id = 65012
@@ -708,11 +712,13 @@ character_event = {
 		trait = cruel
 		in_command = no
 		any_courtier = {
+			prisoner = no
 			NOT = {
 				trait = wounded
 			}
 		}
 		any_courtier = {
+			prisoner = no
 			age = 20
 			NOT = {
 				trait = maimed
@@ -728,7 +734,9 @@ character_event = {
 		name = EVTOPTA65022 #Aim low
 		random_courtier = {
 			limit = {
+				prisoner = no
 				NOT = {
+					trait = incapable
 					trait = wounded
 				}
 			}
@@ -746,8 +754,10 @@ character_event = {
 		random_courtier = {
 			limit = {
 				age = 20
+				prisoner = no
 				NOT = {
 					trait = maimed
+					trait = incapable
 				}
 			}
 			random_list = {
@@ -788,6 +798,8 @@ character_event = {
 		in_command = no
 		any_courtier = {
 			trait = craven
+			prisoner = no
+			NOT = { trait = incapable }
 			age = 20
 		}
 	}
@@ -801,7 +813,9 @@ character_event = {
 		random_courtier = {
 			limit = {
 				trait = craven
+				prisoner = no
 				age = 20
+				NOT = { trait = incapable }
 			}
 			random = {
 				chance = 33
@@ -1051,6 +1065,7 @@ character_event = {
 	
 	trigger = {
 		in_command = no
+		NOT = { trait = incapable }
 		OR = {
 			trait = lustful
 			trait = gluttonous
@@ -1092,6 +1107,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		NOT = { trait = incapable }
 		in_command = no
 		trait = scholar
 		trait = zealous
@@ -1172,6 +1188,7 @@ character_event = {
 			trait = envious
 			trait = wroth
 			trait = proud
+			trait = incapable
 		}
 		OR = {
 			trait = chaste
@@ -1194,6 +1211,8 @@ character_event = {
 		prestige = 5
 		random_courtier = {
 			limit = {
+				prisoner = no
+				NOT = { trait = incapable }
 				OR = {
 					trait = lustful
 					trait = gluttonous
@@ -1260,6 +1279,7 @@ character_event = {
 			any_courtier = {
 				trait = celibate
 				prisoner = no
+				NOT = { trait = incapable }
 			}
 		}
 		random_courtier = {
@@ -1440,41 +1460,6 @@ character_event = {
 	}
 }
 
-#Falling asleep in church
-character_event = {
-	id = 65043
-	desc = EVTDESC65043	
-	picture = GFX_evt_drunk
-	
-	capable_only = yes
-	prisoner = no
-	
-	is_triggered_only = yes
-
-	trigger = {
-		trait = drunkard
-		in_command = no
-		is_ruler = yes
-	}
-	
-	weight_multiplier = {
-		factor = 1
-	}
-	
-	option = {
-		name = EVTOPTA65043	#Keep Sleeping.
-		piety = -10
-		add_character_modifier = {
-			name = slept_in_church
-			duration = -1
-		}
-	}
-	option = {
-		name = EVTOPTB65043	#Apologise to the priest
-		prestige = -10
-	}
-}
-
 #Embarass yourself infront of your children
 character_event = {
 	id = 65044
@@ -1634,6 +1619,7 @@ character_event = {
 	picture = GFX_evt_crusaders
 	
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
@@ -1641,7 +1627,6 @@ character_event = {
 	trigger = {
 		trait = drunkard
 		in_command = yes
-		is_ruler = yes
 		in_battle = no
 		in_siege = no
 		NOT = { has_character_modifier = drunk_commander }
@@ -2440,6 +2425,7 @@ character_event = {
 				age = 12
 				NOT = {
 					age = 60
+					trait = incapable
 				}
 				trait = dwarf
 			}
@@ -3282,6 +3268,8 @@ character_event = {
 		random_courtier = {
 			limit = {
 				is_female = yes
+				prisoner = no
+				NOT = { trait = incapable }
 				has_character_flag = hope_everlasting
 			}
 			opinion = {
@@ -4259,6 +4247,10 @@ character_event = {
 	option = {
 		name = EVTOPTA65126
 		random_courtier = {
+			limit = {
+				prisoner = no
+				NOT = { trait = incapable }
+			}
 			opinion = {
 				modifier = opinion_shocked
 				who = ROOT

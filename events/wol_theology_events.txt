@@ -382,26 +382,6 @@ character_event = {
 		}
 		remove_character_modifier = religious_philosopher
 		add_trait = theologian
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_pious
-				}
-				10 = {
-					give_nickname = nick_the_holy
-				}
-				10 = {
-					give_nickname = nick_the_apostle
-				}
-				10 = {
-					give_nickname = nick_the_confessor
-				}
-				10 = {
-					give_nickname = nick_the_blessed
-				}
-			}
-		}
 	}
 	option = {
 		name = EVTOPTB_WoL_7070  # Become cynical theologian
@@ -410,30 +390,8 @@ character_event = {
 		}
 		remove_character_modifier = religious_philosopher
 		add_trait = theologian
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_scholar
-				}
-				10 = {
-					give_nickname = nick_the_wise
-				}
-			}
-		}
 	}
 	option = {
 		name = EVTOPTC_WoL_7070  # There are other paths in life
-		if = {
-			limit = { has_nickname = no }
-			random_list = {
-				10 = {
-					give_nickname = nick_the_scholar
-				}
-				10 = {
-					give_nickname = nick_the_wise
-				}
-			}
-		}
 	}
 }

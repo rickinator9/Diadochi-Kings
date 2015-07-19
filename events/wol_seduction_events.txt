@@ -31,6 +31,14 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		FROM = {
+			save_event_target_as = target_seduced
+		}
+		save_event_target_as = target_seducer
+		set_character_flag = seduction_confirmed
+	}
+	
 	option = {
 		name = EVTOPTA_WOL_100
 		character_event = { id = WoL.110 days = 20 random = 20 tooltip = EVTTOOLTIP_WoL_110 }
@@ -50,6 +58,14 @@ character_event = {
 	prisoner = no
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			save_event_target_as = target_seduced
+		}
+		save_event_target_as = target_seducer
+		set_character_flag = seduction_confirmed
+	}
 	
 	option = {
 		name = EVTOPTA_WOL_101
@@ -100,6 +116,14 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		FROM = {
+			save_event_target_as = target_seduced
+		}
+		save_event_target_as = target_seducer
+		set_character_flag = seduction_confirmed
+	}
+	
 	option = {
 		name = EVTOPTA_WOL_102
 		ai_chance = {
@@ -135,6 +159,14 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		FROM = {
+			save_event_target_as = target_seduced
+		}
+		save_event_target_as = target_seducer
+		set_character_flag = seduction_confirmed
+	}
+	
 	option = {
 		name = EVTOPTA_WOL_103
 		ai_chance = {
@@ -169,6 +201,14 @@ character_event = {
 	prisoner = no
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			save_event_target_as = target_seduced
+		}
+		save_event_target_as = target_seducer
+		set_character_flag = seduction_confirmed
+	}
 	
 	option = {
 		name = EVTOPTA_WOL_104
@@ -783,7 +823,6 @@ letter_event = {
 			factor = 100
 		}
 		transfer_scaled_wealth = {
-			from = ROOT
 			to = FROM
 			value = 0.2
 		}
@@ -1440,10 +1479,20 @@ character_event = {
 		if = {
 			limit = {
 				fertility = 0.6
-				FROM = { fertility = 0.6 }
+				OR = {
+					ai = no
+					NOT = { num_of_children = 4 }
+				}
+				FROM = {
+					fertility = 0.6
+					OR = {
+						ai = no
+						NOT = { num_of_children = 4 }
+					}
+				}
 			}
 			random = {
-				chance = 75
+				chance = 50
 				if = {
 					limit = {
 						is_married = no
@@ -1456,13 +1505,24 @@ character_event = {
 			}
 			break = yes
 		}
+		
 		if = {
 			limit = {
 				fertility = 0.5
-				FROM = { fertility = 0.5 }
+				OR = {
+					ai = no
+					NOT = { num_of_children = 6 }
+				}
+				FROM = {
+					fertility = 0.5
+					OR = {
+						ai = no
+						NOT = { num_of_children = 6 }
+					}
+				}
 			}
 			random = {
-				chance = 50
+				chance = 33
 				if = {
 					limit = {
 						is_married = no
@@ -1481,7 +1541,7 @@ character_event = {
 				FROM = { fertility = 0.34 }
 			}
 			random = {
-				chance = 33
+				chance = 15
 				if = {
 					limit = {
 						is_married = no
@@ -1496,7 +1556,7 @@ character_event = {
 		}
 		
 		random = {
-			chance = 20
+			chance = 5
 			if = {
 				limit = {
 					is_married = no
@@ -1602,34 +1662,6 @@ character_event = {
 		NOT = { has_character_flag = wol_no_to_seducer_trait }
 	}
 	
-	immediate = {
-		if = {
-			limit = {
-				has_nickname = no
-			}
-			if = {
-				limit = {
-					is_female = yes
-				}
-				random_list = {
-					34 = { give_nickname = nick_the_temptress }
-					33 = { give_nickname = nick_the_beguiling }
-					33 = { give_nickname = nick_the_wicked }
-				}
-			}
-			if = {
-				limit = {
-					is_female = no
-				}
-				random_list = {
-					34 = { give_nickname = nick_the_seducer }
-					33 = { give_nickname = nick_the_lewd }
-					33 = { give_nickname = nick_the_lecher }
-				}
-			}
-		}
-	}
-	
 	option = {
 		name = EVTOPTA_WOL_99
 		trigger = {
@@ -1690,10 +1722,6 @@ character_event = {
 			limit = {
 				prisoner = yes # I have become imprisoned
 			}
-			remove_opinion = {
-				who = FROMFROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 			break = yes # Stop execution here
 		}
@@ -1701,10 +1729,6 @@ character_event = {
 		if = {
 			limit = {
 				trait = incapable # I have become incapable
-			}
-			remove_opinion = {
-				who = FROMFROM
-				modifier = opinion_seducing
 			}
 			character_event = { id = WoL.118 }
 			break = yes
@@ -1714,12 +1738,20 @@ character_event = {
 			limit = {
 				NOT = { has_focus = focus_seduction } # I have changed my focus
 			}
-			remove_opinion = {
-				who = FROMFROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 			break = yes
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					has_opinion_modifier = {
+						who = FROMFROM
+						modifier = opinion_seducing
+					}
+				}
+			}
+			break = yes # I have stopped trying to seduce this character
 		}
 		
 		if = {
@@ -1775,6 +1807,12 @@ character_event = {
 				}
 			}
 			repeat_event = { id = WoL.110 days = 20 random = 20 } # Fire again with no scope changes
+
+			random = {
+				chance = 80
+				character_event = { id = WoL.115 } # Time to give up?
+			}
+
 			break = yes
 		}
 		
@@ -2154,10 +2192,6 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		remove_opinion = {
-			who = FROMFROMFROM
-			modifier = opinion_seducing
-		}
 		character_event = { id = WoL.118 }
 	}
 	
@@ -2179,10 +2213,6 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		remove_opinion = {
-			who = FROMFROMFROM
-			modifier = opinion_seducing
-		}
 		character_event = { id = WoL.118 }
 	}
 	
@@ -2204,15 +2234,86 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		remove_opinion = {
-			who = FROMFROMFROM
-			modifier = opinion_seducing
-		}
 		character_event = { id = WoL.118 }
 	}
 	
 	option = {
 		name = EVTOPTA_WOL_114
+	}
+}
+
+# This is taking too long. Give up?
+character_event = {
+	id = WoL.115
+	
+	desc = {
+		text = EVTDESC_WOL_115_BUSY
+		trigger = {
+			OR = {
+				has_regent = yes
+				in_command = yes
+			}
+		}
+	}
+	
+	desc = {
+		text = EVTDESC_WOL_115_UNAVAILABLE
+		trigger = {
+			FROMFROMFROM = {
+				OR = {
+					trait = on_hajj
+					trait = in_hiding
+					trait = on_pilgrimage
+					in_command = yes
+				}
+			}
+		}
+	}
+	
+	desc = {
+		text = EVTDESC_WOL_115
+		trigger = {
+			NOR = {
+				has_regent = yes
+				in_command = yes
+				FROMFROMFROM = {
+					OR = {
+						trait = on_hajj
+						trait = in_hiding
+						trait = on_pilgrimage
+						in_command = yes
+					}
+				}
+			}
+		}
+	}
+	
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
+	
+	show_from_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB_WOL_115 # Keep trying
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROMFROMFROM = { has_character_modifier = lustful_affair_timer }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_WOL_115 # Give up
+		ai_chance = {
+			factor = 5
+		}
+		hidden_tooltip = {
+			character_event = { id = WoL.118 }
+		}
 	}
 }
 
@@ -2224,12 +2325,20 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		remove_opinion = {
+			who = event_target:target_seduced
+			modifier = opinion_seducing
+		}
+		
+		clear_delayed_event = { id = WoL.110 }
+	
 		clr_character_flag = wol_seduce_love_letter
 		clr_character_flag = wol_seduce_gift
 		clr_character_flag = wol_seduce_gossip
 		clr_character_flag = wol_seduce_dance
 		clr_character_flag = wol_seduce_chance_meeting
 		clr_character_flag = wol_seduce_picnic
+		clr_character_flag = seduction_confirmed
 	}
 }
 
@@ -2862,10 +2971,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -2920,10 +3025,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -2978,10 +3079,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -3635,10 +3732,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -3705,10 +3798,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -3774,10 +3863,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -4423,10 +4508,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -4482,10 +4563,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -4541,10 +4618,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -4903,10 +4976,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 			FROM = { character_event = { id = WoL.305 days = 1 } }
 		}
@@ -4967,10 +5036,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -5186,10 +5251,6 @@ character_event = {
 		character_event = { id = WoL.96 } 
 	
 		# End the Seduction
-		remove_opinion = {
-			who = FROM
-			modifier = opinion_seducing
-		}
 		character_event = { id = WoL.118 }
 		
 		# Scandal check
@@ -5376,10 +5437,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -6940,10 +6997,6 @@ character_event = {
 		character_event = { id = WoL.96 } 
 		
 		# End the Seduction
-		remove_opinion = {
-			who = FROM
-			modifier = opinion_seducing
-		}
 		character_event = { id = WoL.118 }
 		
 		# Scandal check
@@ -7074,10 +7127,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -7269,10 +7318,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -7348,10 +7393,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -7464,10 +7505,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -7711,10 +7748,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -7940,10 +7973,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -8192,10 +8221,6 @@ character_event = {
 			text = WOL_SEDUCE_END_TOOLTIP
 		}
 		hidden_tooltip = {
-			remove_opinion = {
-				who = FROM
-				modifier = opinion_seducing
-			}
 			character_event = { id = WoL.118 }
 		}
 	}
@@ -8366,12 +8391,12 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	only_playable = yes
+	prisoner = no
 	
 	trigger = {
 		has_focus = focus_seduction
 		is_pregnant = no
 		is_ill = no
-		prisoner = no
 		has_regent = no
 		OR = {
 			is_female = no
@@ -8563,11 +8588,11 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	only_playable = yes
+	prisoner = no
 	
 	trigger = {
 		has_focus = focus_seduction
 		is_ill = no
-		prisoner = no
 		has_regent = no
 		OR = {
 			is_female = no
@@ -8728,6 +8753,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	only_playable = yes
+	prisoner = no
 	
 	trigger = {
 		has_focus = focus_seduction
@@ -8751,7 +8777,6 @@ character_event = {
 			}
 		}
 		is_ill = no
-		prisoner = no
 		has_regent = no
 		NOT = { has_character_modifier = hidden_seduced_tree }
 	}
@@ -8838,6 +8863,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	only_playable = yes
+	prisoner = no
 	
 	trigger = {
 		has_focus = focus_seduction
@@ -8854,7 +8880,6 @@ character_event = {
 		}
 		NOT = { trait = eunuch }
 		is_ill = no
-		prisoner = no
 		has_regent = no
 		NOT = {
 			OR = {
@@ -8972,12 +8997,12 @@ character_event = {
 	
 	only_playable = yes
 	max_age = 45
+	only_women = yes
+	prisoner = yes
 	
 	trigger = {
 		has_focus = focus_seduction
-		prisoner = yes
 		is_ill = no
-		is_female = yes
 		NOT = {
 			OR = {
 				trait = incapable
@@ -9150,7 +9175,7 @@ character_event = {
 			}
 		}
 		hidden_tooltip = {
-			character_event = { id = WoL.583 }
+			FROM = { character_event = { id = WoL.583 } }
 		}
 	}
 	
@@ -9205,7 +9230,7 @@ character_event = {
 		}
 		
 		hidden_tooltip = {
-			character_event = { id = WoL.584 }
+			FROM = { character_event = { id = WoL.584 } }
 		}
 	}
 }
@@ -9222,9 +9247,10 @@ character_event = {
 	option = {
 		name = EVTOPTA_WOL_583
 		add_character_modifier = { 
-			name = the_oubliette
+			name = house_arrest
 			duration = -1
 		}
+		hidden_tooltip = { remove_character_modifier = the_dungeon }
 		opinion = {
 			who = FROM
 			modifier = opinion_grateful
@@ -9248,6 +9274,7 @@ character_event = {
 			name = the_oubliette
 			duration = -1
 		}
+		hidden_tooltip = { remove_character_modifier = the_dungeon }
 		opinion = {
 			who = FROM
 			modifier = opinion_hatred
@@ -9326,11 +9353,11 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	
 	only_playable = yes
+	prisoner = no
+	only_men = yes
 	
 	trigger = {
 		has_focus = focus_seduction
-		is_female = no
-		prisoner = no
 		has_concubinage = yes
 		is_ill = no
 		NOT = {

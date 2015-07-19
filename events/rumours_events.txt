@@ -919,13 +919,13 @@ character_event = {
 	only_rulers = yes
 	min_age = 16
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	
 	is_triggered_only = yes
 	
 	trigger = {
 		intrigue = 10
-		is_ruler = yes
 		NOT = {
 			has_character_flag = rumour_spreader
 		}
@@ -1149,7 +1149,8 @@ character_event = {
 		any_sibling = {
 			has_character_flag = sister_suspected_of_incest
 		}
-		any_child = {
+		any_realm_character = {
+			prisoner = no
 			NOT = {
 				father = {
 					character = ROOT
@@ -1160,13 +1161,9 @@ character_event = {
 					sibling = ROOT
 				}
 			}
-			age = 6
-			NOT = {
-				age = 15
-			}
-			NOT = {
-				trait = maimed
-			}
+			NOT = { trait = maimed }
+			NOT = { trait = incapable }
+			NOT = { trait = blinded }
 		}
 	}
 	

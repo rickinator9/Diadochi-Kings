@@ -27,6 +27,7 @@ character_event = {
 	
 	trigger = {
 		NOT = { has_dlc = "Way of Life" }
+		NOT = { trait = blinded }
 		in_command = no
 		NOT = {
 			lifestyle_traits = 1
@@ -1095,14 +1096,6 @@ character_event = {
 			martial = 8
 		}
 		modifier = {
-			factor = 0.5
-			has_nickname = nick_the_fowler
-		}
-		modifier = {
-			factor = 0.25
-			has_nickname = nick_the_hunter
-		}
-		modifier = {
 			factor = 4.0
 			trait = slothful
 		}
@@ -1366,7 +1359,7 @@ character_event = {
 
 
 ########################################################################################
-#Female: Poet/Falconer - Start
+#Female: Poet/Falconer - Start #Opened up to male characters in 2.4
 ########################################################################################
 character_event = {
 	id = 5050
@@ -1374,15 +1367,12 @@ character_event = {
 	picture = "GFX_evt_falconing"
 	
 	min_age = 25
-	only_women = yes
+	#only_women = yes
 	capable_only = yes
 	prisoner = no
 
 	trigger = {
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
 		NOT = {
 			has_character_flag = LE_ST
 		}
@@ -1399,14 +1389,6 @@ character_event = {
 		modifier = {
 			factor = 0.75
 			martial = 8
-		}		
-		modifier = {
-			factor = 0.5
-			has_nickname = nick_the_fowler
-		}
-		modifier = {
-			factor = 0.25
-			has_nickname = nick_the_hunter
 		}
 		modifier = {
 			factor = 4.0
@@ -1475,7 +1457,7 @@ character_event = {
 	option = {
 		name = "EVTOPTB5051" #Try something else
 		add_character_modifier = {
-			name = aspiring_poet
+			name = aspiring_falconer
 			duration = 90
 		}
 	}
@@ -1544,16 +1526,12 @@ character_event = {
 	picture = "GFX_evt_library"
 	
 	min_age = 25
-	only_women = yes
+	#only_women = yes
 	capable_only = yes
 	prisoner = no
 
 	trigger = {
-		NOT = { has_dlc = "Way of Life" }
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
 		has_character_modifier = aspiring_poet
 	}
 	
@@ -1603,16 +1581,12 @@ character_event = {
 	picture = "GFX_evt_falconing"
 	
 	min_age = 25
-	only_women = yes
+	#only_women = yes
 	capable_only = yes
 	prisoner = no	
 	
 	trigger = {
-		NOT = { has_dlc = "Way of Life" }
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
 		has_character_modifier = aspiring_falconer
 	}
 	

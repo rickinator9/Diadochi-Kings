@@ -3707,6 +3707,9 @@ character_event = {
 	
 	trigger = {
 		has_guardian = yes
+		father = {
+			NOT = { is_nomadic = yes }
+		}
 		guardian = { 
 			NOT = { culture = ROOT }
 			employer = {
@@ -6467,7 +6470,7 @@ character_event = {
 							is_alive = yes
 						}
 					}
-					father = {
+					father_even_if_dead = {
 						opinion = {
 							modifier = opinion_killed_close_kin
 							who = ROOT

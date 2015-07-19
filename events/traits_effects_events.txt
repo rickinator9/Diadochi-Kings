@@ -14,6 +14,7 @@ character_event = {
 	id = 3000
 	desc = EVTDESC3000
 	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -24,12 +25,12 @@ character_event = {
 		trait = lustful
 		war = no
 		in_command = no
-		religion_group = christian
 		NOT = { 
 			has_job_title = job_spiritual
 		}
 		any_courtier = {
 			age = 16
+			prisoner = no
 			has_job_title = job_spiritual
 		}
 	}
@@ -93,6 +94,7 @@ character_event = {
 	id = 3001
 	desc = EVTDESC3001
 	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -156,6 +158,7 @@ character_event = {
 	id = 3005
 	desc = EVTDESC3005
 	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -167,7 +170,6 @@ character_event = {
 	
 	trigger = {
 		trait = lustful
-		religion_group = christian
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
@@ -267,6 +269,7 @@ character_event = {
 	id = 3010
 	desc = EVTDESC3010
 	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -276,7 +279,6 @@ character_event = {
 	
 	trigger = {
 		trait = lustful
-		religion_group = christian
 		war = no
 		in_command = no
 		is_female = no
@@ -321,6 +323,7 @@ character_event = {
 	id = 3011
 	desc = EVTDESC3011
 	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -332,7 +335,6 @@ character_event = {
 		in_command = no
 		trait = lustful
 		has_job_title = job_spiritual
-		religion_group = christian
 	}
 	
 	weight_multiplier = {
@@ -371,6 +373,7 @@ character_event = {
 	id = 3020
 	desc = EVTDESC3020
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -381,8 +384,6 @@ character_event = {
 		war = no
 		in_command = no
 		trait = chaste
-		religion = catholic
-		NOT = { has_landed_title = k_papal_state }
 		NOT = { trait = excommunicated }
 	}
 	
@@ -415,7 +416,6 @@ character_event = {
 	option = {
 		name = EVTOPTA3020
 		trigger = {
-			religion_group = christian
 			NOT = {
 				lifestyle_traits = 1
 			}
@@ -468,9 +468,11 @@ character_event = {
 	id = 3021
 	desc = EVTDESC3021
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
 	is_triggered_only = yes 
 	
@@ -478,8 +480,6 @@ character_event = {
 		trait = chaste
 		war = no
 		in_command = no
-		is_ruler = yes
-		religion = catholic
 		NOT = { trait = excommunicated }
 		NOT = { trait = cynical }
 		piety = 25
@@ -541,6 +541,7 @@ character_event = {
 	id = 3022
 	desc = EVTDESC3022
 	picture = GFX_evt_monk
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	max_age = 25
@@ -550,7 +551,6 @@ character_event = {
 	is_triggered_only = yes 
 
 	trigger = {
-		religion_group = christian
 		NOT = { trait = excommunicated }	
 		any_courtier = {
 			learning = 9
@@ -603,6 +603,7 @@ character_event = {
 	id = 3025
 	desc = EVTDESC3025
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -614,7 +615,6 @@ character_event = {
 		war = no
 		in_command = no
 		trait = chaste
-		religion_group = christian
 		any_courtier = {
 			is_female = yes
 			age = 18
@@ -686,6 +686,7 @@ character_event = {
 	id = 3026
 	desc = EVTDESC3026
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
@@ -703,7 +704,6 @@ character_event = {
 		NOT = {
 			trait = homosexual
 		}
-		religion_group = christian
 		fertility = 0.4
 		any_courtier = {
 			is_female = yes
@@ -800,11 +800,13 @@ character_event = {
 	id = 3030
 	desc = EVTDESC3030
 	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -814,9 +816,6 @@ character_event = {
 		num_of_rivals = 1
 		has_nickname = no
 		NOT = { prestige = 200 }
-		NOT = {
-			has_nickname = nick_the_effeminate
-		}
 	}
 	
 	weight_multiplier = {
@@ -838,7 +837,6 @@ character_event = {
 		random_rival = {
 			prestige = 10
 		}
-		give_nickname = nick_the_effeminate
 		prestige = -5
 	}
 }
@@ -848,11 +846,13 @@ character_event = {
 	id = 3035
 	desc = EVTDESC3035
 	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+
 	is_triggered_only = yes
 	
 	trigger = {
@@ -960,181 +960,17 @@ character_event = {
 	}
 }
 
-### TEMPERATE ###
-
-### Judge between knights ###
-character_event = {
-	id = 3012
-	desc = EVTDESC3012	
-	picture = GFX_evt_melee
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = temperate
-		war = no
-		in_command = no
-		is_ruler = yes
-		religion_group = christian
-		any_courtier = {
-			martial = 8
-			age = 16
-			is_female = no
-			prisoner = no
-			religion_group = christian
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-	}
-	
-	option = {
-		name = EVTOPTA3012
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				trait = greedy
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { wealth = 25 }
-			}			
-		}
-
-		random_courtier = {
-			limit = {
-				martial = 8
-				age = 16
-				is_female = no
-				prisoner = no
-				religion_group = christian
-			}
-			opinion = {
-				modifier = temperate_good_judgement
-				who = ROOT
-				years = 2
-			}
-
-		}
-		if = {
-			limit = {
-				trait = just
-			}
-			prestige = 5
-		}
-		wealth = -20
-	}
-	option = {
-		name = EVTOPTB3012
-		trigger = {
-			religion_group = christian
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				trait = cynical
-			}
-		}
-		add_character_modifier = {
-			name = defer_to_church_decision
-			duration = 365
-		}
-	}
-	option = {
-		name = EVTOPTC3012
-		ai_chance = {
-			factor = 0
-		}
-		wealth = 50
-		remove_trait = temperate
-		add_trait = greedy
-		if = {
-			limit = {
-				trait = just
-			}
-			remove_trait = just
-		}
-		random_courtier = {
-			limit = {
-				martial = 8
-				age = 16
-				is_female = no
-				prisoner = no
-				religion_group = christian
-			}
-			opinion = {
-				modifier = temperate_bad_judgement
-				who = ROOT
-				years = 2
-			}
-
-		}
-	}
-}
-
-### Sinful feast ###
-character_event = {
-	id = 3013
-	desc = EVTDESC3013	
-	picture = GFX_evt_feast
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = temperate
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		is_ruler = yes
-		religion_group = christian
-		any_vassal = {
-			tier = baron
-			trait = gluttonous
-			is_female = no
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3013
-		random_vassal = {
-			limit = {
-				tier = baron
-				trait = gluttonous
-				is_female = no
-			}
-			opinion = {
-				modifier = temperate_annoyer
-				who = ROOT
-				years = 2
-			}			
-		}	
-		prestige = -5	
-	}
-	option = {
-		name = EVTOPTB3013
-		piety = -5
-	}
-}
-
 ### GLUTTONOUS ###
 character_event = {
 	id = 3040
 	desc = EVTDESC3040
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1199,10 +1035,12 @@ character_event = {
 	id = 3045
 	desc = EVTDESC3045
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1275,6 +1113,7 @@ character_event = {
 	id = 3046
 	desc = EVTDESC3046
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
@@ -1321,11 +1160,13 @@ character_event = {
 	id = 3050
 	desc = EVTDESC3050
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 40
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1374,10 +1215,12 @@ character_event = {
 	id = 3055
 	desc = EVTDESC3055
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1465,6 +1308,7 @@ character_event = {
 	id = 3056
 	desc = EVTDESC3056
 	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
@@ -1511,10 +1355,12 @@ character_event = {
 	id = 3060
 	desc = EVTDESC3060
 	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_economy
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1525,7 +1371,6 @@ character_event = {
 		treasury = 100
 		OR = {
 			trait = wroth
-			has_nickname = nick_the_cruel
 			trait = deceitful
 		}				
 	}
@@ -1587,10 +1432,12 @@ character_event = {
 	id = 3065
 	desc = EVTDESC3065
 	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_economy
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1661,10 +1508,12 @@ character_event = {
 	id = 3070
 	desc = EVTDESC3070
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_economy
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1775,6 +1624,7 @@ character_event = {
 	id = 3071
 	desc = EVTDESC3071
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_economy
 	
 	is_triggered_only = yes
 	
@@ -1799,6 +1649,7 @@ character_event = {
 	id = 3072
 	desc = EVTDESC3072
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_economy
 	
 	is_triggered_only = yes
 	
@@ -1820,10 +1671,12 @@ character_event = {
 	id = 3075
 	desc = EVTDESC3075
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_economy
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1831,7 +1684,6 @@ character_event = {
 		in_command = no
 		trait = greedy
 		NOT = { trait = in_hiding }
-		religion_group = christian
 		OR = {
 			trait = wroth
 			trait = gluttonous
@@ -1886,10 +1738,12 @@ character_event = {
 	id = 3080
 	desc = EVTDESC3080
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -1958,10 +1812,12 @@ character_event = {
 	id = 3081
 	desc = EVTDESC3081
 	picture = GFX_evt_illness
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2038,16 +1894,16 @@ character_event = {
 	id = 3082
 	desc = EVTDESC3082
 	picture = GFX_evt_burning_house
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	only_playable = yes
+	only_rulers = yes
 	prisoner = no
 	is_triggered_only = yes 
 	
 	trigger = {
-		is_ruler = yes
 		trait = charitable
-		religion_group = christian
 	}
 	
 	weight_multiplier = {
@@ -2093,15 +1949,16 @@ character_event = {
 	id = 3083
 	desc = EVTDESC3083
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
 		trait = charitable
-		religion_group = christian
 		trait = shy
 		any_courtier = {
 			age = 16
@@ -2147,65 +2004,23 @@ character_event = {
 		name = EVTOPTB3083	
 		piety = -10
 	}
-}	
-
-### Thomas of Aquinas ###
-character_event = {
-	id = 3084
-	desc = EVTDESC3084
-	picture = GFX_evt_bishop
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		year = 1256
-		trait = charitable
-		religion_group = christian
-		OR = {
-			any_courtier = {
-				NOT = { opinion = { who = ROOT value = -50 } }
-			}
-			AND = {
-				is_ruler = yes
-				any_vassal = {
-					NOT = { opinion = { who = ROOT value = -50 } }
-				}
-			}
-		}		
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 2.0
-			trait = patient
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3084
-		prestige = 5
-		piety = 5	
-	}
-}	
+}
 
 ### Virtue of Charity ###
 character_event = {
 	id = 3085
 	desc = EVTDESC3085
 	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
 		trait = charitable
-		religion_group = christian
 		any_courtier = {
 			prisoner = yes
 			host = { character = ROOT }
@@ -2240,19 +2055,20 @@ character_event = {
 	id = 3095
 	desc = EVTDESC3095
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
+	only_rulers = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
 		trait = charitable
-		religion_group = christian
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		is_ruler = yes
 		job_treasurer = {
 			NOT = { trait = charitable }
 		}
@@ -2294,6 +2110,7 @@ character_event = {
 	id = 3096
 	desc = EVTDESC3096
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
@@ -2333,6 +2150,7 @@ character_event = {
 	id = 3097
 	desc = EVTDESC3097
 	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
@@ -2373,10 +2191,12 @@ character_event = {
 	id = 3100
 	desc = EVTDESC3100
 	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2433,10 +2253,12 @@ character_event = {
 	id = 3105
 	desc = EVTDESC3105
 	picture = GFX_evt_family
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2516,10 +2338,12 @@ character_event = {
 	id = 3110
 	desc = EVTDESC3110
 	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2606,14 +2430,15 @@ character_event = {
 	id = 3115
 	desc = EVTDESC3115
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
 	
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
-		religion_group = christian
 		trait = slothful
 		war = no
 		in_command = no
@@ -2680,6 +2505,7 @@ character_event = {
 	id = 3116
 	desc = EVTDESC3116
 	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes 
 	
@@ -2725,6 +2551,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2790,6 +2617,7 @@ character_event = {
 	capable_only = yes
 	only_playable = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2882,11 +2710,11 @@ character_event = {
 	capable_only = yes
 	only_playable = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
 		trait = diligent
-		religion_group = christian
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
@@ -2947,6 +2775,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -2990,6 +2819,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -3041,16 +2871,13 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
 		trait = diligent
 		war = no
 		in_command = no
-		OR = {
-			religion_group = christian
-			religion_group = muslim
-		}
 	}	
 	
 	weight_multiplier = {
@@ -3063,9 +2890,6 @@ character_event = {
 
 	option = {
 		name = EVTOPTA3126
-		trigger = {
-			religion_group = christian
-		}
 		piety = -10
 	}
 	option = {
@@ -3076,13 +2900,6 @@ character_event = {
 		remove_trait = diligent
 		prestige = -5
 		
-	}
-	option = {
-		name = EVTOPTC3126
-		trigger = {
-			religion_group = muslim
-		}
-		piety = -10
 	}
 }
 
@@ -3100,6 +2917,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
 	is_triggered_only = yes 
 	
 	trigger = {
@@ -4218,11 +4036,9 @@ character_event = {
 		trait = wroth
 		war = no
 		in_command = no
-		religion_group = christian
 		any_courtier = {
 			age = 16
 			prisoner = no
-			religion_group = christian
 			NOT = {
 				trait = incapable
 			}
@@ -4266,7 +4082,6 @@ character_event = {
 			limit = {
 				age = 16
 				prisoner = no
-				religion_group = christian
 				NOT = {
 					trait = incapable
 				}
@@ -4440,7 +4255,6 @@ character_event = {
 	
 	trigger = {
 		trait = patient
-		religion_group = christian
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
@@ -4528,13 +4342,6 @@ character_event = {
 			factor = 0.1
 			trait = drunkard
 		}
-		modifier = {
-			factor = 10
-			OR = {
-				has_ambition = obj_buddhist_stop_drinking
-				has_ambition = obj_buddhist_temperance_food
-			}
-		}
 	}
 	
 	option = {
@@ -4587,7 +4394,6 @@ character_event = {
 	is_triggered_only = yes 
 	
 	trigger = {
-		religion_group = christian
 		trait = patient
 		NOT = { trait = cruel }
 		war = no
@@ -4657,7 +4463,6 @@ character_event = {
 	
 	trigger = {
 		trait = patient
-		religion_group = christian
 		war = no
 		is_female = no
 		in_command = no
@@ -4829,7 +4634,6 @@ character_event = {
 			NOT = {
 				trait = wroth
 			}
-			has_ambition = obj_buddhist_reject_pride
 		}
 	}
 	
@@ -4853,10 +4657,6 @@ character_event = {
 			factor = 4.0
 			trait = patient
 		}
-		modifier = {
-			factor = 10
-			has_ambition = obj_buddhist_reject_pride
-		}
 	}
 	
 	option = {
@@ -4872,7 +4672,7 @@ character_event = {
 			10 = { change_intrigue = 1 }
 			10 = { change_learning = 1 }
 		}
-		health = -1
+		health = -0.5
 		piety = -10
 		cancel_ambition = yes
 	}
@@ -5018,7 +4818,6 @@ character_event = {
 	
 	trigger = {
 		trait = proud
-		NOT = { religion_group = pagan_group }
 		war = no
 		in_command = no
 		job_spiritual = {
@@ -5214,7 +5013,6 @@ character_event = {
 	trigger = {
 		trait = humble
 		independent = no
-		religion_group = christian
 		NOT = { opinion = { who = liege value = 10 } }
 		NOT = { has_opinion_modifier = { who = liege modifier = show_true_humility } }
 	}
@@ -5261,58 +5059,6 @@ letter_event = {
 				years = 5
 			} 
 		}
-	}
-}
-	
-### Submitting to God ###
-character_event = {
-	id = 3242
-	desc = EVTDESC3242
-	picture = GFX_evt_pope
-	
-	min_age = 16
-	capable_only = yes
-	only_playable = yes
-
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = humble
-		religion = catholic
-		controls_religion = no
-		religion_head = { 
-			NOT = { reverse_opinion = { who = ROOT value = 10 } }
-			NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = show_true_humility } }
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 3.5
-			trait = zealous
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3242 #Submit
-		piety = 5
-		religion_head = { 
-			opinion = { 
-				who = ROOT  
-				modifier = show_true_humility
-				years = 5
-			}
-			letter_event = { 
-				id= 3241 
-				tooltip = EVTTOOLTIP3241 
-			} 
-		}
-	}
-	option = {
-		name = EVTOPTB3242 #NOT submit
-		prestige = 5
 	}
 }
 
@@ -5636,7 +5382,6 @@ character_event = {
 		NOT = {
 			martial = 7
 		}
-		religion_group = christian
 		NOT = { has_character_modifier = deceitful_martial }
 		
 	}
@@ -5876,76 +5621,6 @@ character_event = {
 	option = {
 		name = EVTOPTB3263 #setup job for the blame.
 		job_spiritual = {
-			opinion = {
-				who = ROOT
-				modifier = deceitful_neg
-				years = 5
-			}
-		}
-	}	
-}
-
-### Deceitful Martial - Muslim
-character_event = {
-	id = 3264
-	desc = EVTDESC3264	#Hide martial
-	picture = GFX_evt_spymaster
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes
-	only_playable = yes
-	
-	trigger = {
-		trait = deceitful
-		war = no
-		in_command = no
-		is_female = no
-		NOT = { trait = in_hiding }
-		job_marshal = {
-			martial = 10		
-			martial = ROOT
-		}
-		NOT = {
-			martial = 7
-		}
-		religion_group = muslim
-		NOT = { has_character_modifier = deceitful_martial }
-		
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-	}
-	
-	option = {
-		name = EVTOPTA3260 #Appear to be X
-		any_courtier = {
-			limit = {
-				age = 16
-				OR = {
-					martial = 10
-					trait = honest
-				}
-				NOT = { has_job_title = job_marshal }
-			}
-			opinion = {
-				who = ROOT
-				modifier = deceitful_neg
-				years = 5
-			}
-		}
-		add_character_modifier = {
-			name = deceitful_martial
-			duration = 730
-		}
-	}
-	
-	option = {
-		name = EVTOPTB3260 #setup job for the blame.
-		job_marshal = {
 			opinion = {
 				who = ROOT
 				modifier = deceitful_neg
@@ -6229,116 +5904,6 @@ character_event = {
 #	}
 #}
 
-### Good vassal! ###
-character_event = {
-	id = 3286
-	desc = EVTDESC3286
-	picture = GFX_evt_throne_room
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = honest
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		any_vassal = {
-			age = 16
-			NOT = { trait = in_hiding }
-			OR = {
-				trait = charitable
-				trait = kind
-				trait = diligent
-				trait = chaste
-				trait = temperate
-				trait = patient
-				trait = humble
-			}
-		}		
-	}
-	
-	weight_multiplier = {
-		factor = 1
-	}
-	
-	immediate = {
-		random_vassal = {
-			limit = {
-				age = 16
-				NOT = { trait = in_hiding }
-				OR = {
-					trait = charitable
-					trait = kind
-					trait = diligent
-					trait = chaste
-					trait = temperate
-					trait = patient
-					trait = humble
-				}
-			}
-			set_character_flag = honest_good_vassal_for_us				
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3286
-		random_vassal = {
-			limit = { has_character_flag = honest_good_vassal_for_us }
-			letter_event = { id = 3287 tooltip = EVTTOOLTIP3287 }
-		}
-		any_vassal = {
-			limit = {
-				NOT = { has_character_flag = honest_good_vassal_for_us	} 
-			}
-			opinion = { who = ROOT modifier = honest_neg_small years = 10 }
-		}
-		random_vassal = {
-			limit = { has_character_flag = honest_good_vassal_for_us }
-			clr_character_flag = honest_good_vassal_for_us 
-			opinion = { who = ROOT modifier = honest_pos years = 10 }
-		}
-	}
-
-	option = {
-		name = EVTOPTB3286
-		scaled_wealth = -0.05
-		random_vassal = {
-			limit = { has_character_flag = honest_good_vassal_for_us }
-			clr_character_flag = honest_good_vassal_for_us 
-			letter_event = { id = 3288 tooltip = EVTTOOLTIP3288 }
-		}
-	}
-}
-
-#Praise publicly
-letter_event = {
-	id = 3287
-	desc = EVTDESC3287
-	
-	is_triggered_only = yes 
-	
-	option = {
-		name = EVTOPTA3287
-		prestige = 10
-	}
-}
-
-#Reward with gold
-letter_event = {
-	id = 3288
-	desc = EVTDESC3288
-	
-	is_triggered_only = yes 
-	
-	option = {
-		name = EVTOPTA3288
-		scaled_wealth = 0.2
-	}
-}
-
 ####################################
 # Craven
 ####################################
@@ -6416,7 +5981,6 @@ character_event = {
 		in_command = no
 		NOT = { trait = in_hiding }
 		trait = craven
-		religion_group = christian
 		OR = {
 			NOT = { demesne_size = 1 }
 			tier = count
@@ -6429,7 +5993,6 @@ character_event = {
 				is_priest = yes
 				has_job_title = job_spiritual
 			}
-			religion_group = christian
 			NOT = {
 				character = ROOT
 			}
@@ -6478,7 +6041,6 @@ character_event = {
 					is_priest = yes
 					has_job_title = job_spiritual
 				}
-				religion_group = christian
 				NOT = {
 					character = ROOT
 				}
@@ -6706,6 +6268,7 @@ character_event = {
 	id = 3320
 	desc = EVTDESC3320
 	picture = GFX_evt_hunt
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	prisoner = no
@@ -6826,6 +6389,7 @@ character_event = {
 	id = 3321
 	desc = EVTDESC3321
 	picture = GFX_evt_hunt
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -6850,6 +6414,7 @@ character_event = {
 	id = 3322
 	desc = EVTDESC3322
 	picture = GFX_evt_hunt
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -6886,6 +6451,7 @@ character_event = {
 	id = 3325
 	desc = EVTDESC3325
 	picture = GFX_evt_bandits
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	capable_only = yes
@@ -6897,7 +6463,6 @@ character_event = {
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		religion_group = christian
 	}
 	
 	weight_multiplier = {
@@ -6933,6 +6498,7 @@ character_event = {
 	id = 3330
 	desc = EVTDESC3330
 	picture = GFX_evt_bandits
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	capable_only = yes
@@ -6944,10 +6510,6 @@ character_event = {
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		OR = {
-			religion_group = christian
-			religion_group = muslim
-		}
 	}
 	
 	weight_multiplier = {
@@ -6983,6 +6545,7 @@ character_event = {
 	id = 3335
 	desc = EVTDESC3335
 	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	capable_only = yes
@@ -7080,6 +6643,7 @@ character_event = {
 	id = 3336
 	desc = EVTDESC3336
 	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -7626,7 +7190,6 @@ character_event = {
 		war = no
 		in_command = no
 		is_priest = no
-		religion_group = christian
 		NOT = { trait = in_hiding }
 		OR = {
 			any_courtier = {
@@ -7669,64 +7232,6 @@ character_event = {
 	}
 }
 
-### Ambitious - Muslim ###
-character_event = {
-	id = 3371
-	desc = EVTDESC3371
-	picture = GFX_evt_jerusalem
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = ambitious
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		is_priest = no
-		religion_group = muslim
-		any_courtier = {
-			religion_group = muslim
-			opinion = { who = ROOT value = 75 }
-			reverse_opinion = { who = ROOT value = 50 }
-			NOT = { trait = in_hiding }
-			OR = {
-				is_priest = yes
-				has_job_title = job_spiritual
-			}
-		}				
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 3.0
-			trait = envious
-		}
-		modifier = {
-			factor = 4.0
-			trait = wroth
-		}
-
-		modifier = {
-			factor = 0.3
-			trait = diligent
-		}
-		modifier = {
-			factor = 0.5
-			trait = chaste
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3370
-		piety = 15
-	}
-}
-	
 ### Ambitious: Start ###
 character_event = {
 	id = 3375
@@ -7743,19 +7248,16 @@ character_event = {
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		NOT = {
-			has_character_modifier = the_merciful
-		}
+		NOT = { has_character_modifier = the_merciful }
 		any_courtier = {
 			age = 16
 			is_female = no
+			prisoner = no
+			in_command = no
 			NOT = { trait = in_hiding }
-			NOT = {
-				trait = ambitious
-			}
-			NOT = {
-				trait = diligent
-			}
+			NOT = { trait = ambitious }
+			NOT = { trait = diligent }
+			NOT = { trait = incapable }
 		}
 	}
 	
@@ -7786,7 +7288,10 @@ character_event = {
 		random_courtier = {
 			limit = {
 				age = 16
+				prisoner = no
+				in_command = no
 				is_female = no
+				NOT = { trait = incapable }
 				NOT = {
 					trait = ambitious
 				}
@@ -8063,7 +7568,6 @@ character_event = {
 		war = no
 		in_command = no
 		trait = content
-		religion_group = christian
 	}
 	
 	weight_multiplier = {
@@ -8328,7 +7832,6 @@ character_event = {
 		in_command = no
 		NOT = { trait = in_hiding }
 		trait = arbitrary
-		religion_group = christian
 		any_courtier = {
 			age = 16
 			prisoner = no
@@ -8477,93 +7980,6 @@ character_event = {
 	}
 }
 
-### Arbitrary - Muslim: Start ###
-character_event = {
-	id = 3411
-	desc = EVTDESC3411
-	picture = GFX_evt_emissary
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	only_rulers = yes
-	
-	trigger = {
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		trait = arbitrary
-		religion_group = muslim
-		any_courtier = {
-			age = 16
-			prisoner = no
-			in_command = no
-			NOT = { trait = in_hiding }
-			NOT = {
-				trait = incapable
-			}
-			NOT = {
-				character = ROOT
-			}
-			OR = {
-				trait = envious
-				trait = just
-				trait = gregarious
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 0.3
-			trait = greedy
-		}
-		modifier = {
-			factor = 0.5
-			trait = proud
-		}
-		
-		modifier = {
-			factor = 4.0
-			trait = patient
-		}
-		modifier = {
-			factor = 5.0
-			trait = humble
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3411
-		random_courtier = {
-			limit = {
-				age = 16
-				prisoner = no
-				NOT = {
-					trait = incapable
-				}
-				NOT = {
-					character = ROOT
-				}
-				OR = {
-					trait = envious
-					trait = just
-					trait = gregarious
-				}
-			}
-			character_event = {
-				id = 3412
-				days = 1
-				random = 1
-				tooltip = EVTTOOLTIP3412
-			}
-		}
-	}
-}
-
 #Arbitrary: Courtier
 character_event = {
 	id = 3412
@@ -8599,7 +8015,7 @@ character_event = {
 			}
 			set_character_flag = flag_arbitrary_pos
 			character_event = {
-				id = 3414
+				id = 3413
 				days = 5
 				random = 2
 				tooltip = EVTTOOLTIPB3413
@@ -8628,6 +8044,7 @@ character_event = {
 				years = 2
 			}
 		}
+		clr_character_flag = flag_arbitrary_neg
 	}
 	option = {
 		name = EVTOPTB3413
@@ -8641,6 +8058,7 @@ character_event = {
 				years = 2
 			}
 		}
+		clr_character_flag = flag_arbitrary_pos
 	}
 }
 
@@ -9672,7 +9090,6 @@ character_event = {
 		in_command = no
 		NOT = { trait = in_hiding }
 		trait = cynical
-		religion_group = christian
 		any_courtier = {
 			age = 16
 			in_command = no
@@ -9714,65 +9131,6 @@ character_event = {
 		piety = -15
 	}
 }
-
-### Cynical negative - Muslim ###
-character_event = {
-	id = 3456
-	desc = EVTDESC3456
-	picture = GFX_evt_bishop
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = cynical
-		in_command = no
-		NOT = { trait = in_hiding }
-		religion_group = muslim
-		any_courtier = {
-			age = 16
-			in_command = no
-			NOT = { trait = in_hiding }
-			religion_group = muslim
-			OR = {
-				trait = zealous
-				is_priest = yes
-				NOT = {
-					trait = cynical
-				}
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 2.0
-			trait = slothful
-		}
-		modifier = {
-			factor = 5.0
-			trait = lustful
-		}
-
-		modifier = {
-			factor = 0.3
-			trait = diligent
-		}
-		modifier = {
-			factor = 0.5
-			trait = humble
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3456
-		piety = -15
-	}
-}
 	
 ### Zealous positive: Start ###
 character_event = {
@@ -9789,7 +9147,6 @@ character_event = {
 		in_command = no
 		NOT = { trait = in_hiding }
 		trait = zealous
-		religion_group = christian
 		OR = {
 			tier = count
 			tier = duke
@@ -9976,12 +9333,10 @@ character_event = {
 		trait = zealous
 		war = no
 		in_command = no
-		religion_group = christian
 		OR = {
 			spouse = {
 				is_alive = yes
 				is_abroad = no
-				religion_group = christian
 				NOT = {
 					trait = zealous
 				}
@@ -9992,7 +9347,6 @@ character_event = {
 				NOT = {
 					trait = zealous
 				}
-				religion_group = christian
 				opinion = { who = ROOT value = 100 }
 			}
 		}	
@@ -10029,7 +9383,6 @@ character_event = {
 				NOT = {
 					trait = zealous
 				}
-				religion_group = christian
 				opinion = { who = ROOT value = 100 }
 			}
 		}
@@ -10048,7 +9401,6 @@ character_event = {
 				NOT = {
 					trait = zealous
 				}
-				religion_group = christian
 				opinion = { who = ROOT value = 100 }
 			}
 		}
@@ -10127,7 +9479,6 @@ character_event = {
 		war = no
 		in_command = no
 		trait = zealous
-		religion_group = christian
 	}
 	
 	weight_multiplier = {
@@ -10965,7 +10316,6 @@ character_event = {
 		in_command = no
 		fertility = 0.4
 		has_lover = no
-		religion_group = christian
 		OR = {
 			trait = chaste
 			piety = 50
@@ -11086,18 +10436,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA3521
-		if = {
-			limit = {
-				religion_group = christian
-			}
-			add_trait = chaste
-		}
-		if = {
-			limit = {
-				religion_group = muslim
-			}
-			piety = 5
-		}
+		add_trait = chaste
 	}
 	option = {
 		name = EVTOPTB3521
@@ -11127,7 +10466,6 @@ character_event = {
 		in_command = no
 		NOT = { trait = in_hiding }
 		trait = celibate
-		religion_group = christian
 		OR = {
 			trait = chaste
 			NOT = {
@@ -11340,7 +10678,6 @@ character_event = {
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		religion_group = christian
 		NOT = {
 			trait = lustful
 		}
@@ -11480,7 +10817,6 @@ character_event = {
 		NOT = { trait = in_hiding }
 		trait = celibate
 		trait = zealous
-		religion_group = christian
 		NOT = {
 			trait = lustful
 		}
@@ -11707,9 +11043,7 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = EVTOPTA3540 #Demand
-		piety = -10
+	immediate = {
 		random_courtier = {
 			limit = {
 				age = 16
@@ -11718,7 +11052,16 @@ character_event = {
 					learning = 10
 					trait = scholar
 				}
+				has_job_action = no
 			}
+			save_event_target_as = my_courtier
+		}
+	}
+	
+	option = {
+		name = EVTOPTA3540 #Demand
+		piety = -10
+		event_target:my_courtier = {
 			set_character_flag = pressured_scholar
 			character_event = {
 				id = 3541
@@ -11730,15 +11073,7 @@ character_event = {
 	option = {
 		name = EVTOPTB3540 #Ask nicely
 		prestige = -10
-		random_courtier = {
-			limit = {
-				age = 16
-				NOT = { trait = in_hiding }
-				OR = {
-					learning = 10
-					trait = scholar
-				}
-			}
+		event_target:my_courtier = {
 			set_character_flag = asked_scholar
 			character_event = {
 				id = 3541
@@ -11750,15 +11085,7 @@ character_event = {
 	option = {
 		name = EVTOPTC3540 #Bribe
 		scaled_wealth = -0.10
-		random_courtier = {
-			limit = {
-				age = 16
-				NOT = { trait = in_hiding }
-				OR = {
-					learning = 10
-					trait = scholar
-				}
-			}
+		event_target:my_courtier = {
 			set_character_flag = bribed_scholar
 			character_event = {
 				id = 3541
@@ -12069,6 +11396,7 @@ character_event = {
 		in_command = no
 		any_child = {
 			age = 6
+			is_alive = yes
 			NOT = {
 				age = 16
 			}
@@ -15443,10 +14771,6 @@ character_event = {
 			factor = 0.5
 			trait = kind
 		}
-		modifier = {
-			factor = 10
-			has_ambition = obj_buddhist_reject_cruelty
-		}
 	}
 	
 	option = {
@@ -15516,28 +14840,6 @@ character_event = {
 					}
 				}
 			}
-		}
-		if = {
-			limit = {
-				NOT = { has_ambition = obj_buddhist_reject_cruelty }
-			}
-			random = {
-				chance = 10
-			
-				remove_trait = impaler
-				hidden_tooltip = {
-					character_event = {
-						id = 38291 #Notify remove Impaler
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_ambition = obj_buddhist_reject_cruelty
-			}
-			remove_trait = impaler
-			remove_trait = cruel
 		}
 	}
 }
@@ -17810,8 +17112,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { religion_group = muslim }
-		NOT = { religion_group = jewish_group }
+		NOT = { religion_group = abrahamic_religion }
 		trait = hunter
 		war = no
 		in_command = no
@@ -18190,7 +17491,6 @@ character_event = {
 		war = no
 		in_command = no
 		NOT = { trait = in_hiding }
-		religion_group = christian
 		any_courtier = {
 			age = 16
 			in_command = no
@@ -18572,7 +17872,6 @@ character_event = {
 			trait = poet
 			age = 30
 			female = no
-			has_nickname = nick_the_troubadour
 		}
 		new_character = {
 			set_character_flag = pressured_poet
@@ -18592,7 +17891,6 @@ character_event = {
 			trait = poet
 			age = 30
 			female = no
-			has_nickname = nick_the_troubadour
 		}
 		new_character = {
 			set_character_flag = asked_poet
@@ -18612,7 +17910,6 @@ character_event = {
 			trait = poet
 			age = 30
 			female = no
-			has_nickname = nick_the_troubadour
 		}
 		new_character = {
 			set_character_flag = bribed_poet
@@ -18632,7 +17929,6 @@ character_event = {
 			trait = poet
 			age = 30
 			female = no
-			has_nickname = nick_the_troubadour
 		}
 	}
 }
@@ -21467,103 +20763,11 @@ character_event = {
 			chance = 25		
 			
 			change_intrigue = 1
-			remove_trait = deceitful
+			add_trait = deceitful
 			hidden_tooltip = {
 				character_event = {
 					id = 38255 #Notify Deceitful
 				}
-			}
-		}
-	}
-}
-
-### Muslim Events ###
-
-### Wroth - Muslim: Start ###
-character_event = {
-	id = 3730
-	desc = EVTDESC3730
-	picture = GFX_evt_scandal
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	
-	is_triggered_only = yes 
-	only_playable = yes
-	
-	trigger = {
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		religion_group = muslim
-		trait = wroth
-		any_courtier = {
-			age = 16
-			prisoner = no
-			NOT = { trait = in_hiding }
-			is_abroad = no
-			NOT = {
-				trait = incapable
-			}
-			NOT = {
-				trait = wroth
-				trait = patient
-			}
-			OR = {
-				trait = kind
-				trait = charitable
-				prestige = 60
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 4.0
-			is_priest = no
-		}
-		modifier = {
-			factor = 5.0
-			trait = weak
-		}
-
-		modifier = {
-			factor = 0.5
-			trait = scholarly_theologian
-		}
-		modifier = {
-			factor = 0.3
-			trait = mastermind_theologian
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3730
-		random_courtier = {
-			limit = {
-				age = 16
-				prisoner = no
-				is_abroad = no
-				NOT = {
-					trait = incapable
-				}
-				NOT = {
-					trait = wroth
-					trait = patient
-				}
-				OR = {
-					trait = kind
-					trait = charitable
-					prestige = 60
-				}
-			}
-			character_event = {
-				id = 3731
-				days = 1
-				tooltip = EVTTOOLTIP3731
 			}
 		}
 	}
@@ -21668,100 +20872,6 @@ character_event = {
 		}
 	}
 }
-
-### Craven - Muslim ###
-character_event = {
-	id = 3735
-	desc = EVTDESC3735
-	picture = GFX_evt_bishop
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		trait = craven
-		religion_group = muslim
-		OR = {
-			NOT = { demesne_size = 1 }
-			tier = count
-		}
-		any_courtier = {
-			age = 16
-			prisoner = no
-			NOT = { trait = in_hiding }
-			OR = {
-				is_priest = yes
-				has_job_title = job_spiritual
-			}
-			NOT = {
-				character = ROOT
-			}
-			NOT = {
-				trait = incapable
-			}
-			OR = {
-				trait = craven
-				NOT = {
-					trait = brave
-				}
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 0.4
-			trait = gluttonous
-		}
-		modifier = {
-			factor = 0.4
-			trait = wroth
-		}
-
-		modifier = {
-			factor = 2.0
-			trait = kind
-		}
-		modifier = {
-			factor = 5.0
-			trait = humble
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3735
-		random_courtier = {
-			limit = {
-				age = 16
-				prisoner = no
-				NOT = {
-					character = ROOT
-				}
-				NOT = {
-					trait = incapable
-				}
-				OR = {
-					trait = craven
-					NOT = {
-						trait = brave
-					}
-				}
-			}
-			character_event = {
-				id = 3736
-				tooltip = EVTTOOLTIP3736
-			}
-		}
-	}
-}
-
 #Courtier
 character_event = {
 	id = 3736
@@ -21801,203 +20911,6 @@ character_event = {
 				modifier = craven_pos
 				who = ROOT
 				years = 2
-			}
-		}
-	}
-}
-
-### Brave positive - Muslim ###
-character_event = {
-	id = 3740
-	desc = EVTDESC3740
-	picture = GFX_evt_jerusalem
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		religion_group = muslim
-		trait = brave
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 0.5
-			trait = proud
-		}
-		modifier = {
-			factor = 0.5
-			trait = lustful
-		}
-
-		modifier = {
-			factor = 5.0
-			trait = humble
-		}
-		modifier = {
-			factor = 5.0
-			trait = chaste
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3740
-		piety = 15
-	}
-}
-
-### Content positive ###
-character_event = {
-	id = 3745
-	desc = EVTDESC3745
-	picture = GFX_evt_bishop
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		war = no
-		in_command = no
-		NOT = { trait = in_hiding }
-		religion_group = muslim
-		trait = content
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 0.4
-			trait = gluttonous
-		}
-		modifier = {
-			factor = 0.4
-			trait = wroth
-		}
-
-		modifier = {
-			factor = 4.0
-			trait = charitable
-		}
-		modifier = {
-			factor = 5.0
-			trait = humble
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3745
-		piety = 15
-	}
-}
-
-### Zealous negative - Muslim: Start ###
-character_event = {
-	id = 3750
-	desc = EVTDESC3750
-	picture = GFX_evt_jerusalem
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		trait = zealous
-		war = no
-		in_command = no
-		religion_group = muslim
-		OR = {
-			spouse = {
-				is_alive = yes
-				is_abroad = no
-				NOT = {
-					trait = zealous
-				}
-				opinion = { who = ROOT value = 100 }
-			}
-			any_child = {
-				age = 15
-				NOT = {
-					trait = zealous
-				}
-				opinion = { who = ROOT value = 100 }
-			}
-		}	
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 4.0
-			trait = gluttonous
-		}
-		modifier = {
-			factor = 3.0
-			trait = envious
-		}
-
-		modifier = {
-			factor = 0.2
-			trait = kind
-		}
-		modifier = {
-			factor = 0.5
-			trait = humble
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3750
-		trigger = {
-			spouse = {
-				is_alive = yes
-				is_abroad = no
-				NOT = {
-					trait = zealous
-				}
-				opinion = { who = ROOT value = 100 }
-			}
-		}
-		spouse = {
-			character_event = {
-				id = 3751
-				tooltip = EVTTOOLTIP3751
-			}
-		}
-	}
-	option = {
-		name = EVTOPTB3750
-		trigger = {
-			any_child = {
-				age = 15
-				NOT = {
-					trait = zealous
-				}
-				opinion = { who = ROOT value = 100 }
-			}
-		}
-		random_child = {
-			limit = {
-				age = 15
-				NOT = {
-					trait = zealous
-				}
-				opinion = { who = ROOT value = 100 }
-			}
-			character_event = {
-				id = 3751
-				tooltip = EVTTOOLTIP3751
 			}
 		}
 	}
@@ -22112,63 +21025,5 @@ character_event = {
 				years = 2
 			}
 		}
-	}
-}
-
-### Zealous negative - Muslim ###
-character_event = {
-	id = 3755
-	desc = EVTDESC3755
-	picture = GFX_evt_jerusalem
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	is_triggered_only = yes 
-	
-	trigger = {
-		war = no
-		in_command = no
-		scaled_wealth = 0.5
-		religion_group = muslim
-		trait = zealous
-		NOT = {
-			trait = greedy
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-
-		modifier = {
-			factor = 3.0
-			trait = envious
-		}
-		modifier = {
-			factor = 5.0
-			trait = lustful
-		}
-
-		modifier = {
-			factor = 0.5
-			trait = temperate
-		}
-		modifier = {
-			factor = 0.2
-			trait = kind
-		}
-		modifier = {
-			factor = 0.5
-			trait = charitable
-		}
-		modifier = {
-			factor = 0.2
-			trait = honest
-		}
-	}
-	
-	option = {
-		name = EVTOPTA3755
-		scaled_wealth = -0.025
 	}
 }

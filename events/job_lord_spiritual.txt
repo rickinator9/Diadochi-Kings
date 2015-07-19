@@ -233,6 +233,7 @@ character_event = {
 		has_job_action = action_inquisition
 		location = {
 			any_province_character = {
+				is_adult = yes
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
 				NOT = { religion = ROOT }
@@ -308,6 +309,7 @@ character_event = {
 		location = {
 			random_province_character = {
 				limit = {
+					is_adult = yes
 					NOT = { character = ROOT }
 					NOT = { is_liege_of = ROOT }
 					NOT = { religion = ROOT }
@@ -1061,6 +1063,7 @@ character_event = {
 		has_job_action = action_improve_rel_relations
 		location = { 
 			any_province_lord = {
+				NOT = { character = ROOT }
 				is_priest = yes
 				religion = ROOT
 				NOT = { is_liege_of = ROOT }
@@ -1195,6 +1198,7 @@ character_event = {
 		has_job_action = action_improve_rel_relations
 		location = { 
 			any_province_lord = {
+				NOT = { character = ROOT }
 				is_priest = yes
 				NOT = { is_liege_of = ROOT }
 				same_realm = ROOT

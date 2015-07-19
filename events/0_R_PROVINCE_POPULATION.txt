@@ -10,45 +10,9 @@ province_event = {
 	hide_window = yes
 
 	immediate = {
-		if = {
-			limit = {
-				OR = {
-					culture = scythian
-					culture = sarmatian
-				}
-				owner = {
-					top_liege = {
-						primary_title = { has_law = nomad_settled_0 }
-					}
-				}
-			}
-			set_variable = {
-				which = "province_pop"
-				value = 1500
-			}
-			add_province_modifier = {
-				name = high_resource
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						culture = scythian
-						culture = sarmatian
-					}
-					owner = {
-						top_liege = {
-							primary_title = { has_law = nomad_settled_0 }
-						}
-					}
-				}
-			}
-			set_variable = {
-				which = "province_pop"
-				value = 4500
-			}
+		set_variable = {
+			which = "province_pop"
+			value = 3000
 		}
 
 		# Randomizing as much as I can

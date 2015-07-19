@@ -12,8 +12,9 @@
 #Irresistable young wench
 character_event = {
 	id = 76000
-	desc = "EVTDESC76000"
+	desc = EVTDESC76000
 	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	max_age = 25
@@ -59,7 +60,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76000"
+		name = EVTOPTA76000
 		piety = -10
 		if = {
 			limit = {
@@ -80,7 +81,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76000"
+		name = EVTOPTB76000
 		add_trait = chaste
 	}
 }
@@ -88,8 +89,9 @@ character_event = {
 #Unwed daughter
 character_event = {
 	id = 76005
-	desc = "EVTDESC76005"
+	desc = EVTDESC76005
 	picture = GFX_evt_pregnancy
+	border = GFX_event_normal_frame_intrigue
 	
 	only_rulers = yes
 	capable_only = yes
@@ -101,6 +103,7 @@ character_event = {
 			is_female = yes
 			is_alive = yes
 			age = 16
+			NOT = { age = 45 }
 			is_married = no
 			fertility = 0.6
 			NOT = {
@@ -123,18 +126,19 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76005"
+		name = EVTOPTA76005
 		character_event = {
 			id = 76006
-			tooltip = "EVTTOOLTIP76006"
+			tooltip = EVTTOOLTIP76006
 		}
 	}
 	option = {
-		name = "EVTOPTB76005"
+		name = EVTOPTB76005
 		random_child = {
 			limit = {
 				is_female = yes
 				age = 16
+				NOT = { age = 45 }
 				is_married = no
 				fertility = 0.4
 				NOT = {
@@ -164,7 +168,7 @@ character_event = {
 		add_trait = kind
 	}
 	option = {
-		name = "EVTOPTC76005"
+		name = EVTOPTC76005
 		random_child = {
 			limit = {
 				is_female = yes
@@ -205,13 +209,14 @@ character_event = {
 #Spymaster advice you
 character_event = {
 	id = 76006
-	desc = "EVTDESC76006"
+	desc = EVTDESC76006
 	picture = GFX_evt_council
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76006"
+		name = EVTOPTA76006
 		scaled_wealth = -0.33
 		add_trait = deceitful
 		random = {
@@ -226,7 +231,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76006"
+		name = EVTOPTB76006
 		scaled_wealth = -0.2
 		piety = -10
 		random = {
@@ -241,12 +246,12 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC76006"
+		name = EVTOPTC76006
 		add_trait = trusting
 		job_spymaster = {
 			character_event = {
 				id = 76007
-				tooltip = "EVTTOOLTIP76007"
+				tooltip = EVTTOOLTIP76007
 			}
 		}
 	}
@@ -255,13 +260,14 @@ character_event = {
 #Spymaster is trusted to deal with liege's daughter's bastard child
 character_event = {
 	id = 76007
-	desc = "EVTDESC76007"
+	desc = EVTDESC76007
 	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76007"
+		name = EVTOPTA76007
 		prestige = 50
 		add_trait = proud
 		random = {
@@ -270,13 +276,13 @@ character_event = {
 			FROM = {
 				character_event = {
 					id = 76008
-					tooltip = "EVTTOOLTIP76008"
+					tooltip = EVTTOOLTIP76008
 				}
 			}
 		}
 	}
 	option = {
-		name = "EVTOPTB76007"
+		name = EVTOPTB76007
 		change_intrigue = 1
 		FROM = {
 			random_child = {
@@ -309,7 +315,7 @@ character_event = {
 			}
 			character_event = {
 				id = 76009
-				tooltip = "EVTTOOLTIP76009"
+				tooltip = EVTTOOLTIP76009
 			}
 		}
 	}
@@ -318,25 +324,26 @@ character_event = {
 #Spymaster let child and daughter live
 character_event = {
 	id = 76008
-	desc = "EVTDESC76008"
+	desc = EVTDESC76008
 	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76008"
+		name = EVTOPTA76008
 		add_trait = deceitful
 		FROM = {
 			imprison = ROOT
 		}
 	}
 	option = {
-		name = "EVTOPTB76008"
+		name = EVTOPTB76008
 		add_trait = honest
 		prestige = -20
 	}
 	option = {
-		name = "EVTOPTC76008"
+		name = EVTOPTC76008
 		random_child = {
 			limit = {
 				is_councillor = no
@@ -366,13 +373,14 @@ character_event = {
 #Spymaster let daugther and bastard child live
 character_event = {
 	id = 76009
-	desc = "EVTDESC76009"
+	desc = EVTDESC76009
 	picture = GFX_evt_spymaster
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76009"
+		name = EVTOPTA76009
 		prestige = -5
 	}
 }
@@ -380,8 +388,9 @@ character_event = {
 #Get rid of a bastard?
 character_event = {
 	id = 76010
-	desc = "EVTDESC76010"
+	desc = EVTDESC76010
 	picture = GFX_evt_beheading
+	border = GFX_event_normal_frame_intrigue
 	
 	only_rulers = yes
 	capable_only = yes
@@ -408,7 +417,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76010"
+		name = EVTOPTA76010
 		ai_chance = {
 			factor = 1
 			
@@ -442,7 +451,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76010"
+		name = EVTOPTB76010
 		add_trait = honest
 	}
 }
@@ -450,8 +459,9 @@ character_event = {
 #Recognise bastard son as a legitimate heir?
 character_event = {
 	id = 76015
-	desc = "EVTDESC76015"
+	desc = EVTDESC76015
 	picture = GFX_evt_son_asking_father
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
@@ -472,7 +482,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76015"
+		name = EVTOPTA76015
 		random_child = {
 			limit = {
 				trait = bastard
@@ -499,7 +509,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76015"
+		name = EVTOPTB76015
 		random_child = {
 			limit = {
 				trait = bastard
@@ -521,7 +531,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC76015"
+		name = EVTOPTC76015
 		random_child = {
 			limit = {
 				trait = bastard
@@ -539,8 +549,9 @@ character_event = {
 #Bastard son ask to be included in the succession
 character_event = {
 	id = 76020
-	desc = "EVTDESC76020"
+	desc = EVTDESC76020
 	picture = GFX_evt_son_asking_father
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	
@@ -588,17 +599,17 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76020"
+		name = EVTOPTA76020
 		father = {
 			set_character_flag = legitimise_bastard_son
 			character_event = {
 				id = 76021
-				tooltip = "EVTTOOLTIP76021"				
+				tooltip = EVTTOOLTIP76021				
 			}
 		}
 	}
 	option = {
-		name = "EVTOPTB76020"
+		name = EVTOPTB76020
 		piety = 10
 		add_trait = content
 	}
@@ -607,13 +618,14 @@ character_event = {
 #Father is asked to legitimise bastard
 character_event = {
 	id = 76021
-	desc = "EVTDESC76021"
+	desc = EVTDESC76021
 	picture = GFX_evt_son_asking_father
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTA76021"
+		name = EVTOPTA76021
 		FROM = {
 			hidden_tooltip = {
 				set_character_flag = father_didnt_legitimise
@@ -640,7 +652,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76021"
+		name = EVTOPTB76021
 		FROM = {
 			hidden_tooltip = {
 				set_character_flag = father_legitimise
@@ -657,13 +669,14 @@ character_event = {
 #Father answers son
 character_event = {
 	id = 76022
-	desc = "EVTDESC76022"
+	desc = EVTDESC76022
 	picture = GFX_evt_son_asking_father
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76022"
+		name = EVTOPTA76022
 		trigger = {
 			has_character_flag = father_didnt_legitimise
 		}
@@ -675,7 +688,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76022"
+		name = EVTOPTB76022
 		trigger = {
 			has_character_flag =  father_legitimise
 		}
@@ -691,8 +704,9 @@ character_event = {
 #I have a bastard child
 character_event = {
 	id = 76025
-	desc = "EVTDESC76025"
+	desc = EVTDESC76025
 	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 16
 	only_women = yes
@@ -725,17 +739,17 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76025"
+		name = EVTOPTA76025
 		set_character_flag = raising_bastard
 		father = {
 			character_event = {
 				id = 76026
-				tooltip = "EVTTOOLTIP76026"
+				tooltip = EVTTOOLTIP76026
 			}
 		}
 	}
 	option = {
-		name = "EVTOPTB76025"
+		name = EVTOPTB76025
 		set_character_flag = raising_bastard
 		add_trait = stressed
 	}
@@ -744,13 +758,14 @@ character_event = {
 #Daughter asks for help with bastard child
 character_event = {
 	id = 76026
-	desc = "EVTDESC76026"
+	desc = EVTDESC76026
 	picture = GFX_evt_daughter_asking_father
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76026"
+		name = EVTOPTA76026
 		prestige = -20
 		FROM = {
 			prestige = -10
@@ -769,7 +784,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76026"
+		name = EVTOPTB76026
 		prestige = -20
 		FROM = {
 			random_child = {
@@ -786,7 +801,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC76026"
+		name = EVTOPTC76026
 		prestige = -20
 		FROM = {
 			random_child = {
@@ -805,7 +820,7 @@ character_event = {
 						}
 						character_event = {
 							id = 76027
-							tooltip = "EVTTOOLTIP76027"
+							tooltip = EVTTOOLTIP76027
 						}
 					}
 					if = {
@@ -817,7 +832,7 @@ character_event = {
 						}
 						character_event = {
 							id = 76028
-							tooltip = "EVTTOOLTIP76028"
+							tooltip = EVTTOOLTIP76028
 						}
 					}
 				}
@@ -829,13 +844,14 @@ character_event = {
 #Father to bastard is angry
 character_event = {
 	id = 76027
-	desc = "EVTDESC76027"
+	desc = EVTDESC76027
 	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76027"
+		name = EVTOPTA76027
 		piety = 10
 		prestige = -25
 		opinion = {
@@ -845,7 +861,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76027"
+		name = EVTOPTB76027
 		piety = -5
 		opinion = {
 			modifier = opinion_angry
@@ -858,13 +874,14 @@ character_event = {
 #Grandfather is angry
 character_event = {
 	id = 76028
-	desc = "EVTDESC76028"
+	desc = EVTDESC76028
 	picture = GFX_evt_birth
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76028"
+		name = EVTOPTA76028
 		piety = 10
 		prestige = -25
 		opinion = {
@@ -874,7 +891,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76028"
+		name = EVTOPTB76028
 		piety = -5
 		opinion = {
 			modifier = opinion_angry
@@ -887,8 +904,9 @@ character_event = {
 #A dream is born and a sword sharpened
 character_event = {
 	id = 76030
-	desc = "EVTDESC76030"
+	desc = EVTDESC76030
 	picture = GFX_evt_child_sword
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
@@ -911,7 +929,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76030"
+		name = EVTOPTA76030
 		add_trait = ambitious
 	}
 }
@@ -919,8 +937,9 @@ character_event = {
 #I am teased about my inferior status
 character_event = {
 	id = 76035
-	desc = "EVTDESC76035"
+	desc = EVTDESC76035
 	picture = GFX_evt_child_bully
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 6
 	max_age = 16
@@ -949,7 +968,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76035"
+		name = EVTOPTA76035
 		any_courtier = {
 			limit = {
 				age = 6
@@ -980,7 +999,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76035"
+		name = EVTOPTB76035
 		random_list = {
 			50 = {
 				add_trait = craven
@@ -1011,7 +1030,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC76035"
+		name = EVTOPTC76035
 		random_list = {
 			50 = {
 				change_diplomacy = 1
@@ -1042,7 +1061,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTD76035"
+		name = EVTOPTD76035
 		random_list = {
 			50 = {
 				change_intrigue = 1
@@ -1077,8 +1096,9 @@ character_event = {
 # I'm a bastard, what does that mean?
 character_event = {
 	id = 76040
-	desc = "EVTDESC76040"
+	desc = EVTDESC76040
 	picture = GFX_evt_guardian
+	border = GFX_event_normal_frame_intrigue
 	
 	min_age = 11
 	
@@ -1097,12 +1117,12 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA76040"
+		name = EVTOPTA76040
 		set_character_flag = asked_about_bastard
 		guardian = {
 			character_event = {
 				id = 76041
-				tooltip = "EVTTOOLTIP76041"
+				tooltip = EVTTOOLTIP76041
 			}
 		}
 	}
@@ -1111,13 +1131,14 @@ character_event = {
 #Guardian is asked what being bastard means
 character_event = {
 	id = 76041
-	desc = "EVTDESC76041"
+	desc = EVTDESC76041
 	picture = GFX_evt_guardian
+	border = GFX_event_normal_frame_intrigue
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA76041"
+		name = EVTOPTA76041
 		FROM = {
 			random_list = {
 				80 = {
@@ -1150,7 +1171,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB76041"
+		name = EVTOPTB76041
 		FROM = {
 			random_list = {
 				80 = {
@@ -1183,7 +1204,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC76041"
+		name = EVTOPTC76041
 		FROM = {
 			random_list = {
 				80 = {

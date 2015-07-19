@@ -22,9 +22,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		capital_scope = {
 			NOT = { has_province_modifier = peasants_upset }
 		}
@@ -153,9 +153,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			age = 20
 		}
@@ -257,9 +257,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		capital_scope = {
 			NOT = { has_province_modifier = peasants_upset }
 		}
@@ -362,9 +362,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = { reverse_opinion = { who = ROOT value = 10 } }
 		capital_scope = {
 			NOT = { has_province_modifier = peasants_upset }
@@ -474,9 +474,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			NOT = {
 				is_priest = yes
@@ -575,9 +575,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		is_married = yes
 		learning = 10
 		any_vassal = {
@@ -676,9 +676,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			is_priest = yes
 		}
@@ -762,132 +762,6 @@ character_event = {
 	}
 }
 
-#Jumping Jews of Jerusalem
-character_event = {
-	id = 74035
-	desc = "EVTDESC74035"
-	picture = GFX_evt_jugglers
-
-	min_age = 20
-	capable_only = yes
-	prisoner = no
-	only_rulers = yes
-
-	trigger = {
-		has_character_modifier = holding_summer_fair
-		any_vassal = {
-			trait = gregarious
-		}
-		capital_scope = {
-			NOT = { has_province_modifier = peasants_upset }
-		}
-		
-		OR = {
-			NOT = { has_character_flag = fair_event_happened }
-			had_character_flag = {
-				flag = fair_event_happened
-				days = 3
-			}
-		}			
-
-		had_character_flag = {
-			flag = summer_fair_begin
-			days = 3
-		}		
-	}
-	
-	immediate = {
-		set_character_flag = fair_event_happened
-	}	
-
-	mean_time_to_happen = {
-		days = 360
-		
-		modifier = {
-			factor = 0.33
-			NOT = { has_character_flag = fair_event_happened }
-		}	
-		
-		modifier = {
-			factor = 1.5
-			has_character_flag = fair_event_happened
-		}			
-
-		modifier = {
-			factor = 0.5
-			trait = gregarious
-		}
-
-		modifier = {
-			factor = 1.5
-			trait = shy
-		}
-	}
-
-	option = {
-		name = "EVTOPTA74035"
-		trigger = {
-			NOT = { trait = gregarious }
-		}
-		treasury = 5
-		random_vassal = {
-			limit = {
-				trait = gregarious
-			}
-			opinion = {
-				modifier = opinion_disgruntled
-				who = ROOT
-				years = 5
-			}
-		}
-	}
-
-	option = {
-		name = "EVTOPTB74035"
-		trigger = {
-			NOT = { trait = gregarious }
-			OR = {
-				trait = wroth
-				trait = cruel
-			}
-		}
-		capital_scope = {
-			add_province_modifier = {
-				name = peasants_upset
-				duration = 365
-			}
-		}
-	}
-
-	option = {
-		name = "EVTOPTC74035"
-		if = {
-			limit = {
-				NOT = { trait = gregarious }
-			}
-			random = {
-				chance = 25
-				add_trait = gregarious
-				hidden_tooltip = {
-					character_event = {
-						id = 38265 #Notify Gregarious
-					}
-				}
-			}
-		}
-		random_vassal = {
-			limit = {
-				trait = gregarious
-			}
-			opinion = {
-				modifier = opinion_approves
-				who = ROOT
-				years = 5
-			}
-		}
-	}
-}
-
 #Mages and Divinators visits the fair
 character_event = {
 	id = 74040
@@ -898,9 +772,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			is_priest = yes
 		}
@@ -986,9 +860,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			is_priest = yes
 		}
@@ -1067,9 +941,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		job_marshal = {
 			martial = 12
 		}
@@ -1150,9 +1024,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_rulers = yes
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			tier = baron
 		}
@@ -1266,11 +1140,11 @@ character_event = {
 	only_playable = yes
 	capable_only = yes
 	prisoner = no
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
 		war = no
 		in_command = no
-		has_character_modifier = holding_summer_fair
 		any_vassal = {
 			war = no
 			prisoner = no
@@ -1388,11 +1262,11 @@ character_event = {
 	only_playable = yes
 	capable_only = yes
 	prisoner = no
+	has_character_modifier = holding_summer_fair
 
 	trigger = {
 		war = no
 		in_command = no
-		has_character_modifier = holding_summer_fair
 		any_courtier = {
 			prisoner = no
 			is_female = no
