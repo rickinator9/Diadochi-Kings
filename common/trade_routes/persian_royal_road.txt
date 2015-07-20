@@ -2,7 +2,6 @@ persian_royal_road = {
 	wealth = 10			# Total base wealth of silk route
 
 	modifier = {			# How the trade route modifies the provinces it passes
-		global_movement_speed = 10.0
 		trade_route_value = 1
 	}
 
