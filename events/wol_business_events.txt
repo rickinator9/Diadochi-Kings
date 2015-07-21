@@ -1112,11 +1112,11 @@ character_event = {
 	option = {
 		name = EVTOPTA_WOL_10123
 		if = {
-			limit = { trait = indulgent_wastrel }
+			limit = { trait = fortune_builder }
 			hidden_tooltip = {
-				remove_trait = indulgent_wastrel
+				remove_trait = fortune_builder
 			}
-			add_trait = thrifty_clerk
+			add_trait = midas_touched 
 		}
 		if = {
 			limit = { trait = thrifty_clerk }
@@ -1126,11 +1126,11 @@ character_event = {
 			add_trait = fortune_builder
 		}
 		if = {
-			limit = { trait = fortune_builder }
+			limit = { trait = indulgent_wastrel }
 			hidden_tooltip = {
-				remove_trait = fortune_builder
+				remove_trait = indulgent_wastrel
 			}
-			add_trait = midas_touched 
+			add_trait = thrifty_clerk
 		}
 	}
 }

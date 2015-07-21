@@ -1,5 +1,6 @@
 414.1.1 = { # 362 BC
 	holder = 30601
+	set_government_type = feudal_government
 }
 438.8.2 = { # 338 BC, Battle of Chaeronea
 	liege = e_macedonia

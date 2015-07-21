@@ -1196,7 +1196,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 		
 		modifier = {
 			factor = 0.75
@@ -1270,7 +1270,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 		
 		modifier = {
 			factor = 0.75
@@ -1344,7 +1344,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 12
 		
 		modifier = {
 			factor = 0.75
@@ -1418,7 +1418,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 3
 		modifier = {
 			factor = 0.75
 			base_health = 5.1
@@ -1491,7 +1491,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 5
 		
 		modifier = {
 			factor = 0.75
@@ -1565,7 +1565,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 5
 		
 		modifier = {
 			factor = 0.75

@@ -131,6 +131,7 @@ character_event = {
 		trigger = {
 			has_character_flag = sky_burial_sister
 		}
+		text = EVTDESC_HL_8005_sister
 	}
 	desc = { # Any other predecessor
 		trigger = {
@@ -545,8 +546,6 @@ character_event = {
 	picture = GFX_evt_steppe_mercenaries
 	border = GFX_event_normal_frame_war
 	
-	has_dlc = "Horse Lords"
-	
 	min_age =  16
 	only_men = yes
 	capable_only = yes
@@ -554,6 +553,7 @@ character_event = {
 	only_playable = yes
 
 	trigger = {
+		has_dlc = "Horse Lords"
 		government = nomadic_government
 		war = no
 		independent = yes
@@ -610,7 +610,7 @@ character_event = {
 		
 		if = {
 			limit = {
-				NOT = { has_trait = diligent }
+				NOT = { trait = diligent }
 			}
 			random = {
 				add_trait = diligent

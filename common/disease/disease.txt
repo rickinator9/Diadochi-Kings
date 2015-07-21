@@ -1,6 +1,6 @@
 tuberculosis = {
-	contagiousness = 0.2
-	outbreak_chance = 0.02
+	contagiousness = 0.3
+	outbreak_chance = 0.012
 	effect = {
 		city_tax_modifier = -0.5
 		supply_limit = -4
@@ -8,7 +8,7 @@ tuberculosis = {
 	}
 	icon = 1
 	tooltip = TUBERCULOSIS_INFO
-	months = 24
+	months = 30
 	trait = has_tuberculosis
 	always_get_message = no
 
@@ -21,8 +21,8 @@ tuberculosis = {
 }
 
 typhoid_fever = {
-	contagiousness = 0.2
-	outbreak_chance = 0.02
+	contagiousness = 0.3
+	outbreak_chance = 0.012
 	effect = {
 		city_tax_modifier = -0.5
 		supply_limit = -4
@@ -30,7 +30,7 @@ typhoid_fever = {
 	}
 	icon = 2
 	tooltip = TYPHOID_FEVER_INFO
-	months = 24
+	months = 30
 	trait = has_typhoid_fever
 	always_get_message = no
 	
@@ -43,8 +43,8 @@ typhoid_fever = {
 }
 
 typhus = {
-	contagiousness = 0.4
-	outbreak_chance = 0.08
+	contagiousness = 0.5
+	outbreak_chance = 0.04
 	effect = {
 		city_tax_modifier = -0.5
 		supply_limit = -4
@@ -52,7 +52,7 @@ typhus = {
 	}
 	icon = 3
 	tooltip = TYPHUS_INFO
-	months = 5
+	months = 10
 	trait = has_typhus
 	always_get_message = no
 	
@@ -65,8 +65,8 @@ typhus = {
 }
 
 measles = {
-	contagiousness = 0.4
-	outbreak_chance = 0.08
+	contagiousness = 0.6
+	outbreak_chance = 0.03
 	effect = {
 		city_tax_modifier = -0.5
 		supply_limit = -4
@@ -74,7 +74,7 @@ measles = {
 	}
 	icon = 5
 	tooltip = MEASLES_INFO
-	months = 5
+	months = 8
 	trait = has_measles
 	always_get_message = no
 	
@@ -87,8 +87,8 @@ measles = {
 }
 
 small_pox = {
-	contagiousness = 0.4
-	outbreak_chance = 0.16
+	contagiousness = 0.5
+	outbreak_chance = 0.08
 	effect = {
 		city_tax_modifier = -0.2
 		supply_limit = -4
@@ -96,7 +96,7 @@ small_pox = {
 	}
 	icon = 6
 	tooltip = SMALL_POX_INFO
-	months = 4
+	months = 8
 	trait = has_small_pox
 	always_get_message = no
 	

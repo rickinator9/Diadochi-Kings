@@ -227,9 +227,7 @@ character_event = {
 					}
 					if  = {
 						limit = {
-							event_target:previous_liege = {
-								NOT = { government = nomadic_government }
-							}
+							is_seafarer = yes
 						}
 						
 						# Create a fleet, just to be sure
@@ -239,7 +237,7 @@ character_event = {
 							disband_on_peace = yes
 							troops =
 							{
-								galleys = { 200 200 }
+								galleys = { 110 110 }
 							}
 						}
 					}
@@ -400,19 +398,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 15
+					martial = 15
 				}
 				modifier = {
 					factor = 0.7
-					marital = 18
+					martial = 18
 				}
 				modifier = {
 					factor = 0.7
-					marital = 21
+					martial = 21
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -448,19 +446,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 17
+					martial = 17
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 23
+					martial = 23
 				}
 				modifier = {
 					factor = 0.7
-					marital = 26
+					martial = 26
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -497,11 +495,11 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -533,15 +531,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 10 }
+					NOT = { martial = 10 }
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 15 }
+					NOT = { martial = 15 }
 				}
 				modifier = {
 					factor = 0.7
-					NOT = { marital = 20 }
+					NOT = { martial = 20 }
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -620,19 +618,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 15
+					martial = 15
 				}
 				modifier = {
 					factor = 0.7
-					marital = 18
+					martial = 18
 				}
 				modifier = {
 					factor = 0.7
-					marital = 21
+					martial = 21
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -668,19 +666,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 17
+					martial = 17
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 23
+					martial = 23
 				}
 				modifier = {
 					factor = 0.7
-					marital = 26
+					martial = 26
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -717,11 +715,11 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -753,15 +751,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 10 }
+					NOT = { martial = 10 }
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 15 }
+					NOT = { martial = 15 }
 				}
 				modifier = {
 					factor = 0.7
-					NOT = { marital = 20 }
+					NOT = { martial = 20 }
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -953,19 +951,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 15
+					martial = 15
 				}
 				modifier = {
 					factor = 0.7
-					marital = 18
+					martial = 18
 				}
 				modifier = {
 					factor = 0.7
-					marital = 21
+					martial = 21
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -999,19 +997,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 17
+					martial = 17
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 23
+					martial = 23
 				}
 				modifier = {
 					factor = 0.7
-					marital = 26
+					martial = 26
 				}
 				spawn_unit = {
 					province = THIS
@@ -1046,11 +1044,11 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -1080,15 +1078,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 10 }
+					NOT = { martial = 10 }
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 15 }
+					NOT = { martial = 15 }
 				}
 				modifier = {
 					factor = 0.7
-					NOT = { marital = 20 }
+					NOT = { martial = 20 }
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -1163,19 +1161,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 15
+					martial = 15
 				}
 				modifier = {
 					factor = 0.7
-					marital = 18
+					martial = 18
 				}
 				modifier = {
 					factor = 0.7
-					marital = 21
+					martial = 21
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -1210,19 +1208,19 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 17
+					martial = 17
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 23
+					martial = 23
 				}
 				modifier = {
 					factor = 0.7
-					marital = 26
+					martial = 26
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -1258,11 +1256,11 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.7
-					marital = 20
+					martial = 20
 				}
 				modifier = {
 					factor = 0.7
-					marital = 24
+					martial = 24
 				}
 				spawn_unit = {
 					province = THIS
@@ -1293,15 +1291,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 10 }
+					NOT = { martial = 10 }
 				}
 				modifier = {
 					factor = 0.5
-					NOT = { marital = 15 }
+					NOT = { martial = 15 }
 				}
 				modifier = {
 					factor = 0.7
-					NOT = { marital = 20 }
+					NOT = { martial = 20 }
 				}
 				spawn_unit = {
 					province = event_target:target_province
@@ -1392,10 +1390,6 @@ character_event = {
 					}
 					modifier = {
 						trait = ambitious
-						factor = 2
-					}
-					modifier = {
-						trait = cruel
 						factor = 2
 					}
 					log = "[Root.GetBestName] prepares to settle."

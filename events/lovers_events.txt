@@ -2570,7 +2570,19 @@ character_event = {
 	option = {
 		name = "EVTOPTA64085" #They elope to get married
 		piety = 5
-		lover = {
+		random_lover = {
+			limit = {
+				is_ruler = no
+				is_married = no
+				is_consort = no
+				prisoner = no
+				NOT = { trait = incapable }
+				can_marry = ROOT
+				ROOT = {
+					can_marry = PREV
+				}
+				NOT = { num_of_lovers = 2 }
+			}
 			add_spouse = ROOT
 		}
 		liege = {

@@ -5452,6 +5452,5 @@ character_event = {
 		clr_character_flag = maimed_opponent
 		clr_character_flag = killed_opponent
 		clr_character_flag = do_not_disturb
-		remove_character_modifier = holding_large_feast
 	}
 }
