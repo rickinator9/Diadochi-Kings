@@ -21,11 +21,6 @@ republic_governments = {
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "city_"
 		potential = {
-			NAND = {
-				controls_religion = yes
-				NOT = { religion_group = muslim }
-				NOT = { religion = norse_pagan_reformed }
-			}
 			is_female = no
 			OR = {
 				AND = {

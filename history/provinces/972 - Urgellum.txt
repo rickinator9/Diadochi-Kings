@@ -5,8 +5,8 @@ title = c_urgellum
 
 # Settlements
 max_settlements = 2
-b_arketurki_urgellum = temple
 b_eso_urgellum = castle
+b_arketurki_urgellum = temple
 
 # Misc
 culture = iberian
