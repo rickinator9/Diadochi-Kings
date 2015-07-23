@@ -5,8 +5,8 @@ title = c_ris
 
 # Settlements
 max_settlements = 2
-b_ris_ris = castle
-b_bagapanti_ris = temple
+b_ris_ris = tribal
+#b_bagapanti_ris = temple
 
 # Misc
 culture = scythian

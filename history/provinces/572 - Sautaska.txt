@@ -5,9 +5,9 @@ title = c_sautaska
 
 # Settlements
 max_settlements = 3
-b_sautaska_sautaska = castle
-b_askaca_sautaska = city
-b_abragasti_sautaska = temple
+b_sautaska_sautaska = tribal
+#b_askaca_sautaska = city
+#b_abragasti_sautaska = temple
 
 # Misc
 culture = chorasmian

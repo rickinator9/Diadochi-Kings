@@ -5,8 +5,8 @@ title = c_amapa
 
 # Settlements
 max_settlements = 2
-b_amapa_amapa = castle
-b_abdradvara_amapa = temple
+b_amapa_amapa = tribal
+#b_abdradvara_amapa = temple
 
 # Misc
 culture = scythian

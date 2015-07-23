@@ -5,8 +5,8 @@ title = c_bagia
 
 # Settlements
 max_settlements = 2
-b_bagia_bagia = castle
-b_abrapo_bagia = temple
+b_bagia_bagia = tribal
+#b_abrapo_bagia = temple
 
 # Misc
 culture = sarmatian

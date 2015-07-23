@@ -5,8 +5,8 @@ title = c_giarun
 
 # Settlements
 max_settlements = 2
-b_giarun_giarun = castle
-b_cali_giarun = temple
+b_giarun_giarun = tribal
+#b_cali_giarun = temple
 
 # Misc
 culture = scythian

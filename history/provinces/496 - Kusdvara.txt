@@ -5,8 +5,8 @@ title = c_kusdvara
 
 # Settlements
 max_settlements = 2
-b_kusdvara_kusdvara = castle
-b_vaskica_kusdvara = temple
+b_kusdvara_kusdvara = tribal
+#b_vaskica_kusdvara = temple
 
 # Misc
 culture = sarmatian

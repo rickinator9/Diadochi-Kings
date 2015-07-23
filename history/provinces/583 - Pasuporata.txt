@@ -5,8 +5,8 @@ title = c_pasuporata
 
 # Settlements
 max_settlements = 2
-b_pasuporata_pasuporata = castle
-b_koli_pasuporata = temple
+b_pasuporata_pasuporata = tribal
+#b_koli_pasuporata = temple
 
 # Misc
 culture = chorasmian
