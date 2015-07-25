@@ -48,6 +48,7 @@ king_of_asia = {
 	general_opinion = 10
 	vassal_opinion = 15
 	
+	
 	monthly_character_prestige = 0.7
 	
 	customizer = no
@@ -58,6 +59,19 @@ king_of_sicily = {
 	vassal_opinion = 8
 	
 	monthly_character_prestige = 0.1
+	
+	customizer = no
+	random = no
+}
+
+macedonian_pharaoh = {
+	
+	global_revolt_risk = -0.05
+	christian_opinion = 10
+	same_religion_opinion = -15
+	same_dynasty_opinion = 30
+
+	monthly_character_prestige = 0.4
 	
 	customizer = no
 	random = no
