@@ -37,3 +37,5 @@
 # 36001-37000 for Albanian dynasties
 # 37001-38000 for Tocharian dynasties
 # 38001-39000 for Israelite dynasties
+# 39001-46000 unreserved
+# 46001-47000 for Khotanese dynasties
