@@ -1,6 +1,6 @@
 # 33001-34000 for Scythian dynasties
 
-33001 = {
+33001 = { # Dahae, Later Parthian dynasty
 	name = "Parni"
 	culture = scythian
 }
@@ -28,7 +28,27 @@
 	name = "Tauroi"
 	culture = scythian
 }
-33008 = {
+33008 = { # Dahae
 	name = "Pissyri"
+	culture = scythian
+}
+33009 = { # Dahae
+	name = "Xanti"
+	culture = scythian
+}
+33010 = { # Dzungaria-area
+	name = "Issedones"
+	culture = scythian
+}
+33011 = { # Don area
+	name = "Androphagi" # Man-eaters
+	culture = scythian
+}
+33012 = { # Dacia, assimilated
+	name = "Agathyrsi"
+	culture = scythian
+}
+33013 = { # Media
+	name = "Orthocorybantians"
 	culture = scythian
 }

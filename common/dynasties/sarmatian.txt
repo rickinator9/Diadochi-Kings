@@ -12,3 +12,37 @@
 	name = "Maiotai"
 	culture = sarmatian
 }
+
+#Maeotae tribes
+34004 = {
+	name = "Sindi"
+	culture = sarmatian
+}
+34005 = {
+	name = "Dandarii"
+	culture = sarmatian
+}
+34006 = {
+	name = "Toreatae"
+	culture = sarmatian
+}
+34007 = {
+	name = "Arrechi"
+	culture = sarmatian
+}
+34008 = {
+	name = "Agri"
+	culture = sarmatian
+}
+34009 = {
+	name = "Obidiaceni"
+	culture = sarmatian
+}
+34010 = {
+	name = "Sittaceni"
+	culture = sarmatian
+}
+34011 = {
+	name = "Dosci"
+	culture = sarmatian
+}
