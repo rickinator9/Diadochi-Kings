@@ -8,3 +8,5 @@
 	# 370601-370700 for the Hvamna dynasty
 	# 370701-370800 for the Subhadra dynasty
 	# 370801-370900 for the Cozbo dynasty
+	# 370901-371000 for the Kuun dynasty
+	# 371001-371100 for the Pigita dynasty

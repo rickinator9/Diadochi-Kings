@@ -156,3 +156,11 @@
 	name = "Abdali"
 	culture = tocharian
 }
+37040 = {
+	name = "Kuun"
+	culture = tocharian
+}
+37041 = {
+	name = "Pigita"
+	culture = tocharian
+}
