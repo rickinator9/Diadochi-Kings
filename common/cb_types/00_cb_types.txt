@@ -6841,6 +6841,10 @@ tributary_cb = {
 		has_dlc = "Horse Lords"
 
 		ROOT = {
+			OR = {
+				martial = 12
+				trait = brilliant_strategist
+			}
 			mercenary = no
 			is_tributary = no
 			NOT = { is_vassal_or_below = FROM }
