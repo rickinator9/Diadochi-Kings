@@ -12,3 +12,35 @@
 		death="yes"
 	}
 }
+
+420902 = {
+	name = "Bilinos" # Made up Celtici leader
+	dynasty = 42010
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 420901
+	
+	428.1.1 = { # 348 BC, Made up
+		birth="yes"
+	}
+	495.1.1 = { # 281 BC
+		death="yes"
+	}
+}
+
+420903 = {
+	name = "Ablon" # Made up Celtici leader
+	dynasty = 42010
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 420902
+	
+	449.1.1 = { # 327 BC, Made up
+		birth="yes"
+	}
+	503.1.1 = { # 273 BC
+		death="yes"
+	}
+}

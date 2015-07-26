@@ -2,3 +2,9 @@
 	holder = 390801 # Armitalsko
 	liege = d_ilergetae
 }
+464.1.1 = { # 312 BC
+	holder = 390802 # Korbis
+}
+497.1.1 = { # 279 BC
+	holder = 390803 # Eterindu
+}

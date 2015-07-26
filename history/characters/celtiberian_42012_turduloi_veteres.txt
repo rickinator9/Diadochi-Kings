@@ -12,3 +12,35 @@
 		death="yes"
 	}
 }
+
+421102 = {
+	name = "Ordumeles" # Made up Turduli Vetteres leader
+	dynasty = 42012
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 421101
+	
+	408.1.1 = { # 368 BC, Made up
+		birth="yes"
+	}
+	441.1.1 = { # 335 BC
+		death="yes"
+	}
+}
+
+421103 = {
+	name = "Kasilos" # Made up Turduli Vetteres leader
+	dynasty = 42012
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 421102
+	
+	436.1.1 = { # 340 BC, Made up
+		birth="yes"
+	}
+	507.1.1 = { # 269 BC
+		death="yes"
+	}
+}

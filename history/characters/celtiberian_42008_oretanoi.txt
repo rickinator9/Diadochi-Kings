@@ -12,3 +12,35 @@
 		death="yes"
 	}
 }
+
+420702 = {
+	name = "Elguismio" # Made up Oretani leader
+	dynasty = 42008
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 420701
+	
+	416.1.1 = { # 360 BC, Made up
+		birth="yes"
+	}
+	472.1.1 = { # 304 BC
+		death="yes"
+	}
+}
+
+420703 = {
+	name = "Karbelos" # Made up Oretani leader
+	dynasty = 42008
+	culture = celtiberian
+	religion = celtic_main
+	
+	father = 420702
+	
+	450.1.1 = { # 326 BC, Made up
+		birth="yes"
+	}
+	513.1.1 = { # 263 BC
+		death="yes"
+	}
+}
