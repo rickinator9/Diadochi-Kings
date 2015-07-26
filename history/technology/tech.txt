@@ -444,6 +444,7 @@ technology = {
 		d_kashgaria
 		d_turfan
 		d_urumchi
+		d_khotan
 	}
 	417 = {
 		military = 1
