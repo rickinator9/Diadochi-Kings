@@ -9,7 +9,7 @@ silk_road = {
 	}
 
 	start = {				# Start provinces of trade route
-		801 802 # Tarim
+		801 # Tarim
 		707 # Balipura
 	}
 
@@ -18,7 +18,7 @@ silk_road = {
 	############################################
 	# North tarim
 	path = {
-		801 800 799 798
+		802 800 799 798
 	}
 
 	# South tarim
@@ -33,7 +33,7 @@ silk_road = {
 
 	# Route through Soghdiana
 	path = {
-		797 605 276 274 811 813
+		797 276 274 811 813
 	}
 
 	# Route through Bactria
