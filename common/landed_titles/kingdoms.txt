@@ -2313,13 +2313,6 @@ k_egypt = {
 			b_ptolemais_hermeiou_diospolis_mikra = {
 			}
 		}
-		c_qubba = {
-			color= { 225 205 10 }
-			color2= { 255 255 255 }
-			
-			b_qubba_qubba = {
-			}
-		}
 	}
 	d_thebes = {
 		color= { 200 175 0 }
