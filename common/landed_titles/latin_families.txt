@@ -1,0 +1,24 @@
+k_sulpicii = {
+	color= { 225 200 0 }
+	color2= { 255 255 255 }
+	
+	allow = {
+		always = no
+	}
+	
+	dignity = 10
+	
+	title = "KHAL_male"
+	title_female = "KHAL_female"	
+	title_prefix = "KHALASAR_OF"
+	
+	short_name = yes
+
+	primary = yes
+
+	# Always exists
+	landless = yes
+	
+	religion = roman_main
+	culture = latin
+}

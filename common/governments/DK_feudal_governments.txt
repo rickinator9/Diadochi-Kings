@@ -11,8 +11,34 @@ feudal_governments = {
 		free_revoke_on_governments_religion = { }
 		potential = {
 			primary_title = {
-				title = k_rome
+				title = e_rome
 			}
+			is_patrician = no
+		}
+		
+		color = { 255 255 255 }
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+	}
+	dk_republican_family_government {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+		}
+		allowed_holdings_culture = { }
+		accepts_liege_governments = { }
+		free_revoke_on_governments_religion = { }
+		potential = {
+			liege = {
+				tier = EMPEROR
+				government = dk_republic_government
+			}
+			tier = KING
 			is_patrician = no
 		}
 		

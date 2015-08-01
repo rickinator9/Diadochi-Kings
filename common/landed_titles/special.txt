@@ -576,7 +576,7 @@ d_bruttii = {
 	title = "MEDDIX"
 	short_name = yes
 }
-k_rome = {
+e_rome = {
 	color= { 125 0 0 }
 	color2= { 255 255 255 }
 	
