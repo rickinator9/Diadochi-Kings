@@ -34,3 +34,7 @@
 495.8.1 = {
 	holder = 1002 # Antiochos
 }
+497.1.1 = { # 279 BC
+	holder = 602 # Ptolemy II
+	liege = e_egypt
+}

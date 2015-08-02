@@ -27,10 +27,14 @@
 	holder = 30001 # Lysimachos
 	liege = k_odrysia
 }
-495.2.1 = {
+495.2.1 = { # 281 BC
 	holder = 1001 # Seleukos
 	liege = e_syria
 }
-495.8.1 = {
+495.8.1 = { # 281 BC
 	holder = 1002 # Antiochos
+}
+497.1.1 = { # 279 BC
+	holder = 602 # Ptolemy II
+	liege = e_egypt
 }
