@@ -284,3 +284,105 @@
 		death="yes" # 223 BC
 	}
 }
+
+# Line of Achaios
+1016 = {
+	name = "Antiochis" # Daughter of Achaios
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1007 # Achaios
+	
+	487.1.1 = { # Made up
+		birth="yes" # 289 BC
+	}
+	541.1.1 = { # Made up
+		death="yes" # 235 BC
+	}
+}
+1016 = {
+	name = "Alexandros" # Son of Achaios
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1007 # Achaios
+	
+	477.1.1 = { # Made up
+		birth="yes" # 299 BC
+	}
+	547.1.1 = { # Made up
+		death="yes" # 229 BC
+	}
+}
+1017 = {
+	name = "Laodike" # the First, Daughter of Achaios
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	female = yes
+
+	father = 1007 # Achaios
+	
+	491.1.1 = { # Made up
+		birth="yes" # 285 BC
+	}
+	532.1.1 = { # Made up-ish
+		death = { # 244 BC
+			death_reason = death_execution
+			#TODO killer = Ptolemaios Euergetes
+		}
+	}
+}
+1018 = {
+	name = "Andromachos" # Son of Achaios
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1007 # Achaios
+	
+	495.1.1 = { # Made up
+		birth="yes" # 281 BC
+	}
+	559.1.1 = { # Made up
+		death="yes" # 217 BC
+	}
+}
+1019 = {
+	name = "Achaios" # Son of Andromachos, rebelled against Antiochos III
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1018 # Andromachos
+	
+	518.1.1 = { # Made up
+		birth="yes" # 258 BC
+	}
+	563.1.1 = {
+		death = { # 213 BC
+			death_reason = death_execution
+			#TODO killer = Antiochos III
+		}
+	}
+}
+1020 = {
+	name = "Laodike" # the Second, Daughter of Andromachos, mother of Antiochos III
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1018 # Andromachos
+	
+	514.1.1 = { # Made up
+		birth="yes" # 262 BC
+	}
+	555.1.1 = { # Made up
+		death="yes" # 221 BC
+	}
+}

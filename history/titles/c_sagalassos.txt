@@ -27,3 +27,6 @@
 	holder = 1007 # Achaios
 	liege = d_pisidia
 }
+518.1.1 = { # 258 BC
+	holder = 1016 # Alexandros
+}

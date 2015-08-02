@@ -1,4 +1,7 @@
-495.2.1 = {
+495.2.1 = { # 281 BC
 	holder = 1007 # Achaios
 	liege = e_syria
+}
+518.1.1 = { # 258 BC
+	holder = 1016 # Alexandros
 }
