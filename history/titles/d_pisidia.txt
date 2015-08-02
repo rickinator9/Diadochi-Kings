@@ -3,5 +3,5 @@
 	liege = e_syria
 }
 518.1.1 = { # 258 BC
-	holder = 1016 # Alexandros
+	holder = 1017 # Alexandros
 }
