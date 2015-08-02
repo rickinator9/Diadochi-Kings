@@ -1,0 +1,19 @@
+# 1225 - Soloi
+
+# County Title
+title = c_soloi
+
+# Settlements
+max_settlements = 4
+b_soloi_soloi = castle
+b_lapithos_soloi = city
+b_tamassos_soloi = temple
+b_ledrai_soloi = city
+
+# Misc
+culture = arcadian
+religion = greek_main
+
+
+# History
+# Can be filled when things change around the province

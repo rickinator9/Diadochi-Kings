@@ -7,8 +7,8 @@ title = c_salamis
 max_settlements = 5
 b_salamis_salamis = castle
 b_chytroi_salamis = castle
-b_ledrai_salamis = castle
-b_lapithos_salamis = city
+b_thronoi_salamis = city
+b_aphrodision_salamis = temple
 
 # Possible baronies: (Always add a # in front of a line with these!)
 # b_karpasia_salamis

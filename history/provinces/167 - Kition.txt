@@ -8,7 +8,7 @@ max_settlements = 4
 b_kition_kition = castle
 b_amathus_kition = city
 b_idalion_kition = castle
-b_tamassos_kition = castle
+b_tremithous_kition = city
 
 # Misc
 culture = arcadian

@@ -5657,10 +5657,10 @@ k_cyprus = {
 			color2= { 255 255 255 }
 		
 			b_paphos_paphos = {
-			}		
-			b_soloi_paphos = {
 			}
 			b_kourion_paphos = {
+			}
+			b_anogyra_paphos = {
 			}
 			b_marion_paphos = {
 			}
@@ -5675,7 +5675,7 @@ k_cyprus = {
 			}
 			b_idalion_kition = {
 			}
-			b_tamassos_kition = {
+			b_tremithous_kition = {
 			}
 		}
 		c_salamis = {
@@ -5686,11 +5686,24 @@ k_cyprus = {
 			}
 			b_chytroi_salamis = {
 			}
-			b_ledrai_salamis = {
+			b_thronoi_salamis = {
 			}
-			b_lapithos_salamis = {
+			b_aphrodision_salamis = {
 			}
 			b_karpasia_salamis = {
+			}
+		}
+		c_soloi = {
+			color= { 106 249 125 }
+			color2 = { 255 255 255 }
+
+			b_soloi_soloi = {
+			}
+			b_lapithos_soloi = {
+			}
+			b_tamassos_soloi = {
+			}
+			b_ledrai_soloi = {
 			}
 		}
 	}
