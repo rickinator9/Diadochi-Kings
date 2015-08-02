@@ -16,3 +16,6 @@
 	holder = 60002 # Ariarathes II
 	liege = e_syria
 }
+502.1.1 = { # 274 BC, becomes independent during First Syrian war
+	liege = 0
+}
