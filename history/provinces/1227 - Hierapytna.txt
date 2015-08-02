@@ -1,0 +1,21 @@
+# 1227 - Hierapytna
+
+# County Title
+title = c_hierapytna
+
+# Settlements
+max_settlements = 4
+b_hierapytna_hierapytna = castle
+b_itanos_hierapytna = city
+b_praisos_hierapytna = castle
+
+# Possible baronies: (Always add a # in front of a line with these!)
+# b_minoa_hierapytna = city
+
+# Misc
+culture = doric
+religion = greek_main
+
+
+# History
+# Can be filled when things change around the province

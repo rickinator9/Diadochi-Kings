@@ -4562,13 +4562,11 @@ k_greece = {
 		
 			b_kydonia_kydonia = {
 			}
+			b_kisamos_kydonia = {
+			}
+			b_phalasarna_kydonia = {
+			}
 			b_sybrita_kydonia = {
-			}
-			b_lappa_kydonia = {
-			}
-			b_rhithymna_kydonia = {
-			}
-			b_eleutherna_kydonia = {
 			}
 			b_minoa_kydonia = {
 			}
@@ -4581,17 +4579,37 @@ k_greece = {
 		
 			b_knossos_knossos = {
 			}
-			b_plati_knossos = {
+			b_heraklion_knossos = {
 			}
-			b_gortyn_knossos = {
-			}
-			b_praisos_knossos = {
+			b_lyktos_knossos = {
 			}
 			b_olous_knossos = {
 			}
-			b_itanos_knossos = {
+		}
+		c_gortyn = {
+			color= { 110 200 235 }
+			color2= { 255 255 255 }
+
+			b_gortyn_gortyn = {
 			}
-			b_hierapytna_knossos = {
+			b_eleutherna_gortyn = {
+			}
+			b_rhitymna_gortyn = {
+			}
+			b_lappa_gortyn = {
+			}
+		}
+		c_hierapytna = {
+			color= { 90 210 215 }
+			color2= { 255 255 255 }
+			
+			b_hierapytna_hierapytna = {
+			}
+			b_itanos_hierapytna = {
+			}
+			b_praisos_hierapytna = {
+			}
+			b_minoa_hierapytna = {
 			}
 		}
 	}

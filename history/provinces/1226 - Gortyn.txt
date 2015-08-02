@@ -1,0 +1,21 @@
+# 1226 - Gortyn
+
+# County Title
+title = c_gortyn
+
+# Settlements
+max_settlements = 4
+b_gortyn_gortyn = castle
+b_eleutherna_gortyn = castle
+b_rhitymna_gortyn = city
+b_lappa_gortyn = castle
+
+# Possible baronies: (Always add a # in front of a line with these!)
+
+# Misc
+culture = doric
+religion = greek_main
+
+
+# History
+# Can be filled when things change around the province
