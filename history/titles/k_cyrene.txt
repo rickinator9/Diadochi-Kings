@@ -1,0 +1,7 @@
+500.1.1 = { # 276 BC, Magas rebels and becomes a king
+	holder = 3503 # Magas
+}
+# TODO: 250 BC, Demetrius the fair takes over
+527.1.1 = { # 249 BC, Ptolemies return by dowry
+	holder = 0
+}
