@@ -27,3 +27,7 @@
 	holder = 3101 # Lysias
 	liege = d_lycaonia
 }
+502.1.1 = { # 274 BC
+	holder = 60002 # Ariarathes II
+	liege = d_cappadocia
+}
