@@ -2,3 +2,6 @@
 	holder = 3101 # Lysias
 	liege = e_syria
 }
+532.1.1 = { # Hierax' rebellion
+	liege = k_lydia
+}

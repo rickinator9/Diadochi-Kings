@@ -5,3 +5,6 @@
 518.1.1 = { # 258 BC
 	holder = 1017 # Alexandros
 }
+532.1.1 = { # Hierax' rebellion
+	liege = k_lydia
+}

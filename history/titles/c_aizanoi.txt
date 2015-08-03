@@ -29,9 +29,7 @@
 530.1.1 = { # 246 BC
 	holder = 1022 # Seleukos II Kallinikos
 }
-551.1.1 = { # 225 BC
-	holder = 1028 # Seleukos III Keraunos
-}
-553.1.1 = { # 223 BC
-	holder = 1029 # Antiochos III Megas
+532.1.1 = { # 244 BC, Hierax' rebellion
+	holder = 1023 # Antiochos Hierax
+	liege = k_lydia
 }

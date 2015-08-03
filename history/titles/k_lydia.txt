@@ -1,0 +1,3 @@
+532.1.1 = { # 244 BC, Hierax' rebellion
+	holder = 1023 # Antiochos Hierax
+}
