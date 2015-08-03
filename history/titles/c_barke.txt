@@ -23,6 +23,12 @@
 }
 # TODO: 250 BC, Demetrius the fair takes over
 527.1.1 = { # 249 BC, Ptolemies return by dowry
-	holder = 602 # Ptolemy II
+	holder = 606 # Ptolemy III
 	liege = e_egypt
+}
+554.1.1 = { # 222 BC
+	holder = 610 # Ptolemy IV
+}
+572.7.1 = { # 204 BC
+	holder = 615 # Ptolemy V
 }

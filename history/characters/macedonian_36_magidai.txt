@@ -99,6 +99,9 @@
 	# Marries Demetrius the Fair in 250 BC, killing him in 249 BC
 	# Marries Ptolemy III in 249 BC
 	555.1.1 = {
-		death="yes" # 221 BC
+		death = { # 221 BC
+			death_reason = death_murder
+			killer = 610 # Ptolemaios IV
+		}
 	}
 }

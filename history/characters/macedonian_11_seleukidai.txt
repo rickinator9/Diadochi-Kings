@@ -230,6 +230,13 @@
 	490.1.1 = {
 		birth="yes" # 286 BC
 	}
+	507.1.1 = { # 269 BC, made up
+		add_spouse = 1018 # Laodike I
+	}
+	524.1.1 = { # 252 BC
+		remove_spouse = 1018 # Laodike I
+		add_spouse = 608 # Berenike Syra
+	}
 	530.1.1 = {
 		death = { # 246 BC
 			death_reason = death_murder
@@ -337,10 +344,12 @@
 	491.1.1 = { # Made up
 		birth="yes" # 285 BC
 	}
+	# 269 BC, marries Antiochos II
+	# 252 BC, divorces Antiochos II
 	532.1.1 = { # Made up-ish
 		death = { # 244 BC
 			death_reason = death_execution
-			#TODO killer = Ptolemaios Euergetes
+			killer = 606 # Ptolemaios III Euergetes
 		}
 	}
 }
@@ -487,13 +496,16 @@
 	culture = macedonian
 
 	father = 1012 # Antiochos II
-	#TODO mother = Berenike
+	mother = 608 # Berenike Syra
 
 	525.1.1 = { # Made up
 		birth="yes" # 251 BC
 	}
 	530.1.1 = {
-		death="yes" # 246 BC
+		death = { # 246 BC
+			death_reason = death_murder
+			killer = 1018 # Laodike I			
+		}
 	}
 }
 
