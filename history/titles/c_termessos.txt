@@ -26,3 +26,7 @@
 491.1.1 = { # 285 BC
 	holder = 602 # Ptolemy II
 }
+523.1.1 = { # 253 BC
+	holder = 1017 # Alexandros
+	liege = d_pisidia
+}
