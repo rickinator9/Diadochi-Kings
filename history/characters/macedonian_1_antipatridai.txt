@@ -318,3 +318,19 @@
 		death="yes" # 253 BC
 	}
 }
+19 = {
+	name = "Berenike" # Of Egypt
+	dynasty = 1
+	religion = greek_main
+	culture = macedonian
+	mother = 17
+	female = yes
+	436.1.1 = {
+		birth="yes" # 340 BC
+	}
+	# 325 BC, marries Philippos Magidai
+	# 317 BC, marries Ptolemy I
+	503.1.1 = { # Made up-ish
+		death="yes" # 273 BC
+	}
+}

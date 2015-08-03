@@ -72,6 +72,7 @@
 	471.1.1 = { # 305 BC
 		birth="yes"
 	}
+	# 286 BC, marries Ptolemaios II
 	530.1.1 = { # 246 BC, Made up
 		death="yes"
 	}
@@ -223,7 +224,7 @@
 	}
 }
 30012 = {
-	name = "Antipater" # Son of Epigonos
+	name = "Antipatros" # Son of Epigonos
 	dynasty = 3001
 	culture = aeolian
 	religion = greek_main

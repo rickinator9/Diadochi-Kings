@@ -23,6 +23,9 @@
 	455.1.1 = { # 321 BC
 		add_spouse = 4 # Eurydike
 	}
+	459.1.1 = {
+		add_spouse = 19 # Berenike I
+	}
 	472.1.1 = { # 304 BC, End of siege of Rhodes
 		give_nickname = nick_soter
 	}
@@ -35,16 +38,25 @@
 	dynasty = 7 # Ptolemaioi
 	religion = greek_main
 	culture = macedonian
-	father = 601
-			
+
+	father = 601 # Ptolemaios I
+	mother = 19 # Berenike I
+
 	add_trait = diadochi_king
 	add_trait = scholarly_theologian
 	
 	467.1.1 = { # 309 BC
 		birth="yes"
 	}
+	490.1.1 = { # 286 BC, Made up-ish
+		add_spouse = 30003 # Arsinoe I
+	}
 	493.1.1 = { # 283 BC
 		give_nickname = nick_philadelphos
+	}
+	502.1.1 = { # 274 BC, Made up-ish
+		remove_spouse = 30003 # Arsinoe I
+		add_spouse = 603 # Arsinoe II
 	}
 	530.1.1 = { # 246 BC
 		death="yes"
@@ -56,14 +68,18 @@
 	religion = greek_main
 	culture = macedonian
 	female = yes
-	father = 601
-	mother = 4
+
+	father = 601 # Ptolemaios I
+	mother = 19 # Berenike I
 	
 	add_trait = gregarious
 	
 	460.1.1 = {
 		birth="yes" # 316 BC
 	}
+	# 301 BC, marries Lysimachus
+	# 281 BC, marries Ptolemaios Keraunos
+	# 274 BC, marries Ptolemaios II
 	514.1.1 = { # Made up
 		death="yes" # 262
 	}
