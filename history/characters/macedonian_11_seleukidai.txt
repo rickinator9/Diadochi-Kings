@@ -432,6 +432,9 @@
 	515.1.1 = { # Made up
 		birth="yes" # 261 BC
 	}
+	547.1.1 = { # 229 BC
+		add_spouse = 40013 # Daughter of Ziaelas of Bithynia
+	}
 	551.1.1 = {
 		death = { # 225 BC
 			death_reason = death_murder # Killed by robbers
