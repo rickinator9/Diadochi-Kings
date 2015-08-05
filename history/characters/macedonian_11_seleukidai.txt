@@ -379,6 +379,9 @@
 	518.1.1 = { # Made up
 		birth="yes" # 258 BC
 	}
+	555.1.1 = { # 221 BC
+		add_spouse = 130007 # Laodike of Pontus
+	}
 	563.1.1 = {
 		death = { # 213 BC
 			death_reason = death_execution
@@ -488,6 +491,7 @@
 	517.1.1 = { # Made up
 		birth="yes" # 259 BC
 	}
+	# 244 BC, marries Mithridates II
 	575.1.1 = { # Made up
 		death="yes" # 201 BC
 	}
@@ -542,6 +546,9 @@
 
 	535.1.1 = {
 		birth="yes" # 241 BC
+	}
+	555.1.1 = { # 221 BC 
+		add_spouse = 130006 # Laodike III
 	}
 	589.1.1 = {
 		death = { # 187 BC
