@@ -13,6 +13,14 @@ k_pergamum = {
 
 	dynasty_title_names = no
 }
+d_galatia = {
+	color= { 40 170 75 }
+	color2 = { 255 255 255 }
+
+	capital = 96 # Ancyra
+
+	dynasty_title_names = no
+}
 
 # Persian satrapies
 k_p_egypt = {

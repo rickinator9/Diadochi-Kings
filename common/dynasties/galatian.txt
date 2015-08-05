@@ -1,0 +1,13 @@
+# 47001-48000 for Galatian dynasties
+47001 = {
+	name = "Tectosages"
+	culture = galatian
+}
+47002 = {
+	name = "Trocmi"
+	culture = galatian
+}
+47003 = {
+	name = "Tolistobogii"
+	culture = galatian
+}
