@@ -255,6 +255,9 @@
 	465.1.1 = { # Made up
 		birth="yes" # 314 BC
 	}
+	479.1.1 = { # 297 BC
+		add_spouse = 617 # Lysandra
+	}
 	482.1.1 = { # 294 BC
 		death = {
 			death_reason = death_murder

@@ -51,7 +51,9 @@
 	457.1.1 = { # 319 BC, Made up
 		birth="yes"
 	}
-	# Marries Lysandra Ptolemaios somewhere
+	485.1.1 = { # 291 BC
+		add_spouse = 617 # Lysandra
+	}
 	492.1.1 = { # 284 BC
 		death = {
 			death_reason = death_execution

@@ -331,3 +331,42 @@
 		death="yes"
 	}
 }
+
+# Daughters of Ptolemy I
+616 = {
+	name = "Ptolemais" # Daughter of Ptolemy I, marries Demetrius
+	dynasty = 7 # Ptolemaioi
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 601
+	mother = 4
+
+	460.1.1 = { # 316 BC Made up
+		birth="yes"
+	}
+	# 288 BC, marries Demetrius
+	507.1.1 = { # 269 BC made up
+		death="yes"
+	}
+}
+617 = {
+	name = "Lysandra" # Daughter of Ptolemy I, marries Agathocles
+	dynasty = 7 # Ptolemaioi
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 601
+	mother = 4
+
+	456.1.1 = { # 320 BC Made up
+		birth="yes"
+	}
+	# 297 BC, marries Alexander V
+	# 291 BC, marries Agathocles
+	497.1.1 = { # 279 BC made up
+		death="yes"
+	}
+}
