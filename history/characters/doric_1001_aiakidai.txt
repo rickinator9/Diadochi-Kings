@@ -198,3 +198,19 @@
 		}
 	}
 }
+10012 = {
+	name = "Deidameia" # Sister of Pyrrhus, married Demetrius
+	dynasty = 1001 # Aiakidai
+	religion = greek_main
+	culture = doric
+	father = 10001 # Aiakides
+	female = yes
+	
+	452.1.1 = { # 324 BC, made up
+		birth="yes"
+	}
+	# 306 BC, marries Demetrius
+	476.1.1 = { # 300 BC
+		death="yes"
+	}
+}

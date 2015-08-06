@@ -294,6 +294,7 @@
 	494.1.1 = { # Made up
 		birth="yes" # 282 BC
 	}
+	# 253 BC, marries Demetrius II
 	553.1.1 = { # Made up
 		death="yes" # 223 BC
 	}
