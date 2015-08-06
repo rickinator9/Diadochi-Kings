@@ -386,7 +386,7 @@
 	563.1.1 = {
 		death = { # 213 BC
 			death_reason = death_execution
-			#TODO killer = Antiochos III
+			killer = 1029 # Antiochos III
 		}
 	}
 }
