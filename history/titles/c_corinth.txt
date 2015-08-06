@@ -34,6 +34,14 @@
 	holder = 408 # Antigonos Gonatas
 }
 499.1.1 = { # 277 BC
+	holder = 1702 # Krateros, son of the general
+	liege = d_euboia
+}
+513.1.1 = { # 263 BC
+	holder = 1703 # Alexandros, son of Krateros
+}
+529.1.1 = { # 247 BC
+	holder = 408 # Antigonos Gonatas
 	liege = e_macedonia
 }
 537.1.1 = { # 237 BC
