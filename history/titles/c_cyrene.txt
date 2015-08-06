@@ -18,7 +18,9 @@
 	holder = 3503 # Magas
 	liege = k_cyrene
 }
-# TODO: 250 BC, Demetrius the fair takes over
+526.1.1 = { # 250 BC, Demetrius the fair takes over
+	holder = 413 # Demetrius the Fair
+}
 527.1.1 = { # 249 BC, Ptolemies return by dowry
 	holder = 606 # Ptolemy III
 	liege = e_egypt
