@@ -11,6 +11,7 @@ replace_path = "common\retinue_subunits"
 replace_path = "common\cb_types"
 replace_path = "common\buildings"
 replace_path = "common\nicknames"
+replace_path = "common\job_titles"
 
 replace_path = "decisions"
 
