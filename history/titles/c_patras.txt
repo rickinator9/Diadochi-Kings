@@ -22,6 +22,6 @@
 486.1.1 = { # 290 BC
 	holder = 23604
 }
-499.1.1 = { # 277 BC
-	liege = e_macedonia
+496.1.1 = { # 280 BC
+	liege = d_achaea
 }

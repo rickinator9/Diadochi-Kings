@@ -21,6 +21,12 @@ d_galatia = {
 
 	dynasty_title_names = no
 }
+d_achaea = {
+	color = { 90 185 255 }
+	color2= { 255 255 255 }
+	
+	capital = 27 # Patras
+}
 
 # Persian satrapies
 k_p_egypt = {
