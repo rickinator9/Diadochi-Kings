@@ -320,7 +320,10 @@
 	529.1.1 = { # 247 BC
 		add_spouse = 29904 # Nikaia
 	}
-	# TODO marry Pthia in 239 BC, divorce Stratonike
+	537.1.1 = { # 239 BC
+		add_spouse = 10019 # Pthia
+		remove_spouse = 1015 # Stratonike
+	}
 	547.1.1 = { # 229 BC
 		death="yes"
 	}

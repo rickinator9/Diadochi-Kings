@@ -62,6 +62,7 @@
 	454.1.1 = { # Made up-ish
 		birth="yes" # 322 BC
 	}
+	# 298 BC, marries Pyrrhus of Epirus
 	481.1.1 = {
 		death="yes" # 295 BC
 	}
