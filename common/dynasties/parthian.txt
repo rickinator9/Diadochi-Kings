@@ -1,0 +1,9 @@
+# 48001-49000 for Parthian dynasties
+48001 = {
+	name = "Narisanki" # Andragoras' dynasty
+	culture = parthian
+}
+48002 = {
+	name = "Arshak" # Arsacids dynasty
+	culture = parthian
+}

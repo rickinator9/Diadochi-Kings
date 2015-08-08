@@ -308,7 +308,7 @@ e_persia = {
 			color2= { 255 255 255 }
 			
 			persian = Parthava
-			parthian = Parthava
+			parthian = Parthaw
 			median = Parthava
 			arian = Parthava
 			

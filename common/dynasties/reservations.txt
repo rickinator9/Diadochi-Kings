@@ -40,3 +40,4 @@
 # 39001-46000 unreserved
 # 46001-47000 for Khotanese dynasties
 # 47001-48000 for Galatian dynasties
+# 48001-49000 for Parthian dynasties

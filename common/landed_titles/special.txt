@@ -13,6 +13,23 @@ k_pergamum = {
 
 	dynasty_title_names = no
 }
+k_parthia = {
+	color= { 200 25 75 }
+	color2= { 255 255 255 }
+	
+	capital = 246 # Asaak
+
+	persian = Parthava
+	parthian = Parthaw
+	median = Parthava
+	arian = Parthava
+	middle_persian = Pahlaw
+	scythian = Parthaw
+
+	male_names = {
+		Arshak
+	}
+}
 d_galatia = {
 	color= { 40 170 75 }
 	color2 = { 255 255 255 }
