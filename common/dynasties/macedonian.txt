@@ -144,3 +144,7 @@
 	name = "Magidai"
 	culture = macedonian
 }
+37 = {
+	name = "Diodotidai" # Diodotids of Bactria
+	culture = macedonian
+}
