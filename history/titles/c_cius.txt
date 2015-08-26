@@ -32,3 +32,7 @@
 	holder = 0
 	liege = 0
 }
+572.1.1 = { # 204 BC
+	holder = 40012 # Prusias I
+	liege = d_bithynia
+}
