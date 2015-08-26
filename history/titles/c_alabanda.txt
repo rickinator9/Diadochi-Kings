@@ -42,3 +42,15 @@
 	holder = 1023 # Antiochos Hierax
 	liege = k_lydia
 }
+548.1.1 = { # 227 BC
+	holder = 51309 # Attalus I
+	liege = k_pergamum
+}
+554.2.1 = { # 222 BC
+	holder = 1020 # Achaios
+	liege = k_lydia
+}
+560.11.1 = { # 216 BC
+	holder = 1029 # Antiochos III Megas
+	liege = e_syria
+}
