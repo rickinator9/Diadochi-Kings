@@ -17,11 +17,11 @@
 467.1.1 = {
 	liege = e_asia
 }
-475.1.1 = {
+475.1.1 = { # 301 BC
 	holder = 1001 # Seleukos I
 	liege = e_syria
 }
-495.8.1 = {
+495.8.1 = { # 281 BC
 	holder = 1002 # Antiochos I
 }
 515.1.1 = { # 261 BC
