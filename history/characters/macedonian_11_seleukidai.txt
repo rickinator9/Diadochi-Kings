@@ -475,6 +475,7 @@
 	510.1.1 = { # Made up
 		birth="yes" # 266 BC
 	}
+	# 249 BC, Marries Ariarathes III
 	556.1.1 = { # Made up
 		death="yes" # 213 BC
 	}
@@ -572,5 +573,156 @@
 	}
 	592.1.1 = {
 		death="yes" # 184 BC
+	}
+}
+
+# Offspring of Antiochos III
+1031 = {
+	name = "Antiochos" # Son of Antiochus III
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	555.9.1 = {
+		birth="yes" # 221 BC
+	}
+	580.1.1 = { # 196 BC
+		add_spouse = 1035 # Laodike IV
+	}
+	583.1.1 = {
+		death="yes" # 193 BC
+	}
+}
+1032 = {
+	name = "Seleukos" # Seleucus IV
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	558.1.1 = {
+		birth="yes" # 218 BC
+	}
+	589.1.1 = { # 187 BC
+		add_spouse = 1035 # Laodike IV
+	}
+	601.1.1 = {
+		death = { # 175 BC
+			death_reason = death_murder
+		}
+	}
+}
+1033 = {
+	name = "Ardys" # Son of Antiochus III
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	559.1.1 = { # Made up
+		birth="yes" # 217 BC
+	}
+	595.1.1 = { # Made up
+		death="yes" # 181 BC
+	}
+}
+1034 = {
+	name = "Apama" # Daughter of Antiochus III, name unknown
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	561.1.1 = { # Made up
+		birth="yes" # 215 BC
+	}
+	# 206 BC, marries Demetrius I of Bactria
+	615.1.1 = { # Made up
+		death="yes" # 161 BC
+	}
+}
+1035 = {
+	name = "Laodike" # Laodice IV
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	563.1.1 = { # Made up
+		birth="yes" # 213 BC
+	}
+	# 196 BC, Marries Antiochus, son of Antiochus III
+	# 187 BC, Marries Seleucus IV
+	# 175 BC, Marries Antiochus IV
+	622.1.1 = { # Made up
+		death="yes" # 154 BC
+	}
+}
+1036 = {
+	name = "Kleopatra" # Syra
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	572.1.1 = {
+		birth="yes" # 204 BC
+	}
+	600.1.1 = {
+		death="yes" # 176 BC
+	}
+}
+1037 = {
+	name = "Antiochis" # Of Cappadocia
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+	female = yes
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	562.1.1 = { # Made up
+		birth="yes" # 214 BC
+	}
+	# 197 BC, marries Ariarathes IV of Cappadocia
+	623.1.1 = { # Made up
+		death="yes" # 153 BC
+	}
+}
+1038 = {
+	name = "Mithridates" # Antiochus IV
+	dynasty = 11 # Seleukidai
+	religion = greek_main
+	culture = macedonian
+
+	father = 1029 # Antiochus III
+	mother = 1021 # Laodike III
+
+	561.1.1 = {
+		birth="yes" # 215 BC
+	}
+	601.1.1 = { # 175 BC
+		name = "Antiochos"
+		add_spouse = 1035 # Laodike IV
+	}
+	612.1.1 = {
+		death="yes" # 164 BC
 	}
 }

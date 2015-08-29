@@ -44,6 +44,9 @@
 	516.1.1 = { # 225 BC, Made up
 		birth="yes"
 	}
+	570.1.1 = { # 206 BC
+		add_spouse = 1034 # Apama, daughter of Antiochus III
+	}
 	596.1.1 = { # 180 BC
 		death="yes"
 	}
